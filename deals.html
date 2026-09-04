@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta name="description" content="VPS 优惠库：追踪最新促销、历史低价、降幅排行与热门套餐补货实时监控。" />
+    <meta name="description" content="VPS 优惠库：追踪最新促销、历史低价、降幅排行与热门套餐库存状态快照。" />
     <title>优惠库与价格历史 - 选主机</title>
     <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="assets/css/app.css" />
@@ -37,6 +37,7 @@
       <div class="container">
         <h1>优惠库与价格历史</h1>
         <p>跟踪 VPS 套餐的当前价格、历史低价与最近促销变化。</p>
+        <p>页面数据快照：2026-09-03 · 价格、促销状态与库存状态均为静态原型记录，不代表当前实时状态。</p>
       </div>
     </section>
     <main class="container">
@@ -110,15 +111,15 @@
         <div class="card stat">
           <div class="stat-icon">◆</div>
           <div>
-            <div class="stat-label">当前优惠</div>
-            <strong>24</strong><span class="delta">正在进行</span>
+            <div class="stat-label">快照优惠</div>
+            <strong>24</strong><span class="delta">2026-09-03 记录</span>
           </div>
         </div>
         <div class="card stat">
           <div class="stat-icon">NEW</div>
           <div>
-            <div class="stat-label">今日新增</div>
-            <strong>3</strong><span class="delta">新增优惠数量</span>
+            <div class="stat-label">当日新增</div>
+            <strong>3</strong><span class="delta">2026-09-03 新增</span>
           </div>
         </div>
         <div class="card stat">
@@ -140,8 +141,8 @@
         <div>
           <div class="card table-card">
             <div class="list-head">
-              <strong>最新优惠</strong
-              ><span class="small-muted">价格来自商家官网与站内记录</span>
+              <strong>优惠快照</strong
+              ><span class="small-muted">快照日期：2026-09-03 · 价格来源：商家官网与站内记录</span>
             </div>
             <table class="data-table">
               <thead>
@@ -152,7 +153,7 @@
                   <th>现价</th>
                   <th>原价</th>
                   <th>降幅</th>
-                  <th>状态</th>
+                  <th>快照状态</th>
                   <th></th>
                 </tr>
               </thead>
@@ -164,7 +165,7 @@
                   <td class="metric-warn">$4.49/月</td>
                   <td><del>$5.99</del></td>
                   <td><span class="badge red">25%</span></td>
-                  <td>剩余 15 天</td>
+                  <td>剩余 15 天（截至 2026-09-03）</td>
                   <td>
                     <a class="btn btn-primary btn-sm" href="plan.html"
                       >直达免码 ›</a
@@ -178,7 +179,7 @@
                   <td class="metric-warn">$6.90/月</td>
                   <td><del>$9.90</del></td>
                   <td><span class="badge red">30%</span></td>
-                  <td>剩余 8 天</td>
+                  <td>剩余 8 天（截至 2026-09-03）</td>
                   <td>
                     <a class="btn btn-primary btn-sm" href="plan.html"
                       >直达 ›</a
@@ -204,7 +205,7 @@
                   <td class="metric-warn">$5.00/月</td>
                   <td><del>$6.00</del></td>
                   <td><span class="badge red">17%</span></td>
-                  <td>长期有效</td>
+                  <td>记录为长期有效（截至 2026-09-03）</td>
                   <td>
                     <a class="btn btn-primary btn-sm" href="plan.html"
                       >直达免码 ›</a
@@ -218,7 +219,7 @@
                   <td class="metric-warn">$5.50/月</td>
                   <td><del>$6.90</del></td>
                   <td><span class="badge red">20%</span></td>
-                  <td>剩余 12 天</td>
+                  <td>剩余 12 天（截至 2026-09-03）</td>
                   <td>
                     <a class="btn btn-primary btn-sm" href="plan.html"
                       >直达免码 ›</a
@@ -237,6 +238,10 @@
                 ><button class="chip active">90天</button
                 ><button class="chip">全部</button>
               </div>
+            </div>
+            <div class="notice" style="margin: 0 16px 16px">
+              <h4>历史价格说明</h4>
+              <p>历史最高、历史最低与累计降幅仅基于本站当前已收录的价格记录，不代表商家全部历史时期的价格。</p>
             </div>
             <div class="chart-box" style="height: 260px">
               <svg viewBox="0 0 520 160" preserveAspectRatio="none">
@@ -308,15 +313,15 @@
                 margin-bottom: 12px;
               "
             >
-              <h3 style="margin: 0">🔥 热门补货实时监控</h3>
-              <span class="badge green">自动检测</span>
+              <h3 style="margin: 0">热门库存状态快照</h3>
+              <span class="badge green">静态记录</span>
             </div>
             <div class="idea" style="margin-bottom: 8px">
               <div class="idea-icon">✓</div>
               <div>
                 <strong>搬瓦工 洛杉矶 DC6 GIA-E</strong>
                 <p>
-                  <span class="metric-good">刚刚补货 (5分钟前)</span> ·
+                  <span class="metric-good">快照状态：已补货</span> ·
                   $49.99/年
                 </p>
               </div>
@@ -325,17 +330,18 @@
               <div class="idea-icon">✓</div>
               <div>
                 <strong>DMIT 香港 PVM.HKG.Pro</strong>
-                <p><span class="metric-good">少量库存在线</span> · $6.90/月</p>
+                <p><span class="metric-good">快照状态：少量库存</span> · $6.90/月</p>
               </div>
             </div>
             <div class="idea">
               <div class="idea-icon" style="color: var(--muted)">✕</div>
               <div>
                 <strong>BuyVM 卢森堡 1GB 不限流</strong>
-                <p><span class="small-muted">当前缺货 · 预计下周补货</span></p>
+                <p><span class="small-muted">快照状态：缺货</span></p>
               </div>
             </div>
           </div>
+          <p class="small-muted">库存状态记录于页面快照时间，实际库存请以商家官网为准。</p>
           <div class="card aside-card">
             <h3>最近降价</h3>
             <div class="idea">
@@ -437,10 +443,10 @@
               "
             >
               <span style="font-size: 18px">🔔</span>
-              <h3 style="margin: 0">补货与降价实时提醒</h3>
+              <h3 style="margin: 0">补货与降价提醒（功能示意）</h3>
             </div>
             <p class="small-muted" style="margin: 0 0 10px">
-              当热门神机（搬瓦工 GIA / BuyVM）补货时，第一时间发送通知。
+              此订阅区域仅用于展示未来提醒功能的界面形式，当前静态原型不提供实时库存或降价通知。
             </p>
             <form
               data-demo
