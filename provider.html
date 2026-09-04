@@ -161,6 +161,9 @@
         ><button class="tab">测试记录</button><button class="tab">在线率快照</button
         ><button class="tab">价格历史</button>
       </div>
+      <p class="small-muted" style="margin: 12px 0 0">
+        以下各标签仅切换当前 HTML 中已有的静态记录，不会查询库存、启动网络探针、重新测速或同步商家数据。
+      </p>
       <div class="tab-panel active" data-tab-panel="provider">
         <section class="section detail-main">
           <div>
@@ -419,8 +422,8 @@
         <div class="card table-card section" style="margin-top: 20px">
           <div class="list-head">
             <div>
-              <strong>RackNerd 全部在售机型与配置矩阵</strong>
-              <div class="small-muted">实时库存监控 · 自动同步官方在售状态</div>
+              <strong>RackNerd 套餐配置记录快照</strong>
+              <div class="small-muted">当前静态页面展示 4 条套餐配置记录，不代表实时库存、当前可购买状态或完整在售机型。</div>
             </div>
           </div>
           <table class="data-table">
@@ -521,9 +524,9 @@
             "
           >
             <div>
-              <h3 style="margin: 0">全网测试记录指标</h3>
+              <h3 style="margin: 0">测试记录指标快照</h3>
               <p class="small-muted" style="margin: 4px 0 0">
-                覆盖中国电信、中国联通、中国移动及全球骨干网实测
+                以下为当前页面保留的 3 条测试记录，不代表全网覆盖、当前网络状态或持续测速结果。
               </p>
             </div>
             <a class="btn btn-sm" href="benchmarks.html">实测大厅全部报告 →</a>
@@ -576,12 +579,12 @@
         <div class="card section" style="margin-top: 20px; padding: 20px">
           <div class="list-head">
             <div>
-              <h3 style="margin: 0">网络监控探针与故障记录</h3>
+              <h3 style="margin: 0">网络探针与故障记录快照</h3>
               <p class="small-muted" style="margin: 4px 0 0">
-                ICMP / TCP Ping 每 60 秒轮询探测一次
+                原记录采样口径：ICMP / TCP Ping 60 秒间隔；当前静态页面不会执行轮询探测。
               </p>
             </div>
-            <span class="badge green">探针状态：全部正常在线</span>
+            <span class="badge green">状态说明：仅展示已保存样本</span>
           </div>
           <div
             style="
@@ -624,6 +627,12 @@
               </div>
             </div>
           </div>
+          <p class="small-muted">
+            99.85% 与 99.91% 均为当前页面保存的 30 天样本记录，不表示探针当前在线状态，也不保证未来在线率。
+          </p>
+          <p class="small-muted">
+            以下故障条目为当前静态页面已有记录；本页未提供独立外部来源验证，不应据此判断商家当前运行状态。
+          </p>
           <table class="data-table">
             <thead>
               <tr>
@@ -655,8 +664,8 @@
       </div>
       <div class="tab-panel" data-tab-panel="provider">
         <div class="card section" style="margin-top: 20px; padding: 20px">
-          <h3 style="margin-top: 0">商家历史调价与促销动态</h3>
-          <p class="small-muted">收录该商家近 12 个月关键大促与价格波动节点</p>
+          <h3 style="margin-top: 0">商家历史调价与促销记录快照</h3>
+          <p class="small-muted">以下为当前页面保存的近 12 个月促销与价格记录示例，不表示实时价格跟踪或完整历史覆盖。</p>
           <table class="data-table" style="margin-top: 14px">
             <thead>
               <tr>
@@ -664,8 +673,8 @@
                 <th>核心促销套餐</th>
                 <th>促销价格</th>
                 <th>日常参考原价</th>
-                <th>真实降幅</th>
-                <th>历史定位</th>
+                <th>记录降幅</th>
+                <th>页面记录定位</th>
               </tr>
             </thead>
             <tbody>
@@ -713,6 +722,9 @@
               </tr>
             </tbody>
           </table>
+          <p class="small-muted">
+            “页面记录定位”仅相对于本页当前保存的价格节点，不代表 RackNerd 完整历史价格、全网最低价或实时促销状态。
+          </p>
         </div>
       </div>
     </main>
