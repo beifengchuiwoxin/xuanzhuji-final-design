@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta name="description" content="选主机：基于真实测速、价格历史与线路质量数据，帮你快速找到适合的 VPS。收录 60+ 商家、318+ 套餐的客观对比。" />
+    <meta name="description" content="选主机：汇总 VPS 套餐、商家、价格历史与已有测试记录，提供静态数据对比与选型入口。" />
     <title>首页 - 选主机</title>
     <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="assets/css/app.css" />
@@ -12,12 +12,7 @@
         "@context": "https://schema.org",
         "@type": "WebSite",
         "name": "选主机",
-        "url": "https://www.xuanzhuji.com/",
-        "potentialAction": {
-          "@type": "SearchAction",
-          "target": "https://www.xuanzhuji.com/vps.html?q={search_term_string}",
-          "query-input": "required name=search_term_string"
-        }
+        "url": "https://www.xuanzhuji.com/"
       }
     </script>
   </head>
@@ -50,8 +45,10 @@
       <section class="hero">
         <div class="container">
           <h1>找到真正适合你的 VPS</h1>
-          <p>基于价格、配置、线路与真实测试数据，帮你更快做决定。</p>
+          <p>基于当前收录的价格、配置、线路与已有测试记录，帮助你比较 VPS。</p>
           <form action="vps.html" method="GET" class="search-panel card">
+            <h2>快速筛选入口（功能示意）</h2>
+            <p class="small-muted">当前静态原型会跳转到 VPS 列表页，但不会根据这些参数执行真实筛选。</p>
             <div class="filter-grid">
               <div class="field">
                 <label>地区</label>
@@ -90,7 +87,7 @@
                   <option value="media">流媒体解锁</option>
                 </select>
               </div>
-              <button type="submit" class="btn btn-primary">⌕ 查找 VPS</button>
+              <button type="submit" class="btn btn-primary">查看 VPS 列表</button>
             </div>
             <div class="chips">
               <a class="chip" href="vps.html?budget=5">$5以下</a
@@ -110,39 +107,40 @@
           <div class="card stat">
             <div class="stat-icon">▣</div>
             <div>
-              <div class="stat-label">已收录套餐</div>
-              <strong>318</strong><span class="delta">较昨日 +6</span>
+              <div class="stat-label">套餐记录</div>
+              <strong>318</strong><span class="delta">当前快照</span>
             </div>
           </div>
           <div class="card stat">
             <div class="stat-icon">⌂</div>
             <div>
-              <div class="stat-label">商家</div>
-              <strong>60</strong><span class="delta">较昨日 +1</span>
+              <div class="stat-label">商家记录</div>
+              <strong>60</strong><span class="delta">当前快照</span>
             </div>
           </div>
           <div class="card stat">
             <div class="stat-icon">◴</div>
             <div>
-              <div class="stat-label">真实测速</div>
-              <strong>126</strong><span class="delta">较昨日 +8</span>
+              <div class="stat-label">测试记录</div>
+              <strong>126</strong><span class="delta">当前快照</span>
             </div>
           </div>
           <div class="card stat">
             <div class="stat-icon">⌘</div>
             <div>
-              <div class="stat-label">监控节点</div>
-              <strong>18</strong><span class="delta">全球节点</span>
+              <div class="stat-label">节点记录</div>
+              <strong>18</strong><span class="delta">当前快照</span>
             </div>
           </div>
           <div class="card stat">
             <div class="stat-icon">↻</div>
             <div>
-              <div class="stat-label">今日更新</div>
-              <strong>24</strong><span class="delta">今日</span>
+              <div class="stat-label">更新记录</div>
+              <strong>24</strong><span class="delta">当前页面示例</span>
             </div>
           </div>
         </div>
+        <p class="small-muted">首页数据快照：2026-09-04</p>
         <section class="section">
           <div class="section-head">
             <div>
@@ -253,8 +251,8 @@
         <section class="section">
           <div class="section-head">
             <div>
-              <h2>今日网络情况</h2>
-              <p>示例数据每 30 分钟更新</p>
+              <h2>网络测试快照</h2>
+              <p>展示当前静态页面中的网络测试摘要；具体测试时间与样本请进入实测页面查看。</p>
             </div>
             <a class="link-more" href="benchmarks.html">查看全部节点 ›</a>
           </div>
@@ -284,7 +282,7 @@
                   stroke-width="2"
                 />
               </svg>
-              <div class="sub">较昨日 ↓ 8ms · 查看诊断 ›</div>
+              <div class="sub">静态测试摘要 · 查看测试快照 ›</div>
             </a>
             <a
               class="card network-card"
@@ -311,7 +309,7 @@
                   stroke-width="2"
                 />
               </svg>
-              <div class="sub">较昨日 ↓ 5ms · 查看诊断 ›</div>
+              <div class="sub">静态测试摘要 · 查看测试快照 ›</div>
             </a>
             <a
               class="card network-card"
@@ -338,7 +336,7 @@
                   stroke-width="2"
                 />
               </svg>
-              <div class="sub">较昨日 ↑ 2ms · 查看诊断 ›</div>
+              <div class="sub">静态测试摘要 · 查看测试快照 ›</div>
             </a>
             <a
               class="card network-card"
@@ -365,7 +363,7 @@
                   stroke-width="2"
                 />
               </svg>
-              <div class="sub">较昨日 ↓ 1ms · 查看诊断 ›</div>
+              <div class="sub">静态测试摘要 · 查看测试快照 ›</div>
             </a>
           </div>
         </section>
@@ -614,8 +612,9 @@
           <div>
             <div class="section-head">
               <div>
-                <h2>最新真实测速</h2>
-                <p>来自站长和用户提交的真实 VPS 测试</p>
+                <h2>实测记录摘要</h2>
+                <p>查看当前页面已收录的 VPS 测试记录</p>
+                <p class="small-muted">测试结果仅代表对应记录中的测试时间、节点与环境，不代表长期性能。</p>
               </div>
               <a class="link-more" href="benchmarks.html">更多测速报告 ›</a>
             </div>
