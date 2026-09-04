@@ -94,6 +94,7 @@
           ><button class="tab">配置示例</button
           ><button class="tab">价格变动</button>
         </div>
+        <p class="small-muted" style="margin-top: 10px">页面标签仅切换当前已写入 HTML 的静态内容，不会按标签请求新的地区数据。</p>
         <div class="tab-panel active" data-tab-panel="region">
           <section
             class="section"
@@ -129,10 +130,11 @@
                 ><button class="chip">价格从低到高</button
                 ><button class="chip">延迟从低到高</button>
               </div>
+              <p class="small-muted" style="margin-top: 8px">排序按钮仅切换界面选中状态，不会重新排列下方 4 条静态套餐记录。</p>
             </aside>
             <div class="card table-card">
               <div class="list-head">
-                <strong>洛杉矶 VPS 套餐示例</strong
+                <strong id="region-plan-records">洛杉矶 VPS 套餐示例</strong
                 ><span class="small-muted">当前静态页面展示 4 条套餐记录 · 聚合统计范围为 86 款 · 数据更新：2026-09-03</span>
               </div>
               <table class="data-table">
@@ -238,7 +240,8 @@
         <div class="tab-panel" data-tab-panel="region">
           <div class="card section" style="padding: 20px">
             <h3 style="margin-top: 0">洛杉矶 VPS 配置示例</h3>
-            <p class="small-muted">以下配置与价格仅为当前静态页面中的示例，不代表市场主流程度或实时最低价格。</p>
+            <p class="small-muted">以下为通用配置与价格展示示例，不对应下方链接中的具体套餐，也不代表市场主流程度、实时最低价格或购买报价。</p>
+            <p class="small-muted">示例用途、配置和价格彼此仅用于界面展示；如需查看真实套餐记录，请返回上方套餐列表。</p>
             <div class="grid-3" style="margin-top: 16px">
               <div
                 class="card"
@@ -252,13 +255,13 @@
                   class="badge green"
                   style="display: inline-block; margin-bottom: 8px"
                 >
-                  入门开发型
+                  配置示例 A
                 </div>
                 <div style="font-size: 18px; font-weight: 700">
                   1 vCPU · 1 GB · 20GB
                 </div>
                 <p class="small-muted" style="margin: 6px 0">
-                  适合轻量测试、定时脚本、个人博客
+                  用途示例：轻量测试、定时脚本、个人博客
                 </p>
                 <div
                   style="
@@ -270,11 +273,11 @@
                 >
                   <span class="price"
                     >$1.50<span style="font-size: 12px; font-weight: 400"
-                      >/月起</span
+                      >/月 · 示例</span
                     ></span
                   >
-                  <a class="btn btn-primary btn-sm" href="plan.html"
-                    >查看机型</a
+                  <a class="btn btn-sm" href="#region-plan-records"
+                    >查看上方套餐记录</a
                   >
                 </div>
               </div>
@@ -290,13 +293,13 @@
                   class="badge"
                   style="display: inline-block; margin-bottom: 8px"
                 >
-                  标准建站型
+                  配置示例 B
                 </div>
                 <div style="font-size: 18px; font-weight: 700">
                   2 vCPU · 2 GB · 40GB
                 </div>
                 <p class="small-muted" style="margin: 6px 0">
-                  适合 WordPress、外贸独立站、Docker
+                  用途示例：WordPress、独立站、Docker
                 </p>
                 <div
                   style="
@@ -308,11 +311,11 @@
                 >
                   <span class="price"
                     >$4.49<span style="font-size: 12px; font-weight: 400"
-                      >/月起</span
+                      >/月 · 示例</span
                     ></span
                   >
-                  <a class="btn btn-primary btn-sm" href="plan.html"
-                    >查看机型</a
+                  <a class="btn btn-sm" href="#region-plan-records"
+                    >查看上方套餐记录</a
                   >
                 </div>
               </div>
@@ -328,13 +331,13 @@
                   class="badge"
                   style="display: inline-block; margin-bottom: 8px"
                 >
-                  进阶高性能型
+                  配置示例 C
                 </div>
                 <div style="font-size: 18px; font-weight: 700">
                   4 vCPU · 4 GB · 80GB
                 </div>
                 <p class="small-muted" style="margin: 6px 0">
-                  适合中高负载应用、数据库、复杂自动化
+                  用途示例：较高资源需求的应用、数据库或自动化任务
                 </p>
                 <div
                   style="
@@ -346,11 +349,11 @@
                 >
                   <span class="price"
                     >$9.90<span style="font-size: 12px; font-weight: 400"
-                      >/月起</span
+                      >/月 · 示例</span
                     ></span
                   >
-                  <a class="btn btn-primary btn-sm" href="plan.html"
-                    >查看机型</a
+                  <a class="btn btn-sm" href="#region-plan-records"
+                    >查看上方套餐记录</a
                   >
                 </div>
               </div>
@@ -365,11 +368,11 @@
               <thead>
                 <tr>
                   <th>商家 / 套餐</th>
-                  <th>当前促销价格</th>
+                  <th>记录中的促销价格</th>
                   <th>原标定价格</th>
-                  <th>实际降幅</th>
-                  <th>降价生效时间</th>
-                  <th>直达链接</th>
+                  <th>记录降幅</th>
+                  <th>记录中的变动时间</th>
+                  <th>套餐入口</th>
                 </tr>
               </thead>
               <tbody>
