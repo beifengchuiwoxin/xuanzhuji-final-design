@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta name="description" content="VPS 工具箱：路由测试、TCP Ping、IP 查询、DNS 查询、价格计算器等实用工具集合。" />
+    <meta name="description" content="VPS 工具箱目录：汇总已有静态页面、功能原型与规划中的网络、查询、价格和选型工具入口。" />
     <title>工具箱 - 选主机</title>
     <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="assets/css/app.css" />
@@ -38,6 +38,7 @@
         <h1>工具箱</h1>
         <p>汇总 VPS 选购、网络测试、查询与价格评估相关入口；部分工具当前仅提供静态原型或功能规划。</p>
         <p>当前版本：静态原型 · 工具状态以各卡片说明为准</p>
+        <p>状态说明：已有页面 = 可进入当前静态页面查看；规划中 = 尚未提供对应工具功能。</p>
       </div>
     </section>
     <main class="container">
@@ -46,8 +47,9 @@
           class="input"
           style="height: 48px"
           data-tool-search
-          placeholder="⌕ 搜索工具，例如：IP 查询、TCP Ping、价格计算器"
+          placeholder="⌕ 筛选本页工具卡片，例如：IP 查询、TCP Ping、价格计算器"
         />
+        <p class="small-muted" style="margin-top: 6px">此搜索仅按当前页面卡片文字进行前端筛选，不会调用网络查询、测速或外部搜索服务。</p>
       </div>
       <section class="tool-layout">
         <div>
@@ -63,37 +65,37 @@
                 ><div class="tool-icon">⌁</div>
                 <div>
                   <strong>路由测试</strong>
-                  <p>检测到目标的路由与延迟</p>
+                  <p>查看 Looking Glass MTR 静态记录</p><span class="badge">已有页面</span>
                 </div></a
               ><a class="tool" data-tool data-soon href="toolbox.html"
                 ><div class="tool-icon">⌘</div>
                 <div>
                   <strong>TCP Ping</strong>
-                  <p>多端口 TCP 延迟测试</p>
+                  <p>规划中：多端口 TCP 延迟测试</p><span class="badge">规划中</span>
                 </div></a
               ><a class="tool" data-tool href="looking-glass.html"
                 ><div class="tool-icon">⌘</div>
                 <div>
                   <strong>Looking Glass</strong>
-                  <p>查看网络路由与节点信息</p>
+                  <p>查看 MTR 静态快照与测试界面示意</p><span class="badge">已有页面</span>
                 </div></a
               ><a class="tool" data-tool data-soon href="toolbox.html"
                 ><div class="tool-icon">▣</div>
                 <div>
                   <strong>端口检测</strong>
-                  <p>检测端口开放状态</p>
+                  <p>规划中：端口开放状态检测</p><span class="badge">规划中</span>
                 </div></a
               ><a class="tool" data-tool data-soon href="toolbox.html"
                 ><div class="tool-icon">DNS</div>
                 <div>
                   <strong>DNS 查询</strong>
-                  <p>查询域名 DNS 记录</p>
+                  <p>规划中：域名 DNS 记录查询</p><span class="badge">规划中</span>
                 </div></a
               ><a class="tool" data-tool data-soon href="toolbox.html"
                 ><div class="tool-icon">MTR</div>
                 <div>
                   <strong>MTR 测试</strong>
-                  <p>综合路由跟踪检测工具</p>
+                  <p>规划中：独立 MTR 测试工具</p><span class="badge">规划中</span>
                 </div></a
               >
             </div>
@@ -110,37 +112,37 @@
                 ><div class="tool-icon">◎</div>
                 <div>
                   <strong>IP 查询</strong>
-                  <p>查询 IP 归属地与 ASN 信息</p>
+                  <p>查看 IP 查询静态原型</p><span class="badge">已有页面</span>
                 </div></a
               ><a class="tool" data-tool data-soon href="toolbox.html"
                 ><div class="tool-icon">ASN</div>
                 <div>
                   <strong>ASN 查询</strong>
-                  <p>查询 ASN 信息与关联网络</p>
+                  <p>规划中：ASN 与关联网络查询</p><span class="badge">规划中</span>
                 </div></a
               ><a class="tool" data-tool data-soon href="toolbox.html"
                 ><div class="tool-icon">IP</div>
                 <div>
                   <strong>IP 段查询</strong>
-                  <p>查询 IP 段归属与信息</p>
+                  <p>规划中：IP 段归属信息查询</p><span class="badge">规划中</span>
                 </div></a
               ><a class="tool" data-tool data-soon href="toolbox.html"
                 ><div class="tool-icon">▣</div>
                 <div>
                   <strong>网站信息查询</strong>
-                  <p>查询域名备案与 TLS 等信息</p>
+                  <p>规划中：域名与 TLS 信息查询</p><span class="badge">规划中</span>
                 </div></a
               ><a class="tool" data-tool data-soon href="toolbox.html"
                 ><div class="tool-icon">×</div>
                 <div>
                   <strong>黑名单检测</strong>
-                  <p>检测 IP 是否在黑名单</p>
+                  <p>规划中：IP 黑名单状态检测</p><span class="badge">规划中</span>
                 </div></a
               ><a class="tool" data-tool data-soon href="toolbox.html"
                 ><div class="tool-icon">SSL</div>
                 <div>
                   <strong>SSL 证书查询</strong>
-                  <p>查询证书有效性</p>
+                  <p>规划中：证书信息与有效性查询</p><span class="badge">规划中</span>
                 </div></a
               >
             </div>
@@ -157,37 +159,37 @@
                 ><div class="tool-icon">¥</div>
                 <div>
                   <strong>价格计算器</strong>
-                  <p>计算 VPS 总成本与月均价</p>
+                  <p>规划中：VPS 总成本与月均价计算</p><span class="badge">规划中</span>
                 </div></a
               ><a class="tool" data-tool data-soon href="toolbox.html"
                 ><div class="tool-icon">$</div>
                 <div>
                   <strong>汇率换算</strong>
-                  <p>汇率换算功能规划</p>
+                  <p>规划中：汇率换算</p><span class="badge">规划中</span>
                 </div></a
               ><a class="tool" data-tool data-soon href="toolbox.html"
                 ><div class="tool-icon">↔</div>
                 <div>
                   <strong>流量单位换算</strong>
-                  <p>GB / TB / Mbps 换算</p>
+                  <p>规划中：GB / TB / Mbps 单位换算</p><span class="badge">规划中</span>
                 </div></a
               ><a class="tool" data-tool data-soon href="toolbox.html"
                 ><div class="tool-icon">▤</div>
                 <div>
                   <strong>预算估算器</strong>
-                  <p>根据需求估算月度预算</p>
+                  <p>规划中：根据需求估算月度预算</p><span class="badge">规划中</span>
                 </div></a
               ><a class="tool" data-tool href="compare.html"
                 ><div class="tool-icon">≡</div>
                 <div>
                   <strong>成本对比</strong>
-                  <p>对比不同方案成本差异</p>
+                  <p>查看现有套餐对比数据</p><span class="badge">已有页面</span>
                 </div></a
               ><a class="tool" data-tool href="deals.html"
                 ><div class="tool-icon">↘</div>
                 <div>
                   <strong>价格趋势</strong>
-                  <p>跟踪历史价格趋势变化</p>
+                  <p>查看优惠与价格历史快照</p><span class="badge">已有页面</span>
                 </div></a
               >
             </div>
@@ -204,21 +206,21 @@
                 <div class="tool-icon">≡</div>
                 <div>
                   <strong>多套餐横向对比</strong>
-                  <p>最多支持 4 款机型同屏比对</p>
+                  <p>查看当前 4 款静态套餐对比矩阵</p><span class="badge">已有页面</span>
                 </div>
               </a>
               <a class="tool" data-tool href="region.html">
                 <div class="tool-icon">◈</div>
                 <div>
                   <strong>地区网络矩阵</strong>
-                  <p>查看各地区到中国大陆延迟表现</p>
+                  <p>查看地区网络数据静态快照</p><span class="badge">已有页面</span>
                 </div>
               </a>
               <a class="tool" data-tool href="benchmarks.html">
                 <div class="tool-icon">▤</div>
                 <div>
                   <strong>Benchmark 跑分对比</strong>
-                  <p>横向查看各机房 CPU 与磁盘实测</p>
+                  <p>查看已收录测试报告索引</p><span class="badge">已有页面</span>
                 </div>
               </a>
             </div>
@@ -235,37 +237,37 @@
                 ><div class="tool-icon">≡</div>
                 <div>
                   <strong>节点对比</strong>
-                  <p>多节点性能与价格对比</p>
+                  <p>查看现有套餐对比数据</p><span class="badge">已有页面</span>
                 </div></a
               ><a class="tool" data-tool href="vps.html"
                 ><div class="tool-icon">▥</div>
                 <div>
                   <strong>配置参考</strong>
-                  <p>查看现有 VPS 套餐与配置</p>
+                  <p>查看当前 VPS 套餐记录</p><span class="badge">已有页面</span>
                 </div></a
               ><a class="tool" data-tool href="vps.html"
                 ><div class="tool-icon">◇</div>
                 <div>
                   <strong>套餐筛选</strong>
-                  <p>按现有条件查看 VPS 套餐</p>
+                  <p>查看 VPS 列表筛选界面原型</p><span class="badge">已有页面</span>
                 </div></a
               ><a class="tool" data-tool data-soon href="toolbox.html"
                 ><div class="tool-icon">▣</div>
                 <div>
                   <strong>系统镜像查询</strong>
-                  <p>查询常见镜像兼容性</p>
+                  <p>规划中：常见镜像兼容性查询</p><span class="badge">规划中</span>
                 </div></a
               ><a class="tool" data-tool href="benchmarks.html"
                 ><div class="tool-icon">⌁</div>
                 <div>
                   <strong>实测记录</strong>
-                  <p>查看当前已收录的节点测试结果</p>
+                  <p>查看当前已收录测试报告</p><span class="badge">已有页面</span>
                 </div></a
               ><a class="tool" data-tool data-soon href="toolbox.html"
                 ><div class="tool-icon">API</div>
                 <div>
                   <strong>工具合集 API</strong>
-                  <p>API 接口规划</p>
+                  <p>规划中：工具数据接口</p><span class="badge">规划中</span>
                 </div></a
               >
             </div>
@@ -277,6 +279,7 @@
             style="background: var(--bg); border: 1px solid var(--line)"
           >
             <h3 style="margin-top: 0">汇率与价格示例</h3>
+            <p class="small-muted">静态换算示例，不代表实时汇率。</p>
             <div
               style="
                 font-size: 13px;
