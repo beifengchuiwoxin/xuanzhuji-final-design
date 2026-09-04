@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta name="description" content="CN2 GIA 是什么？详解 CN2 GIA 与普通国际线路的区别、真假判断方法与 VPS 选购建议。" />
+    <meta name="description" content="CN2 GIA 静态指南示例：介绍线路对比、判断方法与 VPS 选购时的数据边界。" />
     <title>CN2 GIA 是什么 - 选主机</title>
     <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="assets/css/app.css" />
@@ -54,6 +54,7 @@
             作者：选主机编辑部 · 更新：2026-09-01 · 数据核验：2026-09-02 (样本
             18 份) · 阅读约 8 分钟
           </div>
+          <p class="small-muted">内容说明：本文为静态指南示例，线路判断基于当前收录样本与一般测试方法，不代表所有 CN2 GIA 线路在所有时间和地区都有相同表现。</p>
           <p>
             CN2 GIA 是中国电信面向国际业务的一类高质量承载网络。对 VPS
             用户来说，更重要的不是记住名称，而是理解它在跨境链路、晚高峰稳定性和路由质量上的差异。
@@ -65,10 +66,10 @@
           <div class="notice warn">
             <h4>核心特点</h4>
             <ul class="checklist">
-              <li>通常拥有更优的跨境路径。</li>
-              <li>高峰期相对普通线路更稳定。</li>
-              <li>价格通常也会更高。</li>
-              <li>必须结合实际机房和真实测试判断。</li>
+              <li>部分 CN2 GIA 路由会呈现与普通国际线路不同的跨境路径。</li>
+              <li>线路表现需要结合具体机房、运营商和测试时间判断。</li>
+              <li>相关套餐价格可能高于普通线路，但不能仅凭线路名称判断性价比。</li>
+              <li>判断时应结合路由、延迟、丢包和多时间段测试结果。</li>
             </ul>
           </div>
           <h2 id="s2">二、CN2 GIA 与普通线路对比</h2>
@@ -82,31 +83,31 @@
             </thead>
             <tbody>
               <tr>
-                <td>晚高峰稳定性</td>
-                <td>通常更好</td>
-                <td>波动更明显</td>
+                <td>晚高峰表现</td>
+                <td>需结合具体线路实测</td>
+                <td>需结合具体线路实测</td>
               </tr>
               <tr>
                 <td>中国大陆延迟</td>
-                <td>通常更低</td>
-                <td>取决于机房</td>
+                <td>取决于机房、路由与运营商</td>
+                <td>取决于机房、路由与运营商</td>
               </tr>
               <tr>
                 <td>价格</td>
-                <td>更高</td>
-                <td>更低</td>
+                <td>以具体套餐为准</td>
+                <td>以具体套餐为准</td>
               </tr>
               <tr>
-                <td>适合用户</td>
-                <td>对大陆访问体验敏感</td>
-                <td>预算优先或海外用户</td>
+                <td>关注方向</td>
+                <td>对中国大陆线路质量较敏感的用户可重点关注</td>
+                <td>预算、海外访问或其他场景可综合比较</td>
               </tr>
             </tbody>
           </table>
           <h2 id="s3">三、怎么判断商家真的用了 CN2 GIA？</h2>
           <p>
             优先查看路由测试与 AS 信息，再查看多个时间段的延迟与丢包。单次 Ping
-            很容易受到瞬时网络影响，不足以支撑结论。
+            很容易受到瞬时网络影响，不足以支撑结论。AS 或某一跳路由只能作为判断依据之一，不能单凭单个 ASN、单次 Ping 或商家线路名称确认长期网络质量。
           </p>
           <h2 id="s4">四、选 VPS 时怎么用这些数据？</h2>
           <p>
@@ -130,10 +131,10 @@
               "
             >
               <strong style="font-size: 15px"
-                >站内收录且通过实测的 CN2 GIA 热门机型：</strong
+                >当前静态页面中的 CN2 GIA 套餐示例：</strong
               >
               <a href="vps.html" style="font-size: 12px; color: var(--blue)"
-                >查看全部 CN2 套餐 →</a
+                >查看 VPS 套餐列表 →</a
               >
             </div>
             <div class="grid-2" style="gap: 12px">
@@ -143,7 +144,7 @@
                   <span class="rating">9.1</span>
                 </div>
                 <div class="small-muted" style="margin: 4px 0">
-                  香港 CN2 GIA · 电信联通极速
+                  香港 CN2 GIA · 静态套餐示例
                 </div>
                 <div
                   style="
@@ -165,7 +166,7 @@
                   <span class="rating">9.4</span>
                 </div>
                 <div class="small-muted" style="margin: 4px 0">
-                  美西 2.5Gbps 双程 CN2 GIA
+                  美西 2.5Gbps · CN2 GIA 标注
                 </div>
                 <div
                   style="
@@ -182,7 +183,9 @@
                 </div>
               </div>
             </div>
+            <p class="small-muted">以上价格、评分与线路标签均为当前静态页面已有记录；购买前请进入套餐详情核对更新时间与数据来源。</p>
           </div>
+          <p class="small-muted">评分为当前静态原型中的展示字段，本文章未提供评分算法，不用于证明某套餐优于其他套餐。</p>
           <a class="btn btn-primary" href="vps.html"
             >进入找 VPS 列表查看更多 →</a
           >
@@ -201,11 +204,11 @@
               本文是否对你的 VPS 选型决策有所帮助？
             </h4>
             <div style="display: flex; justify-content: center; gap: 12px">
-              <button class="btn btn-sm" data-like-btn>👍 有帮助 (48)</button>
-              <button class="btn btn-sm" data-dislike-btn>👎 暂未解决 (3)</button>
+              <button class="btn btn-sm" data-like-btn>👍 有帮助（示例）</button>
+              <button class="btn btn-sm" data-dislike-btn>👎 暂未解决（示例）</button>
             </div>
             <div class="small-muted" style="margin-top: 8px">
-              已有 51 位开发者参与真实反馈 · 持续修正完善
+              反馈区域为静态原型展示，当前数字统计与真实用户反馈系统尚未接入。
             </div>
           </div>
         </article>
@@ -218,17 +221,17 @@
           </div>
           <div class="card aside-card">
             <h3>相关工具</h3>
-            <a class="idea" href="toolbox.html"
+            <a class="idea" href="looking-glass.html"
               ><div class="idea-icon">⌁</div>
               <div>
                 <strong>路由测试</strong>
-                <p>检查链路</p>
+                <p>查看已有网络测试快照</p>
               </div></a
             ><a class="idea" href="ip.html"
               ><div class="idea-icon">◎</div>
               <div>
                 <strong>IP 查询</strong>
-                <p>查看 ASN</p>
+                <p>查看 IP 查询静态原型</p>
               </div></a
             ><a class="idea" href="compare.html"
               ><div class="idea-icon">≡</div>
@@ -242,8 +245,14 @@
             <h3>相关文章</h3>
             <p><a href="guide.html">中国大陆访问 VPS 为什么晚高峰变慢？</a></p>
             <p><a href="guide.html">CN2、CMI、9929 有什么区别？</a></p>
+            <p class="small-muted">相关文章为静态目录示例，目前暂共用 guide.html 作为详情页原型。</p>
           </div>
         </aside>
+      </section>
+      <section class="section card aside-card">
+        <h2>数据与适用范围</h2>
+        <p>本文页面记录的发布日期为 2026-09-01，数据核验日期为 2026-09-02，当前标注样本为 18 份。样本数量仅说明本页面已有记录范围，不代表完整市场覆盖。</p>
+        <p>线路、延迟和稳定性可能随机房、运营商、路由策略及时间变化，实际选择时应结合最新实测和套餐详情。</p>
       </section>
     </main>
     <footer class="site-footer">
