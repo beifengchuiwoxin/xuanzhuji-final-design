@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta name="description" content="VPS 商家库：收录 60 家主流 VPS 服务商，含信誉评级、支付方式、退款政策与实测数据。" />
+    <meta name="description" content="VPS 商家库快照：展示当前收录的 60 家 VPS 商家记录，包括评分、支付方式、政策、套餐与已有测试数据。" />
     <title>商家库 - 选主机</title>
     <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="assets/css/app.css" />
@@ -36,8 +36,9 @@
     <section class="page-title">
       <div class="container">
         <h1>商家库</h1>
-        <p>按地区、价格与已有实测数据整理 VPS 商家，方便先看商家覆盖范围，再进入具体套餐。</p>
+        <p>按地区、价格、套餐与已有测试记录整理 VPS 商家，方便查看当前商家目录快照。</p>
         <p>数据更新时间：2026-09-04</p>
+        <p class="small-muted">目录状态：静态快照 · 商家数量、套餐数量与测试状态以当前页面记录为准</p>
       </div>
     </section>
     <main class="container">
@@ -45,33 +46,35 @@
         <div class="card stat">
           <div class="stat-icon">▣</div>
           <div>
-            <div class="stat-label">已收录商家</div>
-            <strong>60</strong><span class="delta">较昨日 +1</span>
+            <div class="stat-label">商家记录</div>
+            <strong>60</strong><span class="delta">当前快照</span>
           </div>
         </div>
         <div class="card stat">
           <div class="stat-icon">☆</div>
           <div>
-            <div class="stat-label">活跃商家</div>
-            <strong>42</strong><span class="delta">较昨日 +1</span>
+            <div class="stat-label">页面标记活跃</div>
+            <strong>42</strong><span class="delta">静态分类记录</span>
           </div>
         </div>
         <div class="card stat">
           <div class="stat-icon">▤</div>
           <div>
-            <div class="stat-label">已有实测</div>
-            <strong>26</strong><span class="delta">较昨日 +3</span>
+            <div class="stat-label">有测试记录</div>
+            <strong>26</strong><span class="delta">当前快照</span>
           </div>
         </div>
         <div class="card stat">
           <div class="stat-icon">♙</div>
           <div>
-            <div class="stat-label">有监控数据</div>
-            <strong>18</strong><span class="delta">较昨日 +2</span>
+            <div class="stat-label">有监控样本记录</div>
+            <strong>18</strong><span class="delta">当前快照</span>
           </div>
         </div>
       </div>
       <section class="card toolbar">
+        <h2>商家筛选（功能示意）</h2>
+        <p class="small-muted">当前控件仅展示未来筛选结构，不会查询、重新排序或动态计算商家结果。</p>
         <div
           class="toolbar-grid"
           style="grid-template-columns: repeat(5, 1fr) 130px"
@@ -90,12 +93,12 @@
             </select>
           </div>
           <div class="field">
-            <label>信誉评级</label>
+            <label>评分字段</label>
             <select class="select">
               <option>全部评级</option>
-              <option>9.0 分以上 (极佳)</option>
-              <option>8.0 – 8.9 分 (良好)</option>
-              <option>7.0 – 7.9 分 (普通)</option>
+              <option>9.0 分以上</option>
+              <option>8.0 – 8.9 分</option>
+              <option>7.0 – 7.9 分</option>
               <option>暂无评级</option>
             </select>
           </div>
@@ -122,11 +125,11 @@
             <label>是否有实测</label>
             <select class="select">
               <option>全部</option>
-              <option>已有官方探针实测</option>
-              <option>已有用户提交样本</option>
+              <option>页面标记为已有测试记录</option>
+              <option>页面标记为已有样本记录</option>
             </select>
           </div>
-          <button class="btn btn-primary" data-demo>⌕ 筛选商家</button>
+          <button class="btn btn-primary" data-demo>⌕ 筛选商家（功能示意）</button>
         </div>
       </section>
       <section
@@ -138,6 +141,9 @@
         "
       >
         <div class="provider-grid">
+          <div class="small-muted" style="grid-column: 1 / -1">
+            <strong>商家目录记录</strong>：以下套餐数量、价格区间和测试数量均来自当前静态快照，不代表商家实时库存或当前可购买数量。评分为当前静态原型已有展示字段；本页未展示完整评分算法，不应单独作为商家排名或购买依据。
+          </div>
           <div class="card provider-card">
             <div class="provider-head">
               <img
@@ -161,7 +167,7 @@
             </div>
             <div class="provider-meta">
               <span>成立时间<br /><strong>2019 年</strong></span
-              ><span>在线套餐数<br /><strong>24 个</strong></span
+              ><span>套餐记录数<br /><strong>24 个</strong></span
               ><span style="grid-column: span 2"
                 >支持的支付方式<br /><strong
                   >信用卡、PayPal、部分支持加密货币</strong
@@ -170,7 +176,7 @@
             </div>
             <div class="sub provider-data">覆盖地区：美国 · 亚洲 · 欧洲<br />价格区间：$3.50 – $24.00 / 月 · 最低配置起步：1 vCPU · 1 GB RAM · 20 GB SSD<br />网络：最高 1 Gbps · IPv4 / IPv6 · 价格更新：2026-09-04 · 套餐信息更新：2026-09-04 · 实测套餐：3 个 · 数据来源：商家官网</div>
             <div class="badges">
-              <span class="badge">性价比高</span
+              <span class="badge">价格关注</span
               ><span class="badge">CN2 GIA</span
               ><span class="badge">原生IP</span>
             </div>
@@ -193,7 +199,7 @@
             </div>
             <div class="provider-meta">
               <span>成立时间<br /><strong>2017 年</strong></span
-              ><span>在线套餐数<br /><strong>18 个</strong></span
+              ><span>套餐记录数<br /><strong>18 个</strong></span
               ><span style="grid-column: span 2"
                 >支持的支付方式<br /><strong
                   >信用卡、PayPal、部分支持加密货币</strong
@@ -204,7 +210,7 @@
             <div class="badges">
               <span class="badge">CN2 GIA</span
               ><span class="badge">优化线路</span
-              ><span class="badge">性价比</span>
+              ><span class="badge">价格关注</span>
             </div>
             <div class="actions-row">
               <a class="btn" href="provider.html">查看商家</a
@@ -225,7 +231,7 @@
             </div>
             <div class="provider-meta">
               <span>成立时间<br /><strong>2014 年</strong></span
-              ><span>在线套餐数<br /><strong>32 个</strong></span
+              ><span>套餐记录数<br /><strong>32 个</strong></span
               ><span style="grid-column: span 2"
                 >支持的支付方式<br /><strong
                   >信用卡、PayPal、部分支持加密货币</strong
@@ -236,7 +242,7 @@
             <div class="badges">
               <span class="badge">全球覆盖</span
               ><span class="badge">按小时计费</span
-              ><span class="badge">高性价比</span>
+              ><span class="badge">价格关注</span>
             </div>
             <div class="actions-row">
               <a class="btn" href="provider.html">查看商家</a
@@ -257,7 +263,7 @@
             </div>
             <div class="provider-meta">
               <span>成立时间<br /><strong>2012 年</strong></span
-              ><span>在线套餐数<br /><strong>15 个</strong></span
+              ><span>套餐记录数<br /><strong>15 个</strong></span
               ><span style="grid-column: span 2"
                 >支持的支付方式<br /><strong
                   >信用卡、PayPal、部分支持加密货币</strong
@@ -288,7 +294,7 @@
             </div>
             <div class="provider-meta">
               <span>成立时间<br /><strong>2003 年</strong></span
-              ><span>在线套餐数<br /><strong>28 个</strong></span
+              ><span>套餐记录数<br /><strong>28 个</strong></span
               ><span style="grid-column: span 2"
                 >支持的支付方式<br /><strong
                   >信用卡、PayPal、部分支持加密货币</strong
@@ -298,7 +304,7 @@
             <div class="sub provider-data">覆盖地区：美国 · 欧洲 · 亚洲<br />价格区间：$5.99 – $24.00 / 月 · 最低配置起步：2 vCPU · 4 GB RAM · 50 GB SSD<br />网络：最高 1 Gbps · IPv4 / IPv6 · 价格更新：2026-09-04 · 套餐信息更新：2026-09-04 · 实测套餐：1 个 · 数据来源：商家官网</div>
             <div class="badges">
               <span class="badge">大硬盘</span
-              ><span class="badge">高性价比</span
+              ><span class="badge">价格关注</span
               ><span class="badge">不限流量</span>
             </div>
             <div class="actions-row">
@@ -320,7 +326,7 @@
             </div>
             <div class="provider-meta">
               <span>成立时间<br /><strong>2018 年</strong></span
-              ><span>在线套餐数<br /><strong>20 个</strong></span
+              ><span>套餐记录数<br /><strong>20 个</strong></span
               ><span style="grid-column: span 2"
                 >支持的支付方式<br /><strong
                   >信用卡、PayPal、部分支持加密货币</strong
@@ -352,7 +358,7 @@
             </div>
             <div class="provider-meta">
               <span>成立时间<br /><strong>2011 年</strong></span
-              ><span>在线套餐数<br /><strong>10 个</strong></span
+              ><span>套餐记录数<br /><strong>10 个</strong></span
               ><span style="grid-column: span 2"
                 >支持的支付方式<br /><strong
                   >信用卡、PayPal、部分支持加密货币</strong
@@ -384,7 +390,7 @@
             </div>
             <div class="provider-meta">
               <span>成立时间<br /><strong>1999 年</strong></span
-              ><span>在线套餐数<br /><strong>22 个</strong></span
+              ><span>套餐记录数<br /><strong>22 个</strong></span
               ><span style="grid-column: span 2"
                 >支持的支付方式<br /><strong
                   >信用卡、PayPal、部分支持加密货币</strong
@@ -451,17 +457,17 @@
             <div style="display: flex; align-items: center; gap: 8px">
               <h3 style="margin: 0">没有找到你想了解的 VPS 商家？</h3>
               <span class="badge" style="background: #e0e7ff; color: #4338ca"
-                >持续收录中</span
+                >目录扩展入口（功能示意）</span
               >
             </div>
             <p class="small-muted" style="margin: 6px 0 0">
-              选主机遵循客观标准收录全球主机服务商。如果你是商家代表或想推荐优质小众商家，欢迎提交资料共建。
+              当前静态原型保留商家纠错与资料提交入口；现阶段不会保存、审核或发布提交内容。
             </p>
           </div>
           <div style="display: flex; gap: 10px">
-            <button class="btn btn-sm" data-demo>纠错反馈</button>
+            <button class="btn btn-sm" data-demo>纠错反馈（功能示意）</button>
             <button class="btn btn-primary btn-sm" data-demo>
-              + 提交新商家资料
+              + 提交商家资料（功能示意）
             </button>
           </div>
         </div>
