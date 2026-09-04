@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta name="description" content="RackNerd 商家详情：成立时间、退款政策、在线率监控、在售套餐与真实测速汇总。" />
+    <meta name="description" content="RackNerd 商家详情快照：展示商家资料、政策记录、套餐记录、在线率样本与已有测试数据。" />
     <title>RackNerd 商家详情 - 选主机</title>
     <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="assets/css/app.css" />
@@ -51,10 +51,12 @@
                 <div class="sub">
                   🇺🇸 美国知名 VPS 服务商，性价比较高，支持多地区部署
                 </div>
-                <div class="small-muted">基于当前收录的价格、在线率与实测数据 · 更新于 2026-09-03</div>
+                <div class="small-muted">商家数据快照：2026-09-03 · 基于当前页面已有价格、在线率与测试记录整理</div>
+                <div class="small-muted">评分说明：9.4 为当前静态原型已有展示字段，本页未展示完整评分算法。</div>
                 <div style="display: flex; gap: 8px; margin-top: 12px">
-                  <a class="btn btn-primary" href="#" data-demo>访问官网 ↗</a
-                  ><button class="btn" data-favorite>♡ 收藏</button>
+                  <a class="btn btn-primary" href="#" data-demo>官网入口（功能示意）</a
+                  ><button class="btn" data-favorite>♡ 收藏（功能示意）</button>
+                  <div class="small-muted">当前静态原型不执行官网跳转记录或收藏数据保存。</div>
                 </div>
               </div>
             </div>
@@ -74,7 +76,7 @@
             </div>
             <div class="summary-grid" style="margin-top: 0">
               <div class="summary-cell">
-                <span>在线套餐</span><strong>23 个</strong>
+                <span>套餐记录</span><strong>23 个</strong>
               </div>
               <div class="summary-cell" style="grid-column: span 3">
                 <span>数据中心</span
@@ -109,7 +111,7 @@
           <div class="card section" style="margin-top: 18px; padding: 18px">
             <h3 style="margin: 0 0 4px">RackNerd 社区常见问答与避坑指南</h3>
             <p class="small-muted" style="margin-bottom: 12px">
-              整理自真实用户在选主机社区的高频反馈
+              当前静态页面整理的常见问题示例，具体政策与线路状态仍应以商家公开信息和最新测试记录为准
             </p>
             <div class="faq-list">
               <div class="faq-item open">
@@ -119,7 +121,7 @@
                 <div class="faq-answer">
                   DC02 是 RackNerd 最经典的自建机房，走 MC
                   机房上游网络，针对中国联通和中国电信有 BGP
-                  优化路由。当前站内记录显示，已有测试中的延迟约为 145–152ms；电信晚高峰偶有轻微波动。实际结果会受运营商、地区和测试时间影响，请结合下方最新测速记录判断。
+                  优化路由。当前站内记录显示，已有测试中的延迟约为 145–152ms；电信晚高峰偶有轻微波动。实际结果会受运营商、地区和测试时间影响，请结合下方已有测试记录及其测试时间判断。
                 </div>
               </div>
               <div class="faq-item">
@@ -144,19 +146,19 @@
           <aside class="notice" style="margin-top: 18px">
             <h4>数据来源说明</h4>
             <p>
-              本页商家资料、套餐与政策信息来自商家公开资料；价格历史、在线率与测速来自站内已有记录。不同数据的更新时间可能不同，请以各区块标注时间为准。
+              本页商家资料、套餐与政策信息来自当前页面记录；价格历史、在线率和测速均作为静态数据快照展示。不同数据的记录时间可能不同，请以各区块标注时间为准。
             </p>
             <p>最近整理：2026-09-03</p>
             <p style="margin-top: 10px">
-              评分与 Affiliate 关系分离，不以推广关系改变评分结果。
+              展示原则：评分字段与推广关系应分离；当前静态原型不包含 Affiliate 排序或佣金驱动逻辑。
             </p>
           </aside>
         </div>
       </section>
       <div class="tabs" data-tabs="provider">
         <button class="tab active">概览</button
-        ><button class="tab">在售套餐</button
-        ><button class="tab">真实测速</button><button class="tab">在线率</button
+        ><button class="tab">套餐记录</button
+        ><button class="tab">测试记录</button><button class="tab">在线率快照</button
         ><button class="tab">价格历史</button>
       </div>
       <div class="tab-panel active" data-tab-panel="provider">
@@ -165,7 +167,7 @@
             <div class="card aside-card">
               <div class="conclusion">
                 <div>
-                  <h4>适合</h4>
+                  <h4>用途参考</h4>
                   <ul class="checklist">
                     <li>个人建站、博客</li>
                     <li>轻量应用、开发测试</li>
@@ -173,7 +175,7 @@
                   </ul>
                 </div>
                 <div>
-                  <h4>不适合</h4>
+                  <h4>选购注意</h4>
                   <ul class="checklist bad">
                     <li>企业级 SLA 强需求</li>
                     <li>对售后响应要求极高</li>
@@ -183,8 +185,8 @@
                   <h4>价格特点</h4>
                   <ul class="checklist">
                     <li>入门套餐较低价</li>
-                    <li>长期价格稳定</li>
-                    <li>经常有促销活动</li>
+                    <li>长期价格稳定性需结合更多历史记录判断</li>
+                    <li>促销情况请查看当前价格历史记录</li>
                   </ul>
                 </div>
                 <div>
@@ -196,20 +198,22 @@
                 </div>
               </div>
             </div>
+            <p class="small-muted">以上为当前静态页面中的用途备注，不构成针对所有用户的购买建议。</p>
             <div class="card section">
               <div class="list-head">
                 <div>
-                  <strong>近30天在线率</strong>
+                  <strong>在线率记录快照</strong>
                   <div class="small-muted">
-                    2 个监控节点 · 17,280 次采样 · 3 分钟前更新
+                    记录窗口：30 天 · 样本：17,280 次 · 记录节点：2 个
                   </div>
-                  <div class="small-muted">统计窗口：最近 30 天 · 样本：17,280 次 · 监控节点：2 个 · 最后更新：3 分钟前</div>
+                  <div class="small-muted">原记录未提供可验证的绝对更新时间；当前页面仅保留该静态样本。</div>
                 </div>
                 <div>
                   <span class="metric-good" style="font-size: 26px"
                     >99.82%</span
                   >
-                  <span class="badge green">优秀</span>
+                  <span class="badge green">静态记录</span>
+                  <div class="small-muted">99.82% 仅代表当前保存的这组样本，不表示商家现在或未来持续保持该在线率。</div>
                 </div>
               </div>
               <div class="chart-box">
@@ -238,7 +242,7 @@
             </div>
             <div class="card table-card section">
               <div class="list-head">
-                <strong>在售套餐（4）</strong
+                <strong>套餐记录（4）</strong
                 ><a class="link-more" href="vps.html">查看全部 ›</a>
               </div>
               <table class="data-table">
@@ -290,10 +294,10 @@
             </div>
             <div class="card table-card section">
               <div class="list-head">
-                <strong>最新真实测速</strong
-                ><a class="link-more" href="benchmarks.html">更多测速 ›</a>
+                <strong>测试记录快照</strong
+                ><a class="link-more" href="benchmarks.html">查看测试记录 ›</a>
               </div>
-              <p class="small-muted">以下结果为站内已有测试记录，网络表现会随线路、地区和时间变化。</p>
+              <p class="small-muted">以下结果为站内已有测试记录，网络表现会随线路、地区和时间变化。“已有记录”不表示正在持续测速，也不表示这是当前时刻的网络状态。</p>
               <table class="data-table">
                 <thead>
                   <tr>
@@ -517,7 +521,7 @@
             "
           >
             <div>
-              <h3 style="margin: 0">全网探针真实测速指标</h3>
+              <h3 style="margin: 0">全网测试记录指标</h3>
               <p class="small-muted" style="margin: 4px 0 0">
                 覆盖中国电信、中国联通、中国移动及全球骨干网实测
               </p>
