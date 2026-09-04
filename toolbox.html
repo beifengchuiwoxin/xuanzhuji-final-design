@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="VPS 工具箱：路由测试、TCP Ping、IP 查询、DNS 查询、价格计算器等实用工具集合。" />
+    <title>工具箱 - 选主机</title>
+    <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/css/app.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html"
+          ><img src="assets/img/logo.svg" alt="选主机" />
+          <div>
+            <div class="brand-main">选主机</div>
+            <div class="brand-sub">xuanzhuji.com</div>
+          </div></a
+        >
+        <nav class="nav">
+          <a class="" href="vps.html">找 VPS</a
+          ><a class="" href="providers.html">商家库</a
+          ><a class="" href="deals.html">优惠</a
+          ><a class="" href="benchmarks.html">实测</a
+          ><a class="active" href="toolbox.html">工具箱</a
+          ><a class="" href="guides.html">指南</a>
+        </nav>
+        <button class="mobile-toggle" aria-label="菜单">☰</button>
+        <div class="actions">
+          <a class="btn btn-ghost" href="#" data-demo>登录</a
+          ><a class="btn btn-primary" href="benchmarks.html#submit">加入共建</a>
+        </div>
+      </div>
+    </header>
+    <section class="page-title">
+      <div class="container">
+        <h1>工具箱</h1>
+        <p>围绕 VPS 选购、网络测试与价格评估的实用工具集合。</p>
+      </div>
+    </section>
+    <main class="container">
+      <div style="max-width: 780px; margin: 0 auto 28px">
+        <input
+          class="input"
+          style="height: 48px"
+          data-tool-search
+          placeholder="⌕ 搜索工具，例如：IP 查询、TCP Ping、价格计算器"
+        />
+      </div>
+      <section class="tool-layout">
+        <div>
+          <section class="card tool-section">
+            <div class="section-head">
+              <div>
+                <h2>网络工具</h2>
+                <p>围绕 VPS 选购与诊断的实用工具</p>
+              </div>
+            </div>
+            <div class="tool-grid">
+              <a class="tool" data-tool href="looking-glass.html"
+                ><div class="tool-icon">⌁</div>
+                <div>
+                  <strong>路由测试</strong>
+                  <p>检测到目标的路由与延迟</p>
+                </div></a
+              ><a class="tool" data-tool data-soon href="toolbox.html"
+                ><div class="tool-icon">⌘</div>
+                <div>
+                  <strong>TCP Ping</strong>
+                  <p>多端口 TCP 延迟测试</p>
+                </div></a
+              ><a class="tool" data-tool href="looking-glass.html"
+                ><div class="tool-icon">⌘</div>
+                <div>
+                  <strong>Looking Glass</strong>
+                  <p>查看网络路由与节点信息</p>
+                </div></a
+              ><a class="tool" data-tool data-soon href="toolbox.html"
+                ><div class="tool-icon">▣</div>
+                <div>
+                  <strong>端口检测</strong>
+                  <p>检测端口开放状态</p>
+                </div></a
+              ><a class="tool" data-tool data-soon href="toolbox.html"
+                ><div class="tool-icon">DNS</div>
+                <div>
+                  <strong>DNS 查询</strong>
+                  <p>查询域名 DNS 记录</p>
+                </div></a
+              ><a class="tool" data-tool data-soon href="toolbox.html"
+                ><div class="tool-icon">MTR</div>
+                <div>
+                  <strong>MTR 测试</strong>
+                  <p>综合路由跟踪检测工具</p>
+                </div></a
+              >
+            </div>
+          </section>
+          <section class="card tool-section">
+            <div class="section-head">
+              <div>
+                <h2>查询工具</h2>
+                <p>围绕 VPS 选购与诊断的实用工具</p>
+              </div>
+            </div>
+            <div class="tool-grid">
+              <a class="tool" data-tool href="ip.html"
+                ><div class="tool-icon">◎</div>
+                <div>
+                  <strong>IP 查询</strong>
+                  <p>查询 IP 归属地与 ASN 信息</p>
+                </div></a
+              ><a class="tool" data-tool data-soon href="toolbox.html"
+                ><div class="tool-icon">ASN</div>
+                <div>
+                  <strong>ASN 查询</strong>
+                  <p>查询 ASN 信息与关联网络</p>
+                </div></a
+              ><a class="tool" data-tool data-soon href="toolbox.html"
+                ><div class="tool-icon">IP</div>
+                <div>
+                  <strong>IP 段查询</strong>
+                  <p>查询 IP 段归属与信息</p>
+                </div></a
+              ><a class="tool" data-tool data-soon href="toolbox.html"
+                ><div class="tool-icon">▣</div>
+                <div>
+                  <strong>网站信息查询</strong>
+                  <p>查询域名备案与 TLS 等信息</p>
+                </div></a
+              ><a class="tool" data-tool data-soon href="toolbox.html"
+                ><div class="tool-icon">×</div>
+                <div>
+                  <strong>黑名单检测</strong>
+                  <p>检测 IP 是否在黑名单</p>
+                </div></a
+              ><a class="tool" data-tool data-soon href="toolbox.html"
+                ><div class="tool-icon">SSL</div>
+                <div>
+                  <strong>SSL 证书查询</strong>
+                  <p>查询证书有效性</p>
+                </div></a
+              >
+            </div>
+          </section>
+          <section class="card tool-section">
+            <div class="section-head">
+              <div>
+                <h2>价格工具</h2>
+                <p>围绕 VPS 选购与诊断的实用工具</p>
+              </div>
+            </div>
+            <div class="tool-grid">
+              <a class="tool" data-tool data-soon href="toolbox.html"
+                ><div class="tool-icon">¥</div>
+                <div>
+                  <strong>价格计算器</strong>
+                  <p>计算 VPS 总成本与月均价</p>
+                </div></a
+              ><a class="tool" data-tool data-soon href="toolbox.html"
+                ><div class="tool-icon">$</div>
+                <div>
+                  <strong>汇率换算</strong>
+                  <p>实时汇率换算工具</p>
+                </div></a
+              ><a class="tool" data-tool data-soon href="toolbox.html"
+                ><div class="tool-icon">↔</div>
+                <div>
+                  <strong>流量单位换算</strong>
+                  <p>GB / TB / Mbps 换算</p>
+                </div></a
+              ><a class="tool" data-tool data-soon href="toolbox.html"
+                ><div class="tool-icon">▤</div>
+                <div>
+                  <strong>预算估算器</strong>
+                  <p>根据需求估算月度预算</p>
+                </div></a
+              ><a class="tool" data-tool href="compare.html"
+                ><div class="tool-icon">≡</div>
+                <div>
+                  <strong>成本对比</strong>
+                  <p>对比不同方案成本差异</p>
+                </div></a
+              ><a class="tool" data-tool href="deals.html"
+                ><div class="tool-icon">↘</div>
+                <div>
+                  <strong>价格趋势</strong>
+                  <p>跟踪历史价格趋势变化</p>
+                </div></a
+              >
+            </div>
+          </section>
+          <section class="card tool-section">
+            <div class="section-head">
+              <div>
+                <h2>决策与选型工具</h2>
+                <p>帮助你根据实际业务指标快速做出选型决策</p>
+              </div>
+            </div>
+            <div class="tool-grid">
+              <a class="tool" data-tool href="compare.html">
+                <div class="tool-icon">≡</div>
+                <div>
+                  <strong>多套餐横向对比</strong>
+                  <p>最多支持 4 款机型同屏比对</p>
+                </div>
+              </a>
+              <a class="tool" data-tool href="region.html">
+                <div class="tool-icon">◈</div>
+                <div>
+                  <strong>地区网络矩阵</strong>
+                  <p>查看各地区到中国大陆延迟表现</p>
+                </div>
+              </a>
+              <a class="tool" data-tool href="benchmarks.html">
+                <div class="tool-icon">▤</div>
+                <div>
+                  <strong>Benchmark 跑分对比</strong>
+                  <p>横向查看各机房 CPU 与磁盘实测</p>
+                </div>
+              </a>
+            </div>
+          </section>
+          <section class="card tool-section">
+            <div class="section-head">
+              <div>
+                <h2>实用工具</h2>
+                <p>围绕 VPS 选购与诊断的实用工具</p>
+              </div>
+            </div>
+            <div class="tool-grid">
+              <a class="tool" data-tool href="compare.html"
+                ><div class="tool-icon">≡</div>
+                <div>
+                  <strong>节点对比</strong>
+                  <p>多节点性能与价格对比</p>
+                </div></a
+              ><a class="tool" data-tool href="vps.html"
+                ><div class="tool-icon">▥</div>
+                <div>
+                  <strong>配置推荐</strong>
+                  <p>根据用途推荐 VPS 配置</p>
+                </div></a
+              ><a class="tool" data-tool href="vps.html"
+                ><div class="tool-icon">◇</div>
+                <div>
+                  <strong>优劣分析</strong>
+                  <p>方案优缺点自动分析</p>
+                </div></a
+              ><a class="tool" data-tool data-soon href="toolbox.html"
+                ><div class="tool-icon">▣</div>
+                <div>
+                  <strong>系统镜像查询</strong>
+                  <p>查询常见镜像兼容性</p>
+                </div></a
+              ><a class="tool" data-tool href="benchmarks.html"
+                ><div class="tool-icon">⌁</div>
+                <div>
+                  <strong>延迟排行榜</strong>
+                  <p>全球节点延迟排行榜</p>
+                </div></a
+              ><a class="tool" data-tool data-soon href="toolbox.html"
+                ><div class="tool-icon">API</div>
+                <div>
+                  <strong>工具合集 API</strong>
+                  <p>提供工具数据接口</p>
+                </div></a
+              >
+            </div>
+          </section>
+        </div>
+        <aside class="aside-stack">
+          <div
+            class="card aside-card"
+            style="background: var(--bg); border: 1px solid var(--line)"
+          >
+            <h3 style="margin-top: 0">⚡ 汇率与价格快捷换算</h3>
+            <div
+              style="
+                font-size: 13px;
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+              "
+            >
+              <div style="display: flex; justify-content: space-between">
+                <span class="sub">今日汇率参考</span>
+                <strong>1 USD ≈ 7.24 CNY</strong>
+              </div>
+              <div style="display: flex; justify-content: space-between">
+                <span>$4.49 /月起</span>
+                <strong style="color: var(--blue)">≈ ¥32.5 /月</strong>
+              </div>
+              <div style="display: flex; justify-content: space-between">
+                <span>$18.29 /年付</span>
+                <strong style="color: var(--green)">≈ ¥11.0 /月</strong>
+              </div>
+            </div>
+          </div>
+          <div class="card aside-card">
+            <h3>🔥 热门工具</h3>
+            <div class="idea">
+              <div class="idea-icon">1</div>
+              <div>
+                <strong>路由测试</strong>
+                <p>本周使用 21.5 万次</p>
+              </div>
+            </div>
+            <div class="idea">
+              <div class="idea-icon">2</div>
+              <div>
+                <strong>IP 查询</strong>
+                <p>本周使用 18.7 万次</p>
+              </div>
+            </div>
+            <div class="idea">
+              <div class="idea-icon">3</div>
+              <div>
+                <strong>价格计算器</strong>
+                <p>本周使用 16.3 万次</p>
+              </div>
+            </div>
+            <div class="idea">
+              <div class="idea-icon">4</div>
+              <div>
+                <strong>TCP Ping</strong>
+                <p>本周使用 12.8 万次</p>
+              </div>
+            </div>
+            <div class="idea">
+              <div class="idea-icon">5</div>
+              <div>
+                <strong>DNS 查询</strong>
+                <p>本周使用 9.6 万次</p>
+              </div>
+            </div>
+            <div class="idea">
+              <div class="idea-icon">6</div>
+              <div>
+                <strong>节点对比</strong>
+                <p>本周使用 8.3 万次</p>
+              </div>
+            </div>
+          </div>
+          <div class="card aside-card">
+            <h3>★ 新手推荐</h3>
+            <a class="idea" href="ip.html"
+              ><div class="idea-icon">◎</div>
+              <div>
+                <strong>IP 查询</strong>
+                <p>了解服务器基础信息</p>
+              </div></a
+            ><a class="idea" href="toolbox.html"
+              ><div class="idea-icon">⌁</div>
+              <div>
+                <strong>路由测试</strong>
+                <p>测试网络连接与延迟</p>
+              </div></a
+            ><a class="idea" href="compare.html"
+              ><div class="idea-icon">≡</div>
+              <div>
+                <strong>节点对比</strong>
+                <p>选择更适合的节点</p>
+              </div></a
+            >
+          </div>
+        </aside>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-copy">
+          <img src="assets/img/logo.svg" alt="" />
+          <p>
+            <strong style="color: #152343">选主机 xuanzhuji.com</strong
+            ><br />部分购买链接可能包含推广关系，但不会增加你的购买成本。我们致力于提供客观、真实、透明的
+            VPS 选择与测试数据。
+          </p>
+        </div>
+        <div>
+          <div class="footer-links">
+            <a href="#" data-demo>关于</a><a href="#" data-demo>免责声明</a
+            ><a href="#" data-demo>隐私政策</a
+            ><a href="#" data-demo>联系我们</a>
+          </div>
+          <div class="small-muted" style="margin-top: 12px; text-align: right">
+            © 2026 xuanzhuji.com 保留所有权利
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

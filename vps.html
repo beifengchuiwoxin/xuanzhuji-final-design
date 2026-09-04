@@ -1,0 +1,625 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="按地区、预算、配置、线路与用途筛选 VPS 套餐，支持价格排序与多套餐横向对比，基于真实测速数据做决策。" />
+    <title>查找 VPS - 选主机</title>
+    <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/css/app.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html"
+          ><img src="assets/img/logo.svg" alt="选主机" />
+          <div>
+            <div class="brand-main">选主机</div>
+            <div class="brand-sub">xuanzhuji.com</div>
+          </div></a
+        >
+        <nav class="nav">
+          <a class="active" href="vps.html">找 VPS</a
+          ><a class="" href="providers.html">商家库</a
+          ><a class="" href="deals.html">优惠</a
+          ><a class="" href="benchmarks.html">实测</a
+          ><a class="" href="toolbox.html">工具箱</a
+          ><a class="" href="guides.html">指南</a>
+        </nav>
+        <button class="mobile-toggle" aria-label="菜单">☰</button>
+        <div class="actions">
+          <a class="btn btn-ghost" href="#" data-demo>登录</a
+          ><a class="btn btn-primary" href="benchmarks.html#submit">加入共建</a>
+        </div>
+      </div>
+    </header>
+    <section class="page-title">
+      <div class="container">
+        <h1>查找 VPS</h1>
+        <p>按地区、价格、配置、线路和用途筛选，快速找到适合你的套餐。</p>
+      </div>
+    </section>
+    <main class="container">
+      <section class="card toolbar">
+        <div class="toolbar-grid">
+          <div class="field">
+            <label>地区</label>
+            <select class="select">
+              <option>全部地区 (全球)</option>
+              <option>🇭🇰 香港</option>
+              <option>🇺🇸 洛杉矶 (美西)</option>
+              <option>🇯🇵 东京 (日本)</option>
+              <option>🇸🇬 新加坡</option>
+              <option>🇩🇪 法兰克福 (欧洲)</option>
+              <option>🇺🇸 圣何塞 (美西)</option>
+              <option>🇬🇧 伦敦 (英国)</option>
+            </select>
+          </div>
+          <div class="field">
+            <label>月预算</label>
+            <select class="select">
+              <option>全部预算</option>
+              <option>$5 以下 /月 (极致性价比)</option>
+              <option>$5 – $10 /月 (主流均衡)</option>
+              <option>$10 – $20 /月 (性能进阶)</option>
+              <option>$20 以上 /月 (企业独享)</option>
+            </select>
+          </div>
+          <div class="field">
+            <label>CPU</label>
+            <select class="select">
+              <option>全部核心</option>
+              <option>1 vCPU</option>
+              <option>2 vCPU</option>
+              <option>4 vCPU</option>
+              <option>8 vCPU 及以上</option>
+              <option>AMD EPYC 高主频</option>
+              <option>Intel Xeon</option>
+            </select>
+          </div>
+          <div class="field">
+            <label>内存</label>
+            <select class="select">
+              <option>全部内存</option>
+              <option>1 GB</option>
+              <option>2 GB (建站推荐)</option>
+              <option>4 GB</option>
+              <option>8 GB 及以上</option>
+            </select>
+          </div>
+          <div class="field">
+            <label>硬盘</label>
+            <select class="select">
+              <option>全部存储</option>
+              <option>NVMe 高速 SSD</option>
+              <option>标准 SSD</option>
+              <option>大容量存储盘 (&gt;100GB)</option>
+            </select>
+          </div>
+          <div class="field">
+            <label>带宽</label>
+            <select class="select">
+              <option>全部带宽</option>
+              <option>100 Mbps</option>
+              <option>500 Mbps</option>
+              <option>1 Gbps (高速口)</option>
+              <option>2.5 Gbps / 10 Gbps</option>
+            </select>
+          </div>
+          <div class="field">
+            <label>线路</label>
+            <select class="select">
+              <option>全部线路</option>
+              <option>电信 CN2 GIA</option>
+              <option>联通 AS9929 / CMIN2</option>
+              <option>日本软银 (SoftBank)</option>
+              <option>移动 CMI 直连</option>
+              <option>国际优化 BGP</option>
+            </select>
+          </div>
+          <div class="field">
+            <label>虚拟化</label>
+            <select class="select">
+              <option>全部架构</option>
+              <option>KVM (独立内核)</option>
+              <option>LXC / OpenVZ (轻量级)</option>
+            </select>
+          </div>
+          <div class="field">
+            <label>IPv4</label>
+            <select class="select">
+              <option>全部 IPv4</option>
+              <option>1 个独立 IPv4</option>
+              <option>双栈 IPv4 + IPv6</option>
+              <option>纯 IPv6 (低成本)</option>
+            </select>
+          </div>
+          <div class="field">
+            <label>用途</label>
+            <select class="select">
+              <option>全部用途</option>
+              <option>个人建站 / 博客</option>
+              <option>流媒体解锁 (Netflix等)</option>
+              <option>ChatGPT / AI 工具访问</option>
+              <option>开发测试 / 自动化</option>
+              <option>跨境电商 / 独立站</option>
+            </select>
+          </div>
+          <div class="field">
+            <label>商家</label>
+            <select class="select">
+              <option>全部商家</option>
+              <option>DMIT (香港/美西精品)</option>
+              <option>RackNerd (低价老牌)</option>
+              <option>Vultr (全球按时计费)</option>
+              <option>Hostodo (新加坡大带宽)</option>
+              <option>Contabo (欧洲大盘鸡)</option>
+              <option>BuyVM (卢森堡不限流)</option>
+              <option>搬瓦工 BandwagonHost</option>
+            </select>
+          </div>
+          <div class="field">
+            <label>排序</label>
+            <select class="select">
+              <option>综合推荐评分 ↓</option>
+              <option>月付价格从低到高 ↑</option>
+              <option>实测延迟从低到高 ↑</option>
+              <option>CPU 跑分从高到低 ↓</option>
+              <option>月流量从大到小 ↓</option>
+            </select>
+          </div>
+        </div>
+        <div
+          style="
+            display: flex;
+            justify-content: space-between;
+            gap: 12px;
+            align-items: center;
+            margin-top: 14px;
+            flex-wrap: wrap;
+          "
+        >
+          <div>
+            <strong>热门快速筛选</strong>
+            <div class="chips">
+              <button class="chip">香港</button
+              ><button class="chip">日本</button
+              ><button class="chip">洛杉矶</button
+              ><button class="chip">新加坡</button
+              ><button class="chip">$5以下</button
+              ><button class="chip">$5-$10</button
+              ><button class="chip">CN2</button
+              ><button class="chip">原生IP</button
+              ><button class="chip">ChatGPT</button
+              ><button class="chip">流媒体</button>
+            </div>
+          </div>
+          <div style="display: flex; gap: 8px">
+            <button class="btn">↻ 重置筛选</button
+            ><button class="btn btn-primary" data-apply-filter>
+              ⌕ 应用筛选
+            </button>
+          </div>
+        </div>
+      </section>
+      <section
+        class="section two-col"
+        style="grid-template-columns: minmax(0, 1fr) 280px"
+      >
+        <div class="card table-card">
+          <div class="list-head">
+            <div>
+              <strong
+                >共找到
+                <span data-result-count style="color: var(--blue)">318</span>
+                个套餐</strong
+              >
+              <div class="small-muted">实时更新 · 17 分钟前</div>
+            </div>
+            <div style="display: flex; gap: 8px">
+              <button class="btn btn-sm" data-favorite>♡ 收藏</button
+              ><button class="btn btn-sm" data-demo>⇩ 导出结果</button>
+            </div>
+          </div>
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>商家</th>
+                <th>地区</th>
+                <th>CPU</th>
+                <th>内存</th>
+                <th>硬盘</th>
+                <th>带宽</th>
+                <th>线路</th>
+                <th>测试状态</th>
+                <th>价格</th>
+                <th>操作</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <strong>DMIT</strong>
+                  <div class="badges">
+                    <span class="badge green">高口碑</span>
+                  </div>
+                </td>
+                <td>🇭🇰 香港<br /><span class="sub">CN2 GIA</span></td>
+                <td>2 vCPU</td>
+                <td>2 GB</td>
+                <td>30 GB NVMe</td>
+                <td>1 Gbps</td>
+                <td><span class="badge">CN2 GIA</span></td>
+                <td>
+                  <span class="metric-good">实测可用</span><br /><span
+                    class="sub"
+                    >延迟 38ms · 丢包 0%</span
+                  >
+                </td>
+                <td>
+                  <span class="price">$6.90</span><span class="sub">/月</span>
+                </td>
+                <td>
+                  <a class="btn btn-primary btn-sm" href="plan.html"
+                    >查看详情</a
+                  >
+                  <button
+                    class="btn btn-sm"
+                    data-compare-btn
+                    style="margin-top: 4px"
+                  >
+                    + 对比
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>RackNerd</strong>
+                  <div class="badges">
+                    <span class="badge green">性价比首选</span>
+                  </div>
+                </td>
+                <td>🇺🇸 洛杉矶<br /><span class="sub">DC02 机房</span></td>
+                <td>2 vCPU</td>
+                <td>2 GB</td>
+                <td>40 GB NVMe</td>
+                <td>1 Gbps</td>
+                <td><span class="badge">优化 BGP</span></td>
+                <td>
+                  <span class="metric-good">实测可用</span><br /><span
+                    class="sub"
+                    >延迟 152ms · 丢包 0.3%</span
+                  >
+                </td>
+                <td>
+                  <span class="price">$4.49</span><span class="sub">/月</span>
+                </td>
+                <td>
+                  <a class="btn btn-primary btn-sm" href="plan.html"
+                    >查看详情</a
+                  >
+                  <button
+                    class="btn btn-sm"
+                    data-compare-btn
+                    style="margin-top: 4px"
+                  >
+                    + 对比
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>Vultr</strong>
+                  <div class="badges">
+                    <span class="badge">按时计费</span>
+                  </div>
+                </td>
+                <td>🇯🇵 东京<br /><span class="sub">日本机房</span></td>
+                <td>2 vCPU</td>
+                <td>2 GB</td>
+                <td>55 GB NVMe</td>
+                <td>1 Gbps</td>
+                <td><span class="badge">软银优化</span></td>
+                <td>
+                  <span class="metric-good">实测可用</span><br /><span
+                    class="sub"
+                    >延迟 68ms · 丢包 0%</span
+                  >
+                </td>
+                <td>
+                  <span class="price">$5.00</span><span class="sub">/月</span>
+                </td>
+                <td>
+                  <a class="btn btn-primary btn-sm" href="plan.html"
+                    >查看详情</a
+                  >
+                  <button
+                    class="btn btn-sm"
+                    data-compare-btn
+                    style="margin-top: 4px"
+                  >
+                    + 对比
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>Hostodo</strong>
+                  <div class="badges">
+                    <span class="badge green">全解锁</span>
+                  </div>
+                </td>
+                <td>🇸🇬 新加坡<br /><span class="sub">亚太直连</span></td>
+                <td>2 vCPU</td>
+                <td>2 GB</td>
+                <td>40 GB NVMe</td>
+                <td>1 Gbps</td>
+                <td><span class="badge">原生 BGP</span></td>
+                <td>
+                  <span class="metric-good">实测可用</span><br /><span
+                    class="sub"
+                    >延迟 46ms · 丢包 0.2%</span
+                  >
+                </td>
+                <td>
+                  <span class="price">$5.50</span><span class="sub">/月</span>
+                </td>
+                <td>
+                  <a class="btn btn-primary btn-sm" href="plan.html"
+                    >查看详情</a
+                  >
+                  <button
+                    class="btn btn-sm"
+                    data-compare-btn
+                    style="margin-top: 4px"
+                  >
+                    + 对比
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>搬瓦工</strong>
+                  <div class="badges">
+                    <span class="badge green">极速直连</span>
+                  </div>
+                </td>
+                <td>🇺🇸 洛杉矶<br /><span class="sub">DC6 CN2 GIA</span></td>
+                <td>2 vCPU</td>
+                <td>2 GB</td>
+                <td>40 GB SSD</td>
+                <td>2.5 Gbps</td>
+                <td><span class="badge">CN2 GIA-E</span></td>
+                <td>
+                  <span class="metric-good">实测可用</span><br /><span
+                    class="sub"
+                    >延迟 142ms · 丢包 0%</span
+                  >
+                </td>
+                <td>
+                  <span class="price">$8.33</span><span class="sub">/月</span>
+                </td>
+                <td>
+                  <a class="btn btn-primary btn-sm" href="plan.html"
+                    >查看详情</a
+                  >
+                  <button
+                    class="btn btn-sm"
+                    data-compare-btn
+                    style="margin-top: 4px"
+                  >
+                    + 对比
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>Contabo</strong>
+                  <div class="badges">
+                    <span class="badge">大盘高配</span>
+                  </div>
+                </td>
+                <td>🇩🇪 法兰克福<br /><span class="sub">欧洲机房</span></td>
+                <td>4 vCPU</td>
+                <td>6 GB</td>
+                <td>100 GB NVMe</td>
+                <td>200 Mbps</td>
+                <td><span class="badge">国际网络</span></td>
+                <td>
+                  <span class="metric-good">实测可用</span><br /><span
+                    class="sub"
+                    >延迟 198ms · 丢包 0.1%</span
+                  >
+                </td>
+                <td>
+                  <span class="price">$5.99</span><span class="sub">/月</span>
+                </td>
+                <td>
+                  <a class="btn btn-primary btn-sm" href="plan.html"
+                    >查看详情</a
+                  >
+                  <button
+                    class="btn btn-sm"
+                    data-compare-btn
+                    style="margin-top: 4px"
+                  >
+                    + 对比
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>BuyVM</strong>
+                  <div class="badges">
+                    <span class="badge">不限流量</span>
+                  </div>
+                </td>
+                <td>🇺🇸 拉斯维加斯<br /><span class="sub">美西大带宽</span></td>
+                <td>1 vCPU</td>
+                <td>1 GB</td>
+                <td>20 GB SSD</td>
+                <td>1 Gbps</td>
+                <td><span class="badge">BGP + 优化</span></td>
+                <td>
+                  <span class="metric-good">实测可用</span><br /><span
+                    class="sub"
+                    >延迟 165ms · 丢包 0.2%</span
+                  >
+                </td>
+                <td>
+                  <span class="price">$3.50</span><span class="sub">/月</span>
+                </td>
+                <td>
+                  <a class="btn btn-primary btn-sm" href="plan.html"
+                    >查看详情</a
+                  >
+                  <button
+                    class="btn btn-sm"
+                    data-compare-btn
+                    style="margin-top: 4px"
+                  >
+                    + 对比
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>HostHatch</strong>
+                  <div class="badges">
+                    <span class="badge">大存储</span>
+                  </div>
+                </td>
+                <td>🇺🇸 芝加哥<br /><span class="sub">大存储节点</span></td>
+                <td>1 vCPU</td>
+                <td>2 GB</td>
+                <td>250 GB HDD</td>
+                <td>1 Gbps</td>
+                <td><span class="badge">国际骨干</span></td>
+                <td>
+                  <span class="metric-good">实测可用</span><br /><span
+                    class="sub"
+                    >延迟 182ms · 丢包 0.3%</span
+                  >
+                </td>
+                <td>
+                  <span class="price">$4.16</span><span class="sub">/月</span>
+                </td>
+                <td>
+                  <a class="btn btn-primary btn-sm" href="plan.html"
+                    >查看详情</a
+                  >
+                  <button
+                    class="btn btn-sm"
+                    data-compare-btn
+                    style="margin-top: 4px"
+                  >
+                    + 对比
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="pagination">
+            <span class="page-dot active">1</span><span class="page-dot">2</span
+            ><span class="page-dot">3</span><span class="page-dot">4</span
+            ><span class="page-dot">…</span><span class="page-dot">40</span>
+          </div>
+        </div>
+        <aside class="aside-stack">
+          <div class="card aside-card">
+            <h3>筛选建议</h3>
+            <div class="idea">
+              <div class="idea-icon">◉</div>
+              <div>
+                <strong>访问中国优化</strong>
+                <p>优先 CN2 / 中港优化线路。</p>
+              </div>
+            </div>
+            <div class="idea">
+              <div class="idea-icon">▶</div>
+              <div>
+                <strong>流媒体解锁</strong>
+                <p>适合 Netflix、YouTube 等。</p>
+              </div>
+            </div>
+            <div class="idea">
+              <div class="idea-icon">⌂</div>
+              <div>
+                <strong>搭建网站</strong>
+                <p>稳定磁盘与较高性价比。</p>
+              </div>
+            </div>
+            <div class="idea">
+              <div class="idea-icon">AI</div>
+              <div>
+                <strong>ChatGPT / AI 工具</strong>
+                <p>稳定原生 IP 更重要。</p>
+              </div>
+            </div>
+          </div>
+          <div class="card aside-card">
+            <h3>筛选小贴士</h3>
+            <ul class="checklist">
+              <li>预算有限先试 $5 以下。</li>
+              <li>不确定线路时优先看实测。</li>
+              <li>收藏可用于后续对比。</li>
+            </ul>
+          </div>
+        </aside>
+      </section>
+
+      <!-- 底部浮动对比栏 -->
+      <div class="compare-bar" id="compare-bar" style="display: none">
+        <div class="compare-bar-inner">
+          <div style="display: flex; align-items: center; gap: 10px">
+            <span class="badge" style="background: var(--blue); color: #fff"
+              >对比池</span
+            >
+            <span
+              >已选择
+              <strong id="compare-count" style="color: #60a5fa; font-size: 16px"
+                >0</strong
+              >
+              / 4 款套餐</span
+            >
+          </div>
+          <div style="display: flex; gap: 8px; align-items: center">
+            <button
+              class="btn btn-sm btn-ghost"
+              id="clear-compare-btn"
+              style="color: #e2e8f0; border-color: rgba(255, 255, 255, 0.2)"
+            >
+              清空
+            </button>
+            <a class="btn btn-primary btn-sm" href="compare.html"
+              >立即横向对比 →</a
+            >
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-copy">
+          <img src="assets/img/logo.svg" alt="" />
+          <p>
+            <strong style="color: #152343">选主机 xuanzhuji.com</strong
+            ><br />部分购买链接可能包含推广关系，但不会增加你的购买成本。我们致力于提供客观、真实、透明的
+            VPS 选择与测试数据。
+          </p>
+        </div>
+        <div>
+          <div class="footer-links">
+            <a href="#" data-demo>关于</a><a href="#" data-demo>免责声明</a
+            ><a href="#" data-demo>隐私政策</a
+            ><a href="#" data-demo>联系我们</a>
+          </div>
+          <div class="small-muted" style="margin-top: 12px; text-align: right">
+            © 2026 xuanzhuji.com 保留所有权利
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

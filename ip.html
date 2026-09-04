@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="IP 查询工具：查询 IP 归属地、ASN、运营商、IP 类型与纯净度风险分。" />
+    <title>IP 查询 - 选主机</title>
+    <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/css/app.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html"
+          ><img src="assets/img/logo.svg" alt="选主机" />
+          <div>
+            <div class="brand-main">选主机</div>
+            <div class="brand-sub">xuanzhuji.com</div>
+          </div></a
+        >
+        <nav class="nav">
+          <a class="" href="vps.html">找 VPS</a
+          ><a class="" href="providers.html">商家库</a
+          ><a class="" href="deals.html">优惠</a
+          ><a class="" href="benchmarks.html">实测</a
+          ><a class="active" href="toolbox.html">工具箱</a
+          ><a class="" href="guides.html">指南</a>
+        </nav>
+        <button class="mobile-toggle" aria-label="菜单">☰</button>
+        <div class="actions">
+          <a class="btn btn-ghost" href="#" data-demo>登录</a
+          ><a class="btn btn-primary" href="benchmarks.html#submit">加入共建</a>
+        </div>
+      </div>
+    </header>
+    <section class="page-title">
+      <div class="container">
+        <h1>IP 查询</h1>
+        <p>查询 IP 地址的归属地、ASN、运营商与基础网络信息。</p>
+      </div>
+    </section>
+    <main class="container">
+      <section class="card aside-card">
+        <form data-ip-form style="display: flex; gap: 10px">
+          <input
+            class="input"
+            placeholder="输入 IP 地址，例如：8.8.8.8"
+          /><button class="btn btn-primary">查询</button>
+        </form>
+        <div class="chips">
+          <button
+            class="chip active"
+            type="button"
+            onclick="
+              document.querySelector('[data-ip-form] input').value =
+                '104.28.19.82';
+              document
+                .querySelector('[data-ip-form]')
+                .dispatchEvent(new Event('submit'));
+            "
+          >
+            🎯 查询我的本机 IP</button
+          ><button
+            class="chip"
+            type="button"
+            onclick="
+              document.querySelector('[data-ip-form] input').value = '8.8.8.8'
+            "
+          >
+            8.8.8.8</button
+          ><button
+            class="chip"
+            type="button"
+            onclick="
+              document.querySelector('[data-ip-form] input').value = '1.1.1.1'
+            "
+          >
+            1.1.1.1</button
+          ><button
+            class="chip"
+            type="button"
+            onclick="
+              document.querySelector('[data-ip-form] input').value =
+                '114.114.114.114'
+            "
+          >
+            114.114.114.114
+          </button>
+        </div>
+      </section>
+      <section class="section" data-ip-result>
+        <div class="section-head">
+          <div>
+            <h2>查询结果</h2>
+            <p>静态原型展示本地模拟结果</p>
+          </div>
+        </div>
+        <div class="card aside-card ip-result">
+          <div>
+            <div class="kv">
+              <div class="kv-item">
+                <span>IP 地址</span><strong data-ip-value>8.8.8.8</strong>
+              </div>
+              <div class="kv-item">
+                <span>国家 / 地区</span><strong>美国</strong>
+              </div>
+              <div class="kv-item">
+                <span>城市</span><strong>Mountain View</strong>
+              </div>
+              <div class="kv-item">
+                <span>运营商</span><strong>Google LLC</strong>
+              </div>
+              <div class="kv-item">
+                <span>ASN</span><strong>AS15169</strong>
+              </div>
+              <div class="kv-item">
+                <span>组织</span><strong>Google LLC</strong>
+              </div>
+              <div class="kv-item">
+                <span>经纬度</span><strong>37.3860, -122.0838</strong>
+              </div>
+              <div class="kv-item">
+                <span>IP 类型</span><strong>原生 IP (广播/IDC机房)</strong>
+              </div>
+              <div class="kv-item">
+                <span>纯净度 / 风险分</span
+                ><strong class="metric-good">2 / 10 (极纯净)</strong>
+              </div>
+              <div class="kv-item">
+                <span>流媒体属性</span><strong>全解锁支持 (美区/港区)</strong>
+              </div>
+            </div>
+          </div>
+          <div class="fake-map">
+            <div class="map-pin"></div>
+            <div
+              style="
+                position: absolute;
+                left: 50%;
+                top: 61%;
+                transform: translateX(-50%);
+                font-weight: 700;
+              "
+            >
+              Mountain View
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="section-head">
+          <div><h2>相关工具推荐</h2></div>
+        </div>
+        <div class="grid-4">
+          <a class="card mini-card" href="toolbox.html"
+            ><strong>⌁ 路由追踪</strong>
+            <div class="sub">查看 IP 路由链路</div></a
+          ><a class="card mini-card" href="toolbox.html"
+            ><strong>⌘ TCP Ping</strong>
+            <div class="sub">多端口 TCP 延迟</div></a
+          ><a class="card mini-card" href="toolbox.html"
+            ><strong>⌘ Looking Glass</strong>
+            <div class="sub">多地区网络测试</div></a
+          ><a class="card mini-card" href="toolbox.html"
+            ><strong>IP IP 段查询</strong>
+            <div class="sub">查询 IP 段归属</div></a
+          >
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-copy">
+          <img src="assets/img/logo.svg" alt="" />
+          <p>
+            <strong style="color: #152343">选主机 xuanzhuji.com</strong
+            ><br />部分购买链接可能包含推广关系，但不会增加你的购买成本。我们致力于提供客观、真实、透明的
+            VPS 选择与测试数据。
+          </p>
+        </div>
+        <div>
+          <div class="footer-links">
+            <a href="#" data-demo>关于</a><a href="#" data-demo>免责声明</a
+            ><a href="#" data-demo>隐私政策</a
+            ><a href="#" data-demo>联系我们</a>
+          </div>
+          <div class="small-muted" style="margin-top: 12px; text-align: right">
+            © 2026 xuanzhuji.com 保留所有权利
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

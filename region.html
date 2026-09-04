@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="洛杉矶 VPS 数据页：86 款套餐价格分布、三网延迟表现、网络特征综述与热门配置推荐。" />
+    <title>洛杉矶 VPS 数据 - 选主机</title>
+    <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/css/app.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html"
+          ><img src="assets/img/logo.svg" alt="选主机" />
+          <div>
+            <div class="brand-main">选主机</div>
+            <div class="brand-sub">xuanzhuji.com</div>
+          </div></a
+        >
+        <nav class="nav">
+          <a class="active" href="vps.html">找 VPS</a
+          ><a class="" href="providers.html">商家库</a
+          ><a class="" href="deals.html">优惠</a
+          ><a class="" href="benchmarks.html">实测</a
+          ><a class="" href="toolbox.html">工具箱</a
+          ><a class="" href="guides.html">指南</a>
+        </nav>
+        <button class="mobile-toggle" aria-label="菜单">☰</button>
+        <div class="actions">
+          <a class="btn btn-ghost" href="#" data-demo>登录</a
+          ><a class="btn btn-primary" href="benchmarks.html#submit">加入共建</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="page-title">
+        <div class="container">
+          <h1>🇺🇸 洛杉矶 VPS</h1>
+          <p>共收录 86 款套餐，来自 12 家商家；以数据库统计与真实实测为主。</p>
+        </div>
+      </section>
+      <div class="container">
+        <div class="stats" style="grid-template-columns: repeat(5, 1fr)">
+          <div class="card stat">
+            <div class="stat-icon">$</div>
+            <div>
+              <div class="stat-label">最低价格</div>
+              <strong>$2.49/月</strong>
+            </div>
+          </div>
+          <div class="card stat">
+            <div class="stat-icon">~</div>
+            <div>
+              <div class="stat-label">中位价格</div>
+              <strong>$5.90/月</strong>
+            </div>
+          </div>
+          <div class="card stat">
+            <div class="stat-icon">↑</div>
+            <div>
+              <div class="stat-label">最高价格</div>
+              <strong>$22.00/月</strong>
+            </div>
+          </div>
+          <div class="card stat">
+            <div class="stat-icon">⌂</div>
+            <div>
+              <div class="stat-label">商家数量</div>
+              <strong>12</strong>
+            </div>
+          </div>
+          <div class="card stat">
+            <div class="stat-icon">◴</div>
+            <div>
+              <div class="stat-label">实测套餐</div>
+              <strong>32</strong>
+            </div>
+          </div>
+        </div>
+        <div class="notice section" style="margin-top: 18px">
+          <h4>💡 洛杉矶计算节点网络特征综述</h4>
+          <p>
+            洛杉矶是美西面向中国大陆最成熟的骨干网络出口，带宽冗余大、单位流量成本低。中国联通直连访问延迟全天稳定在
+            145ms 左右；中国电信普通 163
+            骨干网晚高峰偶有拥堵，对于建站或业务高稳定需求，建议优先考虑 CN2 GIA
+            或 AS9929 优化线路。
+          </p>
+        </div>
+        <div class="tabs" data-tabs="region">
+          <button class="tab active">套餐列表</button
+          ><button class="tab">价格分布</button
+          ><button class="tab">网络表现</button
+          ><button class="tab">热门配置</button
+          ><button class="tab">最近降价</button>
+        </div>
+        <div class="tab-panel active" data-tab-panel="region">
+          <section
+            class="section"
+            style="
+              display: grid;
+              grid-template-columns: 220px minmax(0, 1fr);
+              gap: 18px;
+            "
+          >
+            <aside class="card aside-card">
+              <h3>筛选条件</h3>
+              <div class="field">
+                <label>预算</label
+                ><select class="select">
+                  <option>不限</option>
+                  <option>$5以下 (32)</option>
+                  <option>$5-$10 (38)</option>
+                  <option>$10-$20 (14)</option>
+                </select>
+              </div>
+              <div class="field" style="margin-top: 12px">
+                <label>内存</label
+                ><select class="select">
+                  <option>不限</option>
+                  <option>1GB (18)</option>
+                  <option>2GB (46)</option>
+                  <option>4GB (15)</option>
+                </select>
+              </div>
+              <div class="chips">
+                <button class="chip active">默认排序</button
+                ><button class="chip">价格从低到高</button
+                ><button class="chip">延迟从低到高</button>
+              </div>
+            </aside>
+            <div class="card table-card">
+              <div class="list-head">
+                <strong>洛杉矶 VPS 套餐</strong
+                ><span class="small-muted">数据更新：2026-09-03</span>
+              </div>
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th>商家/套餐</th>
+                    <th>基础配置</th>
+                    <th>月付价格</th>
+                    <th>延迟(电信)</th>
+                    <th>综合评分</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>HostHatch Basic 2G</td>
+                    <td>2CPU / 2GB / 40GB / 2TB</td>
+                    <td class="metric-warn">$4.99</td>
+                    <td class="metric-good">146ms</td>
+                    <td class="metric-good">8.4</td>
+                  </tr>
+                  <tr>
+                    <td>CloudCone 2GB</td>
+                    <td>2CPU / 2GB / 20GB / 2TB</td>
+                    <td class="metric-warn">$4.99</td>
+                    <td class="metric-good">148ms</td>
+                    <td class="metric-good">8.3</td>
+                  </tr>
+                  <tr>
+                    <td>DMIT Small</td>
+                    <td>2CPU / 2GB / 30GB / 1TB</td>
+                    <td class="metric-warn">$5.90</td>
+                    <td class="metric-good">68ms</td>
+                    <td class="metric-good">9.1</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a href="plan.html"><strong>RackNerd 2GB</strong></a>
+                    </td>
+                    <td>2CPU / 2GB / 40GB / 3TB</td>
+                    <td class="metric-warn">$1.52</td>
+                    <td>152ms</td>
+                    <td class="metric-good">9.3</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+        </div>
+        <div class="tab-panel" data-tab-panel="region">
+          <div class="card chart-box section">
+            <div style="padding: 16px 20px 0">
+              <h3 style="margin: 0">洛杉矶套餐价格分布</h3>
+              <span class="small-muted"
+                >共 86 款 · 按折算月价统计 · 数据更新 2026-09-03</span
+              >
+            </div>
+            <svg viewBox="0 0 520 210" style="width: 100%; height: auto">
+              <g stroke="#edf0f4" stroke-width="1">
+                <line x1="40" y1="40" x2="500" y2="40" />
+                <line x1="40" y1="85" x2="500" y2="85" />
+                <line x1="40" y1="130" x2="500" y2="130" />
+              </g>
+              <line x1="40" y1="170" x2="500" y2="170" stroke="#cbd5e1" />
+              <g>
+                <rect x="62" y="60" width="76" height="110" rx="6" fill="#93c5fd" />
+                <text x="100" y="52" text-anchor="middle" font-size="13" font-weight="700" fill="#0d1b3a">32 款</text>
+                <text x="100" y="190" text-anchor="middle" font-size="12" fill="#64708a">&lt;$5/月</text>
+              </g>
+              <g>
+                <rect x="182" y="40" width="76" height="130" rx="6" fill="#0b5cff" />
+                <text x="220" y="32" text-anchor="middle" font-size="13" font-weight="700" fill="#0d1b3a">38 款</text>
+                <text x="220" y="190" text-anchor="middle" font-size="12" fill="#64708a">$5–10/月</text>
+              </g>
+              <g>
+                <rect x="302" y="122" width="76" height="48" rx="6" fill="#93c5fd" />
+                <text x="340" y="114" text-anchor="middle" font-size="13" font-weight="700" fill="#0d1b3a">14 款</text>
+                <text x="340" y="190" text-anchor="middle" font-size="12" fill="#64708a">$10–20/月</text>
+              </g>
+              <g>
+                <rect x="422" y="162" width="76" height="8" rx="4" fill="#93c5fd" />
+                <text x="460" y="154" text-anchor="middle" font-size="13" font-weight="700" fill="#0d1b3a">2 款</text>
+                <text x="460" y="190" text-anchor="middle" font-size="12" fill="#64708a">$20+/月</text>
+              </g>
+            </svg>
+          </div>
+        </div>
+        <div class="tab-panel" data-tab-panel="region">
+          <div class="card section" style="padding: 20px">
+            <div class="grid-4">
+              <div class="network-card">电信<br /><strong>152ms</strong></div>
+              <div class="network-card">联通<br /><strong>148ms</strong></div>
+              <div class="network-card">移动<br /><strong>155ms</strong></div>
+              <div class="network-card">
+                平均丢包<br /><strong>0.3%</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-panel" data-tab-panel="region">
+          <div class="card section" style="padding: 20px">
+            <h3 style="margin-top: 0">洛杉矶计算节点三大主流配置推荐</h3>
+            <div class="grid-3" style="margin-top: 16px">
+              <div
+                class="card"
+                style="
+                  padding: 16px;
+                  background: var(--bg);
+                  border: 1px solid var(--line);
+                "
+              >
+                <div
+                  class="badge green"
+                  style="display: inline-block; margin-bottom: 8px"
+                >
+                  入门开发型
+                </div>
+                <div style="font-size: 18px; font-weight: 700">
+                  1 vCPU · 1 GB · 20GB
+                </div>
+                <p class="small-muted" style="margin: 6px 0">
+                  适合轻量测试、定时脚本、个人博客
+                </p>
+                <div
+                  style="
+                    margin-top: 12px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                  "
+                >
+                  <span class="price"
+                    >$1.50<span style="font-size: 12px; font-weight: 400"
+                      >/月起</span
+                    ></span
+                  >
+                  <a class="btn btn-primary btn-sm" href="plan.html"
+                    >查看机型</a
+                  >
+                </div>
+              </div>
+              <div
+                class="card"
+                style="
+                  padding: 16px;
+                  background: var(--bg);
+                  border: 1px solid var(--line);
+                "
+              >
+                <div
+                  class="badge"
+                  style="display: inline-block; margin-bottom: 8px"
+                >
+                  标准建站型 (热门)
+                </div>
+                <div style="font-size: 18px; font-weight: 700">
+                  2 vCPU · 2 GB · 40GB
+                </div>
+                <p class="small-muted" style="margin: 6px 0">
+                  适合 WordPress、外贸独立站、Docker
+                </p>
+                <div
+                  style="
+                    margin-top: 12px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                  "
+                >
+                  <span class="price"
+                    >$4.49<span style="font-size: 12px; font-weight: 400"
+                      >/月起</span
+                    ></span
+                  >
+                  <a class="btn btn-primary btn-sm" href="plan.html"
+                    >查看机型</a
+                  >
+                </div>
+              </div>
+              <div
+                class="card"
+                style="
+                  padding: 16px;
+                  background: var(--bg);
+                  border: 1px solid var(--line);
+                "
+              >
+                <div
+                  class="badge"
+                  style="display: inline-block; margin-bottom: 8px"
+                >
+                  进阶高性能型
+                </div>
+                <div style="font-size: 18px; font-weight: 700">
+                  4 vCPU · 4 GB · 80GB
+                </div>
+                <p class="small-muted" style="margin: 6px 0">
+                  适合中高负载应用、数据库、复杂自动化
+                </p>
+                <div
+                  style="
+                    margin-top: 12px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                  "
+                >
+                  <span class="price"
+                    >$9.90<span style="font-size: 12px; font-weight: 400"
+                      >/月起</span
+                    ></span
+                  >
+                  <a class="btn btn-primary btn-sm" href="plan.html"
+                    >查看机型</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-panel" data-tab-panel="region">
+          <div class="card table-card section" style="padding: 20px">
+            <h3 style="margin-top: 0">洛杉矶机房最近 7 天价格变动追踪</h3>
+            <table class="data-table" style="margin-top: 12px">
+              <thead>
+                <tr>
+                  <th>商家 / 套餐</th>
+                  <th>当前促销价格</th>
+                  <th>原标定价格</th>
+                  <th>实际降幅</th>
+                  <th>降价生效时间</th>
+                  <th>直达链接</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>RackNerd 2GB 洛杉矶</strong></td>
+                  <td><strong class="price">$18.29 /年</strong></td>
+                  <td>$24.99 /年</td>
+                  <td>
+                    <span
+                      class="badge"
+                      style="background: #fef3c7; color: #92400e"
+                      >-27%</span
+                    >
+                  </td>
+                  <td>12 小时前</td>
+                  <td>
+                    <a class="btn btn-primary btn-sm" href="plan.html"
+                      >查看优惠</a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td><strong>CloudCone 2GB 洛杉矶</strong></td>
+                  <td><strong class="price">$21.50 /年</strong></td>
+                  <td>$28.00 /年</td>
+                  <td>
+                    <span
+                      class="badge"
+                      style="background: #fef3c7; color: #92400e"
+                      >-23%</span
+                    >
+                  </td>
+                  <td>2 天前</td>
+                  <td>
+                    <a class="btn btn-primary btn-sm" href="plan.html"
+                      >查看优惠</a
+                    >
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-copy">
+          <img src="assets/img/logo.svg" alt="" />
+          <p>
+            <strong style="color: #152343">选主机 xuanzhuji.com</strong
+            ><br />部分购买链接可能包含推广关系，但不会增加你的购买成本。我们致力于提供客观、真实、透明的
+            VPS 选择与测试数据。
+          </p>
+        </div>
+        <div>
+          <div class="footer-links">
+            <a href="#" data-demo>关于</a><a href="#" data-demo>免责声明</a
+            ><a href="#" data-demo>隐私政策</a
+            ><a href="#" data-demo>联系我们</a>
+          </div>
+          <div class="small-muted" style="margin-top: 12px; text-align: right">
+            © 2026 xuanzhuji.com 保留所有权利
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

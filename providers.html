@@ -1,0 +1,485 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="VPS 商家库：收录 60 家主流 VPS 服务商，含信誉评级、支付方式、退款政策与实测数据。" />
+    <title>商家库 - 选主机</title>
+    <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/css/app.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html"
+          ><img src="assets/img/logo.svg" alt="选主机" />
+          <div>
+            <div class="brand-main">选主机</div>
+            <div class="brand-sub">xuanzhuji.com</div>
+          </div></a
+        >
+        <nav class="nav">
+          <a class="" href="vps.html">找 VPS</a
+          ><a class="active" href="providers.html">商家库</a
+          ><a class="" href="deals.html">优惠</a
+          ><a class="" href="benchmarks.html">实测</a
+          ><a class="" href="toolbox.html">工具箱</a
+          ><a class="" href="guides.html">指南</a>
+        </nav>
+        <button class="mobile-toggle" aria-label="菜单">☰</button>
+        <div class="actions">
+          <a class="btn btn-ghost" href="#" data-demo>登录</a
+          ><a class="btn btn-primary" href="benchmarks.html#submit">加入共建</a>
+        </div>
+      </div>
+    </header>
+    <section class="page-title">
+      <div class="container">
+        <h1>商家库</h1>
+        <p>收录主流 VPS / 云服务器商家，结合公开资料与站内数据进行整理。</p>
+      </div>
+    </section>
+    <main class="container">
+      <div class="stats" style="grid-template-columns: repeat(4, 1fr)">
+        <div class="card stat">
+          <div class="stat-icon">▣</div>
+          <div>
+            <div class="stat-label">已收录商家</div>
+            <strong>60</strong><span class="delta">较昨日 +1</span>
+          </div>
+        </div>
+        <div class="card stat">
+          <div class="stat-icon">☆</div>
+          <div>
+            <div class="stat-label">活跃商家</div>
+            <strong>42</strong><span class="delta">较昨日 +1</span>
+          </div>
+        </div>
+        <div class="card stat">
+          <div class="stat-icon">▤</div>
+          <div>
+            <div class="stat-label">已有实测</div>
+            <strong>26</strong><span class="delta">较昨日 +3</span>
+          </div>
+        </div>
+        <div class="card stat">
+          <div class="stat-icon">♙</div>
+          <div>
+            <div class="stat-label">有监控数据</div>
+            <strong>18</strong><span class="delta">较昨日 +2</span>
+          </div>
+        </div>
+      </div>
+      <section class="card toolbar">
+        <div
+          class="toolbar-grid"
+          style="grid-template-columns: repeat(5, 1fr) 130px"
+        >
+          <div class="field">
+            <label>国家/地区</label>
+            <select class="select">
+              <option>全部国家/地区</option>
+              <option>🇺🇸 美国</option>
+              <option>🇭🇰 中国香港</option>
+              <option>🇯🇵 日本</option>
+              <option>🇸🇬 新加坡</option>
+              <option>🇩🇪 德国</option>
+              <option>🇬🇧 英国</option>
+              <option>🇫🇷 法国</option>
+            </select>
+          </div>
+          <div class="field">
+            <label>信誉评级</label>
+            <select class="select">
+              <option>全部评级</option>
+              <option>9.0 分以上 (极佳)</option>
+              <option>8.0 – 8.9 分 (良好)</option>
+              <option>7.0 – 7.9 分 (普通)</option>
+              <option>暂无评级</option>
+            </select>
+          </div>
+          <div class="field">
+            <label>支付方式</label>
+            <select class="select">
+              <option>全部支付方式</option>
+              <option>支付宝 (AliPay)</option>
+              <option>PayPal</option>
+              <option>信用卡 (Visa/Mastercard)</option>
+              <option>加密货币 (USDT/BTC)</option>
+            </select>
+          </div>
+          <div class="field">
+            <label>是否支持退款</label>
+            <select class="select">
+              <option>全部政策</option>
+              <option>7天及以上无条件退款</option>
+              <option>按天/按比例退款</option>
+              <option>不支持退款 (需谨慎)</option>
+            </select>
+          </div>
+          <div class="field">
+            <label>是否有实测</label>
+            <select class="select">
+              <option>全部</option>
+              <option>已有官方探针实测</option>
+              <option>已有用户提交样本</option>
+            </select>
+          </div>
+          <button class="btn btn-primary" data-demo>⌕ 筛选商家</button>
+        </div>
+      </section>
+      <section
+        class="section"
+        style="
+          display: grid;
+          grid-template-columns: minmax(0, 1fr) 290px;
+          gap: 18px;
+        "
+      >
+        <div class="provider-grid">
+          <div class="card provider-card">
+            <div class="provider-head">
+              <img
+                class="provider-logo"
+                src="assets/img/provider-logos/racknerd.svg"
+              />
+              <div>
+                <h3>RackNerd</h3>
+                <div class="sub">🇺🇸 美国</div>
+              </div>
+              <div style="text-align: right">
+                <span class="rating">9.3</span>
+                <div style="margin-top: 4px">
+                  <span
+                    class="badge green"
+                    style="font-size: 10px; padding: 1px 6px"
+                    >7天退款保障</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="provider-meta">
+              <span>成立时间<br /><strong>2019 年</strong></span
+              ><span>在线套餐数<br /><strong>24 个</strong></span
+              ><span style="grid-column: span 2"
+                >支持的支付方式<br /><strong
+                  >信用卡、PayPal、部分支持加密货币</strong
+                ></span
+              >
+            </div>
+            <div class="badges">
+              <span class="badge">性价比高</span
+              ><span class="badge">CN2 GIA</span
+              ><span class="badge">原生IP</span>
+            </div>
+            <div class="actions-row">
+              <a class="btn" href="provider.html">查看商家</a
+              ><a class="btn btn-primary" href="vps.html">查看套餐</a>
+            </div>
+          </div>
+          <div class="card provider-card">
+            <div class="provider-head">
+              <img
+                class="provider-logo"
+                src="assets/img/provider-logos/dmit.svg"
+              />
+              <div>
+                <h3>DMIT</h3>
+                <div class="sub">🇭🇰 香港</div>
+              </div>
+              <span class="rating">9.1</span>
+            </div>
+            <div class="provider-meta">
+              <span>成立时间<br /><strong>2017 年</strong></span
+              ><span>在线套餐数<br /><strong>18 个</strong></span
+              ><span style="grid-column: span 2"
+                >支持的支付方式<br /><strong
+                  >信用卡、PayPal、部分支持加密货币</strong
+                ></span
+              >
+            </div>
+            <div class="badges">
+              <span class="badge">CN2 GIA</span
+              ><span class="badge">优化线路</span
+              ><span class="badge">性价比</span>
+            </div>
+            <div class="actions-row">
+              <a class="btn" href="provider.html">查看商家</a
+              ><a class="btn btn-primary" href="vps.html">查看套餐</a>
+            </div>
+          </div>
+          <div class="card provider-card">
+            <div class="provider-head">
+              <img
+                class="provider-logo"
+                src="assets/img/provider-logos/vultr.svg"
+              />
+              <div>
+                <h3>Vultr</h3>
+                <div class="sub">🇺🇸 美国</div>
+              </div>
+              <span class="rating">8.9</span>
+            </div>
+            <div class="provider-meta">
+              <span>成立时间<br /><strong>2014 年</strong></span
+              ><span>在线套餐数<br /><strong>32 个</strong></span
+              ><span style="grid-column: span 2"
+                >支持的支付方式<br /><strong
+                  >信用卡、PayPal、部分支持加密货币</strong
+                ></span
+              >
+            </div>
+            <div class="badges">
+              <span class="badge">全球覆盖</span
+              ><span class="badge">按小时计费</span
+              ><span class="badge">高性价比</span>
+            </div>
+            <div class="actions-row">
+              <a class="btn" href="provider.html">查看商家</a
+              ><a class="btn btn-primary" href="vps.html">查看套餐</a>
+            </div>
+          </div>
+          <div class="card provider-card">
+            <div class="provider-head">
+              <img
+                class="provider-logo"
+                src="assets/img/provider-logos/buyvm.svg"
+              />
+              <div>
+                <h3>BuyVM</h3>
+                <div class="sub">🇺🇸 美国</div>
+              </div>
+              <span class="rating">8.7</span>
+            </div>
+            <div class="provider-meta">
+              <span>成立时间<br /><strong>2012 年</strong></span
+              ><span>在线套餐数<br /><strong>15 个</strong></span
+              ><span style="grid-column: span 2"
+                >支持的支付方式<br /><strong
+                  >信用卡、PayPal、部分支持加密货币</strong
+                ></span
+              >
+            </div>
+            <div class="badges">
+              <span class="badge">KVM架构</span><span class="badge">按投诉</span
+              ><span class="badge">原生IP</span>
+            </div>
+            <div class="actions-row">
+              <a class="btn" href="provider.html">查看商家</a
+              ><a class="btn btn-primary" href="vps.html">查看套餐</a>
+            </div>
+          </div>
+          <div class="card provider-card">
+            <div class="provider-head">
+              <img
+                class="provider-logo"
+                src="assets/img/provider-logos/contabo.svg"
+              />
+              <div>
+                <h3>Contabo</h3>
+                <div class="sub">🇩🇪 德国</div>
+              </div>
+              <span class="rating">8.6</span>
+            </div>
+            <div class="provider-meta">
+              <span>成立时间<br /><strong>2003 年</strong></span
+              ><span>在线套餐数<br /><strong>28 个</strong></span
+              ><span style="grid-column: span 2"
+                >支持的支付方式<br /><strong
+                  >信用卡、PayPal、部分支持加密货币</strong
+                ></span
+              >
+            </div>
+            <div class="badges">
+              <span class="badge">大硬盘</span
+              ><span class="badge">高性价比</span
+              ><span class="badge">不限流量</span>
+            </div>
+            <div class="actions-row">
+              <a class="btn" href="provider.html">查看商家</a
+              ><a class="btn btn-primary" href="vps.html">查看套餐</a>
+            </div>
+          </div>
+          <div class="card provider-card">
+            <div class="provider-head">
+              <img
+                class="provider-logo"
+                src="assets/img/provider-logos/hostodo.svg"
+              />
+              <div>
+                <h3>Hostodo</h3>
+                <div class="sub">🇸🇬 新加坡</div>
+              </div>
+              <span class="rating">8.5</span>
+            </div>
+            <div class="provider-meta">
+              <span>成立时间<br /><strong>2018 年</strong></span
+              ><span>在线套餐数<br /><strong>20 个</strong></span
+              ><span style="grid-column: span 2"
+                >支持的支付方式<br /><strong
+                  >信用卡、PayPal、部分支持加密货币</strong
+                ></span
+              >
+            </div>
+            <div class="badges">
+              <span class="badge">新加坡优化</span
+              ><span class="badge">BGP线路</span
+              ><span class="badge">原生IP</span>
+            </div>
+            <div class="actions-row">
+              <a class="btn" href="provider.html">查看商家</a
+              ><a class="btn btn-primary" href="vps.html">查看套餐</a>
+            </div>
+          </div>
+          <div class="card provider-card">
+            <div class="provider-head">
+              <img
+                class="provider-logo"
+                src="assets/img/provider-logos/digitalocean.svg"
+              />
+              <div>
+                <h3>DigitalOcean</h3>
+                <div class="sub">🇺🇸 美国</div>
+              </div>
+              <span class="rating">8.4</span>
+            </div>
+            <div class="provider-meta">
+              <span>成立时间<br /><strong>2011 年</strong></span
+              ><span>在线套餐数<br /><strong>10 个</strong></span
+              ><span style="grid-column: span 2"
+                >支持的支付方式<br /><strong
+                  >信用卡、PayPal、部分支持加密货币</strong
+                ></span
+              >
+            </div>
+            <div class="badges">
+              <span class="badge">开发者首选</span
+              ><span class="badge">按小时计量</span
+              ><span class="badge">全球覆盖</span>
+            </div>
+            <div class="actions-row">
+              <a class="btn" href="provider.html">查看商家</a
+              ><a class="btn btn-primary" href="vps.html">查看套餐</a>
+            </div>
+          </div>
+          <div class="card provider-card">
+            <div class="provider-head">
+              <img
+                class="provider-logo"
+                src="assets/img/provider-logos/ovhcloud.svg"
+              />
+              <div>
+                <h3>OVHcloud</h3>
+                <div class="sub">🇫🇷 法国</div>
+              </div>
+              <span class="rating">8.3</span>
+            </div>
+            <div class="provider-meta">
+              <span>成立时间<br /><strong>1999 年</strong></span
+              ><span>在线套餐数<br /><strong>22 个</strong></span
+              ><span style="grid-column: span 2"
+                >支持的支付方式<br /><strong
+                  >信用卡、PayPal、部分支持加密货币</strong
+                ></span
+              >
+            </div>
+            <div class="badges">
+              <span class="badge">欧洲节点</span
+              ><span class="badge">大带宽</span
+              ><span class="badge">企业级</span>
+            </div>
+            <div class="actions-row">
+              <a class="btn" href="provider.html">查看商家</a
+              ><a class="btn btn-primary" href="vps.html">查看套餐</a>
+            </div>
+          </div>
+        </div>
+        <aside>
+          <div class="card aside-card" style="position: sticky; top: 92px">
+            <h3>商家评级说明</h3>
+            <p class="small-muted">综合评分满分 10 分，示例权重如下：</p>
+            <div class="method-item">
+              <strong>年限（20%）</strong><span>经营年限与行业经验。</span>
+            </div>
+            <div class="method-item">
+              <strong>公开资料（20%）</strong><span>资料完整度与透明度。</span>
+            </div>
+            <div class="method-item">
+              <strong>价格透明度（20%）</strong
+              ><span>价格公开程度与隐藏费用。</span>
+            </div>
+            <div class="method-item">
+              <strong>实测数据（25%）</strong
+              ><span>基于站内用户真实测试。</span>
+            </div>
+            <div class="method-item">
+              <strong>在线率（15%）</strong
+              ><span>仅在达到最低样本门槛后计入。</span>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <!-- 申请收录与纠错入口 -->
+      <section
+        class="card aside-card section"
+        style="
+          margin-top: 28px;
+          background: linear-gradient(180deg, #ffffff, #f8fafc);
+          border: 1px solid var(--line);
+        "
+      >
+        <div
+          style="
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+          "
+        >
+          <div>
+            <div style="display: flex; align-items: center; gap: 8px">
+              <h3 style="margin: 0">没有找到你想了解的 VPS 商家？</h3>
+              <span class="badge" style="background: #e0e7ff; color: #4338ca"
+                >持续收录中</span
+              >
+            </div>
+            <p class="small-muted" style="margin: 6px 0 0">
+              选主机遵循客观标准收录全球主机服务商。如果你是商家代表或想推荐优质小众商家，欢迎提交资料共建。
+            </p>
+          </div>
+          <div style="display: flex; gap: 10px">
+            <button class="btn btn-sm" data-demo>纠错反馈</button>
+            <button class="btn btn-primary btn-sm" data-demo>
+              + 提交新商家资料
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-copy">
+          <img src="assets/img/logo.svg" alt="" />
+          <p>
+            <strong style="color: #152343">选主机 xuanzhuji.com</strong
+            ><br />部分购买链接可能包含推广关系，但不会增加你的购买成本。我们致力于提供客观、真实、透明的
+            VPS 选择与测试数据。
+          </p>
+        </div>
+        <div>
+          <div class="footer-links">
+            <a href="#" data-demo>关于</a><a href="#" data-demo>免责声明</a
+            ><a href="#" data-demo>隐私政策</a
+            ><a href="#" data-demo>联系我们</a>
+          </div>
+          <div class="small-muted" style="margin-top: 12px; text-align: right">
+            © 2026 xuanzhuji.com 保留所有权利
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="选主机 Looking Glass 路由、Ping、MTR 与 TCP Ping 网络测试"
+    />
+    <title>Looking Glass - 选主机</title>
+    <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/css/app.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html"
+          ><img src="assets/img/logo.svg" alt="选主机" />
+          <div>
+            <div class="brand-main">选主机</div>
+            <div class="brand-sub">xuanzhuji.com</div>
+          </div></a
+        >
+        <nav class="nav">
+          <a href="vps.html">找 VPS</a><a href="providers.html">商家库</a
+          ><a href="deals.html">优惠</a
+          ><a class="active" href="benchmarks.html">实测</a
+          ><a href="toolbox.html">工具箱</a><a href="guides.html">指南</a>
+        </nav>
+        <button class="mobile-toggle" aria-label="菜单">☰</button>
+        <div class="actions">
+          <a class="btn btn-ghost" href="#" data-demo>登录</a
+          ><a class="btn btn-primary" href="benchmarks.html#submit">加入共建</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="breadcrumbs">
+          <a href="index.html">首页</a> / <a href="benchmarks.html">实测</a> /
+          Looking Glass
+        </div>
+        <section class="page-title">
+          <h1>Looking Glass</h1>
+          <p>
+            从不同监控节点运行 Ping、TCP Ping、MTR
+            与路由追踪，查看真实网络路径。
+          </p>
+        </section>
+        <section class="card toolbar">
+          <div class="tabs" data-tabs="lg">
+            <button class="tab active">MTR</button
+            ><button class="tab">Ping</button
+            ><button class="tab">TCP Ping</button
+            ><button class="tab">Traceroute</button
+            ><button class="tab">下载测试</button>
+          </div>
+          <div
+            class="toolbar-grid"
+            style="grid-template-columns: 1.2fr 2fr 150px; margin-top: 16px"
+          >
+            <div class="field">
+              <label>测试节点</label
+              ><select class="select">
+                <option>🇭🇰 香港 CN2 GIA</option>
+                <option>🇯🇵 东京</option>
+                <option>🇺🇸 洛杉矶 DC02</option>
+                <option>🇸🇬 新加坡</option>
+              </select>
+            </div>
+            <div class="field">
+              <label>目标 IP / 域名</label>
+              <input class="input" value="8.8.8.8" aria-label="目标 IP" />
+              <div class="small-muted" style="margin-top: 4px">
+                合规提示：仅限检测公网目标地址，内网保留地址已被系统屏蔽
+              </div>
+            </div>
+            <button class="btn btn-primary">开始测试</button>
+          </div>
+        </section>
+        <section class="section two-col">
+          <div class="card table-card">
+            <div class="list-head">
+              <div>
+                <strong>MTR 测试结果</strong>
+                <div class="small-muted">
+                  香港 CN2 GIA → 8.8.8.8 · 2026-09-03 17:02:18 · 100 packets
+                </div>
+              </div>
+              <span class="badge green">测试完成</span>
+            </div>
+            <div class="table-wrap">
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th>Hop</th>
+                    <th>IP</th>
+                    <th>ASN</th>
+                    <th>位置 / 网络</th>
+                    <th>Loss</th>
+                    <th>Avg</th>
+                    <th>Best</th>
+                    <th>Worst</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>10.0.0.1</td>
+                    <td>—</td>
+                    <td>香港机房网关</td>
+                    <td class="metric-good">0%</td>
+                    <td>0.5 ms</td>
+                    <td>0.3</td>
+                    <td>0.8</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>59.43.246.1</td>
+                    <td>AS4809</td>
+                    <td>中国电信 CN2 · 香港</td>
+                    <td class="metric-good">0%</td>
+                    <td>1.8 ms</td>
+                    <td>1.2</td>
+                    <td>2.7</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>59.43.39.5</td>
+                    <td>AS4809</td>
+                    <td>中国电信 CN2 · 上海</td>
+                    <td class="metric-good">0%</td>
+                    <td>29.6 ms</td>
+                    <td>28.9</td>
+                    <td>31.1</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>72.14.215.88</td>
+                    <td>AS15169</td>
+                    <td>Google</td>
+                    <td class="metric-good">0%</td>
+                    <td>34.2 ms</td>
+                    <td>33.2</td>
+                    <td>36.7</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>8.8.8.8</td>
+                    <td>AS15169</td>
+                    <td>Google Public DNS</td>
+                    <td class="metric-good">0%</td>
+                    <td>35.1 ms</td>
+                    <td>34.1</td>
+                    <td>37.0</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <aside class="aside-stack">
+            <div class="card aside-card">
+              <h3>测试摘要</h3>
+              <div class="grid-2">
+                <div>
+                  <div class="sub">平均延迟</div>
+                  <strong class="metric-good" style="font-size: 20px"
+                    >35.1 ms</strong
+                  >
+                </div>
+                <div>
+                  <div class="sub">丢包</div>
+                  <strong class="metric-good" style="font-size: 20px"
+                    >0%</strong
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="card aside-card">
+              <h3>线路判断</h3>
+              <div class="idea">
+                <div class="idea-icon">✓</div>
+                <div>
+                  <strong>经过 CN2 GIA</strong>
+                  <p>香港 → 上海段检测到 AS4809</p>
+                </div>
+              </div>
+              <div class="idea">
+                <div class="idea-icon">✓</div>
+                <div>
+                  <strong>无明显丢包</strong>
+                  <p>100 个样本未发现持续性丢包</p>
+                </div>
+              </div>
+            </div>
+            <div class="card aside-card">
+              <h3>下载测速与终端测试</h3>
+              <div class="idea">
+                <div class="idea-icon">⬇</div>
+                <div style="flex: 1">
+                  <strong>100MB 测速文件</strong>
+                  <div
+                    style="
+                      display: flex;
+                      gap: 6px;
+                      margin-top: 6px;
+                      flex-wrap: wrap;
+                    "
+                  >
+                    <a
+                      class="btn btn-sm"
+                      href="#"
+                      data-demo
+                      style="padding: 2px 8px; font-size: 11px"
+                      >浏览器测速</a
+                    >
+                    <button
+                      class="btn btn-sm"
+                      data-copy="#curl-cmd-100"
+                      style="padding: 2px 8px; font-size: 11px"
+                    >
+                      复制 cURL 命令
+                    </button>
+                    <input
+                      id="curl-cmd-100"
+                      value="curl -o /dev/null http://speedtest.hkg.xuanzhuji.com/100mb.bin"
+                      style="display: none"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="notice">
+              <h4>数据说明</h4>
+              <p>
+                结果来自当前指定 Looking Glass
+                节点，仅代表该节点到目标地址的网络路径，不能直接等同于你的本地网络体验。
+              </p>
+            </div>
+          </aside>
+        </section>
+        <section class="section">
+          <div class="section-head">
+            <div>
+              <h2>其他网络工具</h2>
+              <p>使用相同测试节点继续诊断</p>
+            </div>
+          </div>
+          <div class="grid-4">
+            <a class="card mini-card" href="toolbox.html"
+              ><strong>⌁ Ping</strong>
+              <div class="sub">ICMP 延迟与丢包</div></a
+            ><a class="card mini-card" href="toolbox.html"
+              ><strong>⌘ TCP Ping</strong>
+              <div class="sub">测试 80 / 443 等端口</div></a
+            ><a class="card mini-card" href="toolbox.html"
+              ><strong>↗ Traceroute</strong>
+              <div class="sub">查看完整路由路径</div></a
+            ><a class="card mini-card" href="benchmarks.html"
+              ><strong>◴ VPS 实测</strong>
+              <div class="sub">查看真实性能与解锁结果</div></a
+            >
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-copy">
+          <img src="assets/img/logo.svg" alt="" />
+          <p>
+            <strong style="color: #152343">选主机 xuanzhuji.com</strong
+            ><br />部分购买链接可能包含推广关系，但不会增加你的购买成本。我们致力于提供客观、真实、透明的
+            VPS 选择与测试数据。
+          </p>
+        </div>
+        <div>
+          <div class="footer-links">
+            <a href="#">关于</a><a href="#">数据来源</a><a href="#">评分方法</a
+            ><a href="#">免责声明</a><a href="#">隐私政策</a>
+          </div>
+          <div class="small-muted" style="margin-top: 12px; text-align: right">
+            © 2026 xuanzhuji.com
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

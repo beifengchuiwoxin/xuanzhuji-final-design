@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="VPS 套餐横向对比：最多 4 款同屏对照配置、折算价格、三网延迟、跑分与流媒体解锁差异。" />
+    <title>套餐对比 - 选主机</title>
+    <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/css/app.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html"
+          ><img src="assets/img/logo.svg" alt="选主机" />
+          <div>
+            <div class="brand-main">选主机</div>
+            <div class="brand-sub">xuanzhuji.com</div>
+          </div></a
+        >
+        <nav class="nav">
+          <a class="active" href="vps.html">找 VPS</a
+          ><a class="" href="providers.html">商家库</a
+          ><a class="" href="deals.html">优惠</a
+          ><a class="" href="benchmarks.html">实测</a
+          ><a class="" href="toolbox.html">工具箱</a
+          ><a class="" href="guides.html">指南</a>
+        </nav>
+        <button class="mobile-toggle" aria-label="菜单">☰</button>
+        <div class="actions">
+          <a class="btn btn-ghost" href="#" data-demo>登录</a
+          ><a class="btn btn-primary" href="benchmarks.html#submit">加入共建</a>
+        </div>
+      </div>
+    </header>
+    <section class="page-title">
+      <div class="container">
+        <h1>VPS 套餐对比</h1>
+        <p>最多同时比较 4 款套餐，横向查看配置、价格与真实网络表现。</p>
+      </div>
+    </section>
+    <main class="container">
+      <div
+        style="
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 14px;
+          flex-wrap: wrap;
+          gap: 10px;
+        "
+      >
+        <div class="small-muted">
+          当前已载入 4 款精选横向对照套餐，支持横向拖拽滑动
+        </div>
+        <label
+          style="
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 13px;
+            cursor: pointer;
+            font-weight: 650;
+            user-select: none;
+          "
+        >
+          <input
+            type="checkbox"
+            id="toggle-diff"
+            style="cursor: pointer; width: 16px; height: 16px"
+          />
+          <span>仅高亮差异项 (Highlight Differences)</span>
+        </label>
+      </div>
+      <section class="card table-card">
+        <div style="overflow: auto">
+          <div class="compare-grid">
+            <div class="label compare-head">对比项</div>
+            <div class="compare-head" data-compare-col="0">
+              <img src="assets/img/provider-logos/racknerd.svg" /><strong
+                >RackNerd</strong
+              ><span class="sub">🇺🇸 洛杉矶</span>
+              <div class="price" style="font-size: 16px; margin: 6px 0">
+                $18.29/年
+              </div>
+              <a class="btn btn-primary btn-sm" href="plan.html">立即购买</a
+              ><button
+                class="btn btn-sm"
+                style="margin-top: 6px"
+                data-remove-compare="0"
+              >
+                移除
+              </button>
+            </div>
+            <div class="compare-head" data-compare-col="1">
+              <img src="assets/img/provider-logos/dmit.svg" /><strong
+                >DMIT</strong
+              ><span class="sub">🇭🇰 香港</span>
+              <div class="price" style="font-size: 16px; margin: 6px 0">
+                $16.90/月
+              </div>
+              <a class="btn btn-primary btn-sm" href="plan.html">立即购买</a
+              ><button
+                class="btn btn-sm"
+                style="margin-top: 6px"
+                data-remove-compare="1"
+              >
+                移除
+              </button>
+            </div>
+            <div class="compare-head" data-compare-col="2">
+              <img src="assets/img/provider-logos/vultr.svg" /><strong
+                >Vultr</strong
+              ><span class="sub">🇯🇵 东京</span>
+              <div class="price" style="font-size: 16px; margin: 6px 0">
+                $5.00/月
+              </div>
+              <a class="btn btn-primary btn-sm" href="plan.html">立即购买</a
+              ><button
+                class="btn btn-sm"
+                style="margin-top: 6px"
+                data-remove-compare="2"
+              >
+                移除
+              </button>
+            </div>
+            <div class="compare-head" data-compare-col="3">
+              <img src="assets/img/provider-logos/hosthatch.svg" /><strong
+                >HostHatch</strong
+              ><span class="sub">🇺🇸 洛杉矶</span>
+              <div class="price" style="font-size: 16px; margin: 6px 0">
+                $4.99/月
+              </div>
+              <a class="btn btn-primary btn-sm" href="plan.html">立即购买</a
+              ><button
+                class="btn btn-sm"
+                style="margin-top: 6px"
+                data-remove-compare="3"
+              >
+                移除
+              </button>
+            </div>
+            <div class="label">vCPU</div>
+            <div class="" data-compare-col="0">2</div>
+            <div class="" data-compare-col="1">2</div>
+            <div class="" data-compare-col="2">2</div>
+            <div class="" data-compare-col="3">2</div>
+            <div class="label">内存</div>
+            <div class="" data-compare-col="0">2 GB</div>
+            <div class="" data-compare-col="1">2 GB</div>
+            <div class="" data-compare-col="2">2 GB</div>
+            <div class="" data-compare-col="3">2 GB</div>
+            <div class="label">硬盘</div>
+            <div class="" data-compare-col="0">40 GB NVMe</div>
+            <div class="" data-compare-col="1">30 GB NVMe</div>
+            <div class="metric-good" data-compare-col="2">55 GB NVMe</div>
+            <div class="" data-compare-col="3">40 GB NVMe</div>
+            <div class="label">流量</div>
+            <div class="metric-good" data-compare-col="0">3 TB</div>
+            <div class="" data-compare-col="1">1 TB</div>
+            <div class="" data-compare-col="2">2 TB</div>
+            <div class="" data-compare-col="3">2 TB</div>
+            <div class="label">月价（折算）</div>
+            <div class="" data-compare-col="0">$1.52</div>
+            <div class="" data-compare-col="1">$1.41</div>
+            <div class="" data-compare-col="2">$5.00</div>
+            <div class="" data-compare-col="3">$4.99</div>
+            <div class="label">历史最低</div>
+            <div class="" data-compare-col="0">$10.98/年</div>
+            <div class="" data-compare-col="1">$16.90/月</div>
+            <div class="" data-compare-col="2">$2.50/月</div>
+            <div class="" data-compare-col="3">$4.99/月</div>
+            <div class="label">电信延迟</div>
+            <div class="" data-compare-col="0">152 ms</div>
+            <div class="" data-compare-col="1">68 ms</div>
+            <div class="" data-compare-col="2">98 ms</div>
+            <div class="" data-compare-col="3">146 ms</div>
+            <div class="label">联通延迟</div>
+            <div class="" data-compare-col="0">168 ms</div>
+            <div class="" data-compare-col="1">72 ms</div>
+            <div class="" data-compare-col="2">102 ms</div>
+            <div class="" data-compare-col="3">152 ms</div>
+            <div class="label">移动延迟</div>
+            <div class="" data-compare-col="0">176 ms</div>
+            <div class="" data-compare-col="1">73 ms</div>
+            <div class="" data-compare-col="2">110 ms</div>
+            <div class="" data-compare-col="3">158 ms</div>
+            <div class="label">平均丢包</div>
+            <div class="" data-compare-col="0">0.3%</div>
+            <div class="" data-compare-col="1">0.2%</div>
+            <div class="" data-compare-col="2">0.5%</div>
+            <div class="" data-compare-col="3">0.3%</div>
+            <div class="label">Netflix</div>
+            <div class="" data-compare-col="0">✅</div>
+            <div class="" data-compare-col="1">✅</div>
+            <div class="" data-compare-col="2">✅</div>
+            <div class="" data-compare-col="3">✅</div>
+            <div class="label">YouTube</div>
+            <div class="" data-compare-col="0">✅</div>
+            <div class="" data-compare-col="1">✅</div>
+            <div class="" data-compare-col="2">✅</div>
+            <div class="" data-compare-col="3">✅</div>
+            <div class="label">Disney+</div>
+            <div class="" data-compare-col="0">✅</div>
+            <div class="" data-compare-col="1">✅</div>
+            <div class="" data-compare-col="2">✅</div>
+            <div class="" data-compare-col="3">✅</div>
+            <div class="label">Geekbench 6</div>
+            <div class="" data-compare-col="0">1,842 (单核)</div>
+            <div class="metric-good" data-compare-col="1">2,103 (单核)</div>
+            <div class="" data-compare-col="2">1,960 (单核)</div>
+            <div class="" data-compare-col="3">1,750 (单核)</div>
+            <div class="label">磁盘 4K 顺序读</div>
+            <div class="" data-compare-col="0">412 MB/s</div>
+            <div class="" data-compare-col="1">355 MB/s</div>
+            <div class="metric-good" data-compare-col="2">612 MB/s</div>
+            <div class="" data-compare-col="3">380 MB/s</div>
+            <div class="label">ChatGPT / AI</div>
+            <div class="" data-compare-col="0">✅ 原生支持</div>
+            <div class="" data-compare-col="1">✅ 原生支持</div>
+            <div class="" data-compare-col="2">✅ 原生支持</div>
+            <div class="" data-compare-col="3">✅ 原生支持</div>
+            <div class="label">综合评分</div>
+            <div class="metric-good" data-compare-col="0">9.3</div>
+            <div class="metric-good" data-compare-col="1">9.1</div>
+            <div class="metric-good" data-compare-col="2">8.6</div>
+            <div class="metric-good" data-compare-col="3">8.4</div>
+            <div class="label">推荐适合人群</div>
+            <div class="small-muted" data-compare-col="0">
+              个人建站、开发测试、低预算
+            </div>
+            <div class="small-muted" data-compare-col="1">
+              中国优化首选、企业级低延迟
+            </div>
+            <div class="small-muted" data-compare-col="2">
+              全球边缘部署、按小时随时开
+            </div>
+            <div class="small-muted" data-compare-col="3">
+              海量数据存储、备份下载
+            </div>
+            <div class="label">主要短板</div>
+            <div class="small-muted" data-compare-col="0">
+              高峰期普通线路偶有波动
+            </div>
+            <div class="small-muted" data-compare-col="1">
+              起步价格较贵，存储偏小
+            </div>
+            <div class="small-muted" data-compare-col="2">历史价格常有调整</div>
+            <div class="small-muted" data-compare-col="3">
+              电信延迟普通，需中继
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="notice section">
+        <h4>如何理解对比数据</h4>
+        <p>
+          价格使用统一折算口径；网络数据需要满足最低测试样本后才展示。若没有足够样本，应显示“数据积累中”，而不是用默认数值填充。
+        </p>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-copy">
+          <img src="assets/img/logo.svg" alt="" />
+          <p>
+            <strong style="color: #152343">选主机 xuanzhuji.com</strong
+            ><br />部分购买链接可能包含推广关系，但不会增加你的购买成本。我们致力于提供客观、真实、透明的
+            VPS 选择与测试数据。
+          </p>
+        </div>
+        <div>
+          <div class="footer-links">
+            <a href="#" data-demo>关于</a><a href="#" data-demo>免责声明</a
+            ><a href="#" data-demo>隐私政策</a
+            ><a href="#" data-demo>联系我们</a>
+          </div>
+          <div class="small-muted" style="margin-top: 12px; text-align: right">
+            © 2026 xuanzhuji.com 保留所有权利
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

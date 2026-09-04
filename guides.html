@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="VPS 指南：从入门概念、线路选择到测试方法，配合真实数据帮你做选购决定。" />
+    <title>VPS 指南 - 选主机</title>
+    <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/css/app.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html"
+          ><img src="assets/img/logo.svg" alt="选主机" />
+          <div>
+            <div class="brand-main">选主机</div>
+            <div class="brand-sub">xuanzhuji.com</div>
+          </div></a
+        >
+        <nav class="nav">
+          <a class="" href="vps.html">找 VPS</a
+          ><a class="" href="providers.html">商家库</a
+          ><a class="" href="deals.html">优惠</a
+          ><a class="" href="benchmarks.html">实测</a
+          ><a class="" href="toolbox.html">工具箱</a
+          ><a class="active" href="guides.html">指南</a>
+        </nav>
+        <button class="mobile-toggle" aria-label="菜单">☰</button>
+        <div class="actions">
+          <a class="btn btn-ghost" href="#" data-demo>登录</a
+          ><a class="btn btn-primary" href="benchmarks.html#submit">加入共建</a>
+        </div>
+      </div>
+    </header>
+    <section class="page-title">
+      <div class="container">
+        <h1>VPS 指南</h1>
+        <p>从基础概念、线路选择到测试方法，配合真实数据帮助你做决定。</p>
+      </div>
+    </section>
+    <main class="container">
+      <section class="card toolbar">
+        <div style="display: flex; gap: 12px">
+          <input
+            class="input"
+            placeholder="搜索指南，例如：CN2 GIA、香港 VPS、建站"
+          /><button class="btn btn-primary" data-demo>搜索</button>
+        </div>
+        <div class="chips">
+          <button class="chip active">全部</button
+          ><button class="chip">入门</button><button class="chip">线路</button
+          ><button class="chip">建站</button><button class="chip">流媒体</button
+          ><button class="chip">优惠</button
+          ><button class="chip">测试方法</button>
+        </div>
+      </section>
+      <section class="section">
+        <div class="section-head">
+          <div>
+            <h2>重点指南</h2>
+            <p>最常见、最值得先了解的问题</p>
+          </div>
+        </div>
+        <div class="guide-cards">
+          <a class="card guide-card" href="guide.html" data-guide-card="line"
+            ><span class="kicker"
+              ><span class="badge-level intermediate">进阶实战</span> ·
+              线路入门</span
+            >
+            <h3>CN2 GIA 是什么？相比普通线路有什么优势？</h3>
+            <p>理解 CN2 GIA 的核心特点、适用场景和判断方法。</p>
+            <span class="sub">8 分钟阅读 · 2026-09-01</span></a
+          ><a class="card guide-card" href="guide.html"
+            ><span class="kicker"
+              ><span class="badge-level beginner">小白入门</span> ·
+              新手入门</span
+            >
+            <h3>VPS 1GB 还是 2GB？建站应该怎么选</h3>
+            <p>按 WordPress、博客和轻量应用分析内存选择。</p>
+            <span class="sub">6 分钟阅读</span></a
+          ><a class="card guide-card" href="guide.html" data-guide-card="beginner line"
+            ><span class="kicker"
+              ><span class="badge-level beginner">小白入门</span> ·
+              地区选择</span
+            >
+            <h3>日本 VPS 和香港 VPS 怎么选？</h3>
+            <p>从延迟、价格、线路和流媒体等角度比较。</p>
+            <span class="sub">9 分钟阅读</span></a
+          >
+        </div>
+      </section>
+      <section class="section two-col">
+        <div>
+          <div class="section-head">
+            <div>
+              <h2>最新指南</h2>
+              <p>持续围绕真实数据补充</p>
+            </div>
+          </div>
+          <div class="card aside-card">
+            <div class="idea">
+              <div class="idea-icon">01</div>
+              <div>
+                <a href="guide.html"
+                  ><strong>如何判断 VPS 是否适合中国大陆访问？</strong></a
+                >
+                <p>线路、回程、延迟、丢包与晚高峰测试方法。</p>
+              </div>
+            </div>
+            <div class="idea">
+              <div class="idea-icon">02</div>
+              <div>
+                <a href="guide.html"
+                  ><strong>VPS 流量 1TB 到底够不够？</strong></a
+                >
+                <p>按网站、下载和视频业务估算。</p>
+              </div>
+            </div>
+            <div class="idea">
+              <div class="idea-icon">03</div>
+              <div>
+                <a href="guide.html"
+                  ><strong>KVM 与 OpenVZ 有什么区别？</strong></a
+                >
+                <p>从隔离性、性能和使用场景比较。</p>
+              </div>
+            </div>
+            <div class="idea">
+              <div class="idea-icon">04</div>
+              <div>
+                <a href="guide.html"
+                  ><strong>怎么看懂 VPS 路由测试？</strong></a
+                >
+                <p>学会看 AS、跳数、跨境链路。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <aside class="aside-stack">
+          <div class="card aside-card">
+            <h3>相关工具</h3>
+            <a class="idea" href="ip.html"
+              ><div class="idea-icon">◎</div>
+              <div>
+                <strong>IP 查询</strong>
+                <p>查看 ASN、组织和 IP 类型</p>
+              </div></a
+            ><a class="idea" href="toolbox.html"
+              ><div class="idea-icon">⌁</div>
+              <div>
+                <strong>路由测试</strong>
+                <p>查看网络链路与节点</p>
+              </div></a
+            ><a class="idea" href="compare.html"
+              ><div class="idea-icon">≡</div>
+              <div>
+                <strong>套餐对比</strong>
+                <p>横向比较最多 4 款 VPS</p>
+              </div></a
+            >
+          </div>
+        </aside>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-copy">
+          <img src="assets/img/logo.svg" alt="" />
+          <p>
+            <strong style="color: #152343">选主机 xuanzhuji.com</strong
+            ><br />部分购买链接可能包含推广关系，但不会增加你的购买成本。我们致力于提供客观、真实、透明的
+            VPS 选择与测试数据。
+          </p>
+        </div>
+        <div>
+          <div class="footer-links">
+            <a href="#" data-demo>关于</a><a href="#" data-demo>免责声明</a
+            ><a href="#" data-demo>隐私政策</a
+            ><a href="#" data-demo>联系我们</a>
+          </div>
+          <div class="small-muted" style="margin-top: 12px; text-align: right">
+            © 2026 xuanzhuji.com 保留所有权利
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
