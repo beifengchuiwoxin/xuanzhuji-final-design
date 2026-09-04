@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta
       name="description"
-      content="选主机 Looking Glass 路由、Ping、MTR 与 TCP Ping 网络测试"
+      content="选主机 Looking Glass：展示 MTR、Ping、TCP Ping 与路由追踪测试记录及网络路径分析。"
     />
     <title>Looking Glass - 选主机</title>
     <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml" />
@@ -43,9 +43,9 @@
         <section class="page-title">
           <h1>Looking Glass</h1>
           <p>
-            从不同监控节点运行 Ping、TCP Ping、MTR
-            与路由追踪，查看真实网络路径。
+            展示不同测试节点的 Ping、TCP Ping、MTR 与路由追踪结果原型，用于说明网络路径与延迟数据的展示方式。
           </p>
+          <p class="small-muted">当前页面为静态原型，下方结果为 2026-09-03 已有测试记录，不会从浏览器实时发起网络检测。</p>
         </section>
         <section class="card toolbar">
           <div class="tabs" data-tabs="lg">
@@ -72,22 +72,22 @@
               <label>目标 IP / 域名</label>
               <input class="input" value="8.8.8.8" aria-label="目标 IP" />
               <div class="small-muted" style="margin-top: 4px">
-                合规提示：仅限检测公网目标地址，内网保留地址已被系统屏蔽
+                正式接入后仅允许检测符合规则的公网目标地址；当前输入框仅用于原型展示。
               </div>
             </div>
-            <button class="btn btn-primary">开始测试</button>
+            <button class="btn btn-primary" data-demo>开始测试（功能示意）</button>
           </div>
         </section>
         <section class="section two-col">
           <div class="card table-card">
             <div class="list-head">
               <div>
-                <strong>MTR 测试结果</strong>
+                <strong>MTR 结果快照</strong>
                 <div class="small-muted">
                   香港 CN2 GIA → 8.8.8.8 · 2026-09-03 17:02:18 · 100 packets
                 </div>
               </div>
-              <span class="badge green">测试完成</span>
+              <span class="badge green">静态记录</span>
             </div>
             <div class="table-wrap">
               <table class="data-table">
@@ -161,6 +161,7 @@
           <aside class="aside-stack">
             <div class="card aside-card">
               <h3>测试摘要</h3>
+              <p class="small-muted">基于本次 100 个样本的结果，仅代表 2026-09-03 17:02:18 这次测试。</p>
               <div class="grid-2">
                 <div>
                   <div class="sub">平均延迟</div>
@@ -177,28 +178,28 @@
               </div>
             </div>
             <div class="card aside-card">
-              <h3>线路判断</h3>
+              <h3>本次路由摘要</h3>
               <div class="idea">
                 <div class="idea-icon">✓</div>
                 <div>
-                  <strong>经过 CN2 GIA</strong>
+                  <strong>检测到 AS4809</strong>
                   <p>香港 → 上海段检测到 AS4809</p>
                 </div>
               </div>
               <div class="idea">
                 <div class="idea-icon">✓</div>
                 <div>
-                  <strong>无明显丢包</strong>
+                  <strong>本次样本丢包为 0%</strong>
                   <p>100 个样本未发现持续性丢包</p>
                 </div>
               </div>
             </div>
             <div class="card aside-card">
-              <h3>下载测速与终端测试</h3>
+              <h3>下载测速（功能示意）</h3>
               <div class="idea">
                 <div class="idea-icon">⬇</div>
                 <div style="flex: 1">
-                  <strong>100MB 测速文件</strong>
+                  <strong>100MB 测速文件尚未开放</strong>
                   <div
                     style="
                       display: flex;
@@ -212,18 +213,18 @@
                       href="#"
                       data-demo
                       style="padding: 2px 8px; font-size: 11px"
-                      >浏览器测速</a
+                      >浏览器测速（未接入）</a
                     >
                     <button
                       class="btn btn-sm"
                       data-copy="#curl-cmd-100"
                       style="padding: 2px 8px; font-size: 11px"
                     >
-                      复制 cURL 命令
+                      cURL 命令（未接入）
                     </button>
                     <input
                       id="curl-cmd-100"
-                      value="curl -o /dev/null http://speedtest.hkg.xuanzhuji.com/100mb.bin"
+                      value="正式测速文件地址将在功能接入后提供"
                       style="display: none"
                     />
                   </div>
@@ -233,8 +234,10 @@
             <div class="notice">
               <h4>数据说明</h4>
               <p>
-                结果来自当前指定 Looking Glass
-                节点，仅代表该节点到目标地址的网络路径，不能直接等同于你的本地网络体验。
+                本页 MTR 表格与摘要为 2026-09-03 17:02:18 的静态测试记录，测试节点为香港，目标为 8.8.8.8，共记录 100 个样本。
+              </p>
+              <p>
+                结果仅代表该测试节点在该时间到目标地址的网络路径，不能直接等同于用户本地网络体验，也不能代表线路长期质量。
               </p>
             </div>
           </aside>
@@ -243,7 +246,7 @@
           <div class="section-head">
             <div>
               <h2>其他网络工具</h2>
-              <p>使用相同测试节点继续诊断</p>
+              <p>查看相关网络工具与已收录测试页面</p>
             </div>
           </div>
           <div class="grid-4">
