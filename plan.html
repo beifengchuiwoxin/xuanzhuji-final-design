@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta name="description" content="RackNerd 2GB KVM VPS 套餐详情：价格历史走势、真实测速、三网延迟、流媒体解锁与用户评价。" />
+    <meta name="description" content="RackNerd 2GB KVM VPS 套餐详情快照：展示配置、价格记录、已有测试数据、网络结果与评价界面示例。" />
     <title>RackNerd 2GB KVM VPS - 选主机</title>
     <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="assets/css/app.css" />
@@ -14,12 +14,6 @@
         "name": "RackNerd 2GB KVM VPS",
         "description": "2 vCPU · 2GB RAM · 40GB NVMe · 3TB 流量 · 1Gbps",
         "brand": { "@type": "Brand", "name": "RackNerd" },
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "9.3",
-          "bestRating": "10",
-          "reviewCount": "18"
-        }
       }
     </script>
   </head>
@@ -60,7 +54,7 @@
               />
               <div style="flex: 1">
                 <div class="badges">
-                  <span class="badge green">热卖款</span
+                  <span class="badge green">套餐记录</span
                   ><span class="badge">洛杉矶 DC02</span>
                 </div>
                 <h1>RackNerd 2GB KVM VPS</h1>
@@ -128,7 +122,7 @@
                     </div>
                   </div>
                   <div>
-                    <h3>实测数据（最近 7 天）</h3>
+                    <h3>测试记录摘要</h3>
                     <p class="small-muted">测试状态：已实测 · 测试时间：2026-09-03 · 测试节点：洛杉矶</p>
                     <div class="mini-cards">
                       <div class="card mini-card">
@@ -180,17 +174,17 @@
                     <p class="small-muted">上传速度：暂无单独记录 · 数据状态：已实测</p>
                     <h3>流媒体解锁</h3>
                     <div class="badges">
-                      <span class="badge green">Netflix 解锁</span
-                      ><span class="badge green">YouTube 解锁</span
-                      ><span class="badge green">Disney+ 解锁</span
-                      ><span class="badge green">ChatGPT 可用</span>
+                      <span class="badge green">Netflix：本次记录可用</span
+                      ><span class="badge green">YouTube：本次记录可用</span
+                      ><span class="badge green">Disney+：本次记录可用</span
+                      ><span class="badge green">ChatGPT：本次记录可用</span>
                     </div>
                   </div>
                 </div>
                 <div class="notice" style="margin-top: 20px">
                   <h4>数据说明</h4>
                   <p>
-                    套餐配置与价格来自最近一次采集结果，商家可能随时调整价格、库存或配置，购买前请以商家官网为准。测速为用户/站长真实提交样本；展示时间、样本数量和更新日期，正式站应保留原始测试记录。
+                    套餐配置与价格来自最近一次采集结果，商家可能随时调整价格、库存或配置，购买前请以商家官网为准。当前页面保留已有测试时间、样本数量和结果字段作为静态记录；原始提交来源、持续监控与完整测试归档尚未接入。以上状态仅代表当前静态测试记录，不保证后续持续可用。
                   </p>
                 </div>
               </div>
@@ -207,13 +201,14 @@
                 "
               >
                 <div>
-                  <h3 style="margin: 0">价格历史波动曲线</h3>
+                  <h3 style="margin: 0">价格历史图表（静态记录）</h3>
                   <span class="small-muted"
-                    >当前价格：$4.49 / 月 · 历史最低：$4.49</span
+                    >图表记录价格：$4.49 / 月 · 图表最低记录：$4.49</span
                   >
                 </div>
                 <div class="chips" style="margin: 0">
                   <button class="chip">7天</button>
+                  <span class="small-muted">周期切换（功能示意）：当前静态 SVG 不会随周期按钮重新加载数据。</span>
                   <button class="chip">30天</button>
                   <button class="chip active">90天</button>
                   <button class="chip">1年</button>
@@ -261,7 +256,7 @@
                     margin-bottom: 14px;
                   "
                 >
-                  <h3 style="margin: 0">各项性能跑分指标 (基于最新测试脚本)</h3>
+                <h3 style="margin: 0">性能测试记录</h3>
                   <a class="btn btn-sm" href="benchmark.html"
                     >查看完整测试报告 →</a
                   >
@@ -323,14 +318,14 @@
             </div>
             <div class="tab-panel" data-tab-panel="plan">
               <div style="padding: 20px">
-                <h3 style="margin-top: 0">三网延迟与晚高峰稳定性监测</h3>
+                <h3 style="margin-top: 0">三网网络测试记录</h3>
                 <table class="data-table">
                   <thead>
                     <tr>
-                      <th>监控节点 (国内/全球)</th>
+                      <th>测试节点（国内 / 全球）</th>
                       <th>网络运营商 / 线路</th>
-                      <th>全天平均 Ping</th>
-                      <th>晚高峰丢包率 (20:00–23:00)</th>
+                      <th>记录中的平均 Ping</th>
+                      <th>记录中的丢包率（原记录时段 20:00–23:00）</th>
                       <th>线路研判</th>
                     </tr>
                   </thead>
@@ -425,19 +420,15 @@
                       margin-bottom: 6px;
                     "
                   >
-                    <strong>站长实测结论与验真说明</strong>
-                    <span class="badge green">已验证 · 3 分钟前更新</span>
+                    <strong>测试记录说明</strong>
+                    <span class="badge green">静态记录</span>
                   </div>
                   <p style="margin: 0; font-size: 13px; color: var(--muted)">
-                    该套餐由选主机官方探针节点持续监控超过 90 天，近 30
-                    天在线率达 99.82%。其洛杉矶 DC02 机房在
-                    $4.49/月（年付折算仅需 $1.52/月）的价格档位下，提供纯正独立
-                    IPv4
-                    与完整流媒体解锁能力，适合预算有限的个人开发者建站与轻量业务。
+                    当前静态页面保留套餐价格、测试日期、样本数量和已有测试结果作为参考记录。持续监控、长期在线率、独立 IPv4 验真和长期流媒体状态目前尚未接入，因此本页不据此作长期稳定性或持续可用性结论。
                   </p>
                 </div>
 
-                <!-- 真实用户评价列表 -->
+                <!-- 用户评价示例列表 -->
                 <div style="margin-bottom: 24px">
                   <div
                     style="
@@ -447,7 +438,7 @@
                       margin-bottom: 12px;
                     "
                   >
-                    <h3 style="margin: 0">用户真实评价 (2 条精选)</h3>
+                    <h3 style="margin: 0">用户评价示例（2 条）</h3>
                     <span class="small-muted">基于真实购买凭证审核</span>
                   </div>
 
@@ -470,7 +461,7 @@
                       <div>
                         <strong>DevOps_Jack</strong>
                         <span class="badge green" style="margin-left: 6px"
-                          >已验证买家</span
+                          >评价示例</span
                         >
                         <span class="small-muted" style="margin-left: 6px"
                           >在用时长：8 个月 · 个人建站</span
@@ -500,7 +491,7 @@
                         data-demo
                         style="padding: 2px 8px; font-size: 12px"
                       >
-                        👍 觉得有用 (14)
+                        👍 觉得有用（功能示意）
                       </button>
                     </div>
                   </div>
@@ -520,7 +511,7 @@
                       <div>
                         <strong>Alex_C</strong>
                         <span class="badge green" style="margin-left: 6px"
-                          >已验证买家</span
+                          >评价示例</span
                         >
                         <span class="small-muted" style="margin-left: 6px"
                           >在用时长：3 个月 · 学习测试</span
@@ -549,7 +540,7 @@
                         data-demo
                         style="padding: 2px 8px; font-size: 12px"
                       >
-                        👍 觉得有用 (9)
+                        👍 觉得有用（功能示意）
                       </button>
                     </div>
                   </div>
@@ -573,9 +564,9 @@
                     "
                   >
                     <div>
-                      <h3 style="margin: 0">发表你的真实评价</h3>
+                      <h3 style="margin: 0">评价提交（功能示意）</h3>
                       <p class="small-muted" style="margin: 4px 0 0">
-                        分享你的真实使用体验，帮助更多人避坑与选型。带测试样本或订单截图将获认证徽标。
+                        当前静态原型不会保存、审核或发布提交内容；以下表单仅展示未来评价功能结构。
                       </p>
                     </div>
                     <span
@@ -588,7 +579,7 @@
                     data-demo
                     onsubmit="
                       event.preventDefault();
-                      alert('原型演示：评价提交成功，等待人工审核后上线展示。');
+                      alert('原型演示：当前不会保存或提交评价。');
                     "
                   >
                     <div class="grid-3" style="gap: 12px; margin-bottom: 12px">
@@ -651,8 +642,8 @@
                       </div>
                     </div>
                     <div class="field" style="margin-bottom: 14px">
-                      <label
-                        >真实使用体验评价
+                        <label
+                        >使用体验评价（功能示意）
                         (网络稳定性、售后响应、踩坑提醒等)</label
                       >
                       <textarea
@@ -679,10 +670,10 @@
                     >
                       <div class="small-muted">
                         💡
-                        选主机坚守真实与透明，严禁水军或恶意刷评，提交后经反作弊机制初审即生效
+                        正式接入评价系统后再实现购买凭证审核与反作弊机制；当前表单不保存数据。
                       </div>
                       <button type="submit" class="btn btn-primary">
-                        提交真实评价
+                        提交（功能示意）
                       </button>
                     </div>
                   </form>
@@ -767,8 +758,8 @@
                 align-items: center;
               "
             >
-              <span class="sub">当前价格</span>
-              <span class="badge green">✓ 有货</span>
+              <span class="sub">价格快照</span>
+              <span class="badge green">库存未实时核验</span>
             </div>
             <div class="price">$18.29 <small>/年付</small></div>
             <div class="sub">约 $1.52 /月 · 原价 <del>$24.99</del></div>
@@ -785,12 +776,12 @@
               style="width: 100%; margin-top: 8px"
               href="#"
               data-demo
-              >立即购买</a
+              >购买入口（功能示意）</a
             ><a
               class="btn"
               style="width: 100%; margin-top: 8px"
               href="provider.html"
-              >访问商家页</a
+              >查看商家资料</a
             ><button class="btn" style="width: 100%; margin-top: 8px" data-compare-btn>
               加入对比
             </button><button class="btn" style="width: 100%; margin-top: 8px" data-demo>
