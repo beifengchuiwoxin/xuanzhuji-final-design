@@ -37,7 +37,7 @@
       <div class="container">
         <h1>查找 VPS</h1>
         <p>查看当前收录的 VPS 套餐，并通过筛选与排序界面比较价格、配置、线路和测试记录。</p>
-        <p class="small-muted">页面数据快照：2026-09-04 · 当前筛选与排序控件为静态原型，不连接真实数据查询。</p>
+        <p class="small-muted">页面数据快照：2026-09-04 · 以下条件仅展示筛选与排序界面。当前静态版本不会查询、过滤、排序或计算套餐结果，页面汇总数量始终使用已有快照记录。</p>
       </div>
     </section>
     <main class="container">
@@ -162,7 +162,7 @@
             </select>
           </div>
           <div class="field">
-            <label>排序</label>
+            <label>排序（功能示意）</label>
             <select class="select">
               <option>综合推荐评分 ↓</option>
               <option>月付价格从低到高 ↑</option>
@@ -183,8 +183,8 @@
           "
         >
           <div>
-            <strong>快速筛选（功能示意）</strong>
-            <div class="small-muted">当前按钮仅用于界面原型展示。</div>
+            <strong>快速筛选（界面示意）</strong>
+            <div class="small-muted">点击标签只会切换当前页面的选中样式，不会过滤套餐、改变 318 汇总值或重新排列下方记录。</div>
             <div class="chips">
               <button class="chip">香港</button
               ><button class="chip">日本</button
@@ -199,9 +199,9 @@
             </div>
           </div>
           <div style="display: flex; gap: 8px">
-            <button class="btn">↻ 重置（功能示意）</button
-            ><button class="btn btn-primary" data-apply-filter>
-              ⌕ 应用筛选（功能示意）
+            <button class="btn" data-demo>↻ 重置（未接入）</button
+            ><button class="btn btn-primary" data-demo>
+              ⌕ 应用筛选（未接入）
             </button>
           </div>
         </div>
@@ -214,12 +214,13 @@
           <div class="list-head">
             <div>
               <strong
-                >当前收录套餐记录：
-                <span data-result-count style="color: var(--blue)">318</span>
+                >当前快照汇总套餐记录：
+                <span style="color: var(--blue)">318</span>
                 </strong
               >
               <div class="small-muted">下表展示当前静态页面中的套餐记录；价格与测试状态以各行标注时间为准。</div>
-              <div class="small-muted">筛选控件不会改变真实数据集，318 不是当前筛选条件计算出的动态结果。</div>
+              <div class="small-muted">318 为当前静态快照中的汇总记录数，不会随本页筛选、排序或快速筛选控件变化。</div>
+              <div class="small-muted">下方表格仅展示当前 HTML 中已有的套餐示例记录，不代表页面已经渲染完整 318 条套餐。</div>
             </div>
             <div style="display: flex; gap: 8px">
               <button class="btn btn-sm" data-favorite>♡ 收藏（功能示意）</button
