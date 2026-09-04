@@ -49,15 +49,11 @@
               "
             >
               RackNerd 洛杉矶 DC02 测速报告
-              <span class="badge green">已验证</span>
-              <span
-                class="badge"
-                style="background: #e0f2fe; color: #0369a1; font-size: 13px"
-                >🏆 跑分超越 88% 美西同价位机型</span
-              >
+              <span class="badge green">静态测试记录</span>
             </h1>
             <p>
-              测试时间：2026-09-03 10:24 · 脚本版本 v2.3.1 · 测试时长 6 分钟
+              测试时间：2026-09-03 10:24 · 脚本版本 v2.3.1 · 测试时长 6 分钟<br />
+              报告编号：#20260903-1024 · 本页记录一次测试结果，不代表该套餐长期性能。
             </p>
           </div>
           <a class="btn" href="benchmarks.html">返回测速大厅</a>
@@ -96,6 +92,7 @@
           <div>
             <div class="card aside-card">
               <h3>网络延迟（平均延迟）</h3>
+              <p class="small-muted">网络说明：以下延迟、丢包与吞吐数据均来自 2026-09-03 10:24 这次测试。实际网络表现会随测试节点、运营商、路由和时间变化。</p>
               <div class="mini-cards">
                 <div>
                   <span class="sub">中国大陆</span
@@ -232,28 +229,25 @@
               </table>
             </div>
             <div class="card aside-card section">
-              <h3>原始报告</h3>
+              <h3>原始报告（功能示意）</h3>
               <div style="display: flex; gap: 8px; flex-wrap: wrap">
-                <button class="btn" data-demo>查看 JSON</button
-                ><button class="btn" data-demo>查看 TXT</button
+                <button class="btn" data-demo>JSON 尚未接入</button
+                ><button class="btn" data-demo>TXT 尚未接入</button
                 ><button class="btn" data-copy="#report-url">复制链接</button>
               </div>
               <code
                 id="report-url"
                 class="small-muted"
                 style="display: block; margin-top: 10px"
-                >https://xuanzhuji.com/benchmarks/20260903-1024</code
+                >报告编号：20260903-1024</code
               >
               <div style="margin-top: 14px">
                 <div class="sub" style="margin-bottom: 6px">
-                  嵌入徽章（站长可引用到博客 / 签名档）
+                  嵌入徽章（功能示意）
                 </div>
                 <div class="command" style="font-size: 11px">
                   <code id="embed-badge"
-                    >&lt;a
-                    href=&quot;https://xuanzhuji.com/benchmarks/20260903-1024&quot;&gt;&lt;img
-                    src=&quot;https://xuanzhuji.com/badges/20260903-1024.svg&quot;
-                    alt=&quot;选主机实测 9.3 分&quot; /&gt;&lt;/a&gt;</code
+                    >正式报告与徽章地址将在报告存储功能接入后提供。</code
                   >
                   <button class="btn btn-sm" data-copy="#embed-badge">
                     复制
@@ -269,38 +263,40 @@
           </div>
           <aside class="aside-stack">
             <div class="card aside-card">
-              <h3>流媒体解锁</h3>
+              <h3>流媒体测试</h3>
+              <p class="small-muted">测试时间：2026-09-03 10:24 · 平台策略和 IP 状态可能变化，本次结果不代表长期可用。</p>
               <div class="idea">
                 <div class="idea-icon">N</div>
                 <div>
                   <strong>Netflix</strong>
-                  <p class="metric-good">解锁 ›</p>
+                  <p class="metric-good">本次测试：可用</p>
                 </div>
               </div>
               <div class="idea">
                 <div class="idea-icon">▶</div>
                 <div>
                   <strong>YouTube</strong>
-                  <p class="metric-good">解锁 ›</p>
+                  <p class="metric-good">本次测试：可用</p>
                 </div>
               </div>
               <div class="idea">
                 <div class="idea-icon">D+</div>
                 <div>
                   <strong>Disney+</strong>
-                  <p class="metric-good">解锁 ›</p>
+                  <p class="metric-good">本次测试：可用</p>
                 </div>
               </div>
               <div class="idea">
                 <div class="idea-icon">B</div>
                 <div>
                   <strong>Bilibili</strong>
-                  <p class="metric-good">解锁 ›</p>
+                  <p class="metric-good">本次测试：可用</p>
                 </div>
               </div>
             </div>
             <div class="card aside-card">
               <h3>IP 信息</h3>
+              <p class="small-muted">以下为本次测试记录中的 IP 信息，不代表该套餐后续分配的所有 IP。</p>
               <div class="kv">
                 <div class="kv-item">
                   <span>IP 地址</span><strong>104.238.130.123</strong>
@@ -317,11 +313,11 @@
               </div>
             </div>
             <div class="card aside-card">
-              <h3>原始测试数据 (可追溯)</h3>
-              <p class="small-muted">基于自动化脚本产生，支持第三方核验。</p>
+              <h3>原始测试数据</h3>
+              <p class="small-muted">当前静态原型仅展示测试结果摘要，原始 JSON、终端输出与校验信息尚未接入。</p>
               <div style="display: flex; gap: 8px; margin-top: 12px">
-                <button class="btn btn-sm" data-demo>⇩ 原始 JSON</button>
-                <button class="btn btn-sm" data-demo>⇩ 终端 TXT</button>
+                <button class="btn btn-sm" data-demo>原始 JSON（未接入）</button>
+                <button class="btn btn-sm" data-demo>终端 TXT（未接入）</button>
               </div>
             </div>
             <div class="card aside-card">
@@ -346,8 +342,8 @@
             <div class="notice">
               <h4>数据可信度与复核规范</h4>
               <p>
-                本条实测数据由官方监控探针自动上报，并附带环境系统版本、脚本
-                SHA256 校验和测试节点元数据。正式上线后将保留原始输出以备复核。
+                当前页面保留测试时间、报告编号、脚本版本和已有测试结果作为追溯信息。
+                <br />原始终端输出、JSON、脚本 SHA256 与测试环境元数据目前尚未接入，因此本静态原型不将该记录标记为已完成第三方复核。
               </p>
             </div>
           </aside>
