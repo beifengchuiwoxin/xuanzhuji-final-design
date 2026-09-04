@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta name="description" content="VPS 优惠库：追踪最新促销、历史低价、降幅排行与热门套餐库存状态快照。" />
+    <meta name="description" content="VPS 优惠与价格历史快照：展示当前收录的促销记录、历史价格、降幅与库存状态示例。" />
     <title>优惠库与价格历史 - 选主机</title>
     <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="assets/css/app.css" />
@@ -36,12 +36,14 @@
     <section class="page-title">
       <div class="container">
         <h1>优惠库与价格历史</h1>
-        <p>跟踪 VPS 套餐的当前价格、历史低价与最近促销变化。</p>
+        <p>展示 VPS 套餐的价格快照、历史记录与当前页面已有促销信息。</p>
         <p>页面数据快照：2026-09-03 · 价格、促销状态与库存状态均为静态原型记录，不代表当前实时状态。</p>
       </div>
     </section>
     <main class="container">
       <section class="card toolbar">
+        <h2>优惠筛选与排序（功能示意）</h2>
+        <p class="small-muted">以下控件仅展示未来筛选与排序结构，当前静态页面不会根据选择项重新查询、排序或计算优惠结果。</p>
         <div class="toolbar-grid">
           <div class="field">
             <label>商家</label>
@@ -82,7 +84,7 @@
             <select class="select">
               <option>全部周期</option>
               <option>月付促销</option>
-              <option>年付特惠 (高性价比)</option>
+              <option>年付优惠</option>
               <option>两年付 / 三年付</option>
             </select>
           </div>
@@ -90,16 +92,16 @@
             <label>标签</label>
             <select class="select">
               <option>全部标签</option>
-              <option>历史最低价</option>
-              <option>大降幅 (&gt;25%)</option>
-              <option>热门补货款</option>
-              <option>CN2 GIA 专享</option>
+              <option>页面记录为历史最低</option>
+              <option>记录降幅 &gt;25%</option>
+              <option>页面记录有补货状态</option>
+              <option>CN2 GIA 标签</option>
             </select>
           </div>
           <div class="field">
             <label>排序</label>
             <select class="select">
-              <option>最新入库 ↓</option>
+              <option>记录日期较新 ↓</option>
               <option>降幅从大到小 ↓</option>
               <option>月折算从低到高 ↑</option>
               <option>接近历史低价 ↓</option>
@@ -118,7 +120,7 @@
         <div class="card stat">
           <div class="stat-icon">NEW</div>
           <div>
-            <div class="stat-label">当日新增</div>
+            <div class="stat-label">快照新增记录</div>
             <strong>3</strong><span class="delta">2026-09-03 新增</span>
           </div>
         </div>
@@ -133,7 +135,7 @@
           <div class="stat-icon">◉</div>
           <div>
             <div class="stat-label">历史价格记录</div>
-            <strong>780</strong><span class="delta">累计记录</span>
+            <strong>780</strong><span class="delta">当前页面记录</span>
           </div>
         </div>
       </div>
@@ -168,7 +170,7 @@
                   <td>剩余 15 天（截至 2026-09-03）</td>
                   <td>
                     <a class="btn btn-primary btn-sm" href="plan.html"
-                      >直达免码 ›</a
+                      >查看套餐详情 ›</a
                     >
                   </td>
                 </tr>
@@ -182,20 +184,21 @@
                   <td>剩余 8 天（截至 2026-09-03）</td>
                   <td>
                     <a class="btn btn-primary btn-sm" href="plan.html"
-                      >直达 ›</a
+                      >查看套餐详情 ›</a
                     >
                     <button
                       class="btn btn-sm"
                       data-copy="#deal-code-dmit"
                       style="margin-top: 4px"
                     >
-                      复制优惠码
+                      复制示例优惠码
                     </button>
                     <input
                       id="deal-code-dmit"
                       value="DMIT-HKG-2026"
                       style="display: none"
                     />
+                    <div class="small-muted">优惠码为当前静态快照中的记录，使用前请在商家页面核对是否仍有效。</div>
                   </td>
                 </tr>
                 <tr>
@@ -208,7 +211,7 @@
                   <td>记录为长期有效（截至 2026-09-03）</td>
                   <td>
                     <a class="btn btn-primary btn-sm" href="plan.html"
-                      >直达免码 ›</a
+                      >查看套餐详情 ›</a
                     >
                   </td>
                 </tr>
@@ -222,7 +225,7 @@
                   <td>剩余 12 天（截至 2026-09-03）</td>
                   <td>
                     <a class="btn btn-primary btn-sm" href="plan.html"
-                      >直达免码 ›</a
+                      >查看套餐详情 ›</a
                     >
                   </td>
                 </tr>
@@ -239,6 +242,7 @@
                 ><button class="chip">全部</button>
               </div>
             </div>
+            <p class="small-muted">周期切换（功能示意）：当前静态 SVG 不会因周期选择重新加载价格数据。</p>
             <div class="notice" style="margin: 0 16px 16px">
               <h4>历史价格说明</h4>
               <p>历史最高、历史最低与累计降幅仅基于本站当前已收录的价格记录，不代表商家全部历史时期的价格。</p>
@@ -276,7 +280,7 @@
             </div>
             <div class="mini-cards" style="padding: 0 16px 16px">
               <div>
-                <span class="sub">当前价格</span
+                <span class="sub">快照价格</span
                 ><strong style="display: block; font-size: 18px"
                   >$4.49/月</strong
                 >
@@ -313,9 +317,10 @@
                 margin-bottom: 12px;
               "
             >
-              <h3 style="margin: 0">热门库存状态快照</h3>
+              <h3 style="margin: 0">库存状态快照</h3>
               <span class="badge green">静态记录</span>
             </div>
+            <p class="small-muted">以上库存状态仅代表 2026-09-03 页面记录，不表示当前仍有库存。</p>
             <div class="idea" style="margin-bottom: 8px">
               <div class="idea-icon">✓</div>
               <div>
@@ -452,17 +457,17 @@
               data-demo
               onsubmit="
                 event.preventDefault();
-                alert('原型演示：提醒订阅成功！');
+                alert('原型演示：当前不会保存订阅信息或发送提醒。');
               "
               style="display: flex; gap: 6px"
             >
               <input
                 class="input"
-                placeholder="输入接收邮箱 / Telegram"
+                placeholder="邮箱 / Telegram（功能示意）"
                 style="font-size: 12px; padding: 6px 10px"
                 required
               />
-              <button class="btn btn-primary btn-sm" type="submit">订阅</button>
+              <button class="btn btn-primary btn-sm" type="submit">订阅（功能示意）</button>
             </form>
           </div>
         </aside>
