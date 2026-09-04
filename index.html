@@ -48,7 +48,7 @@
           <p>基于当前收录的价格、配置、线路与已有测试记录，帮助你比较 VPS。</p>
           <form action="vps.html" method="GET" class="search-panel card">
             <h2>快速筛选入口（功能示意）</h2>
-            <p class="small-muted">当前静态原型会跳转到 VPS 列表页，但不会根据这些参数执行真实筛选。</p>
+            <p class="small-muted">当前静态原型的筛选表单会跳转到 VPS 列表页，但不会根据参数执行真实筛选；目前仅建立了洛杉矶独立地区数据页，香港与日本地区页尚未建立。</p>
             <div class="filter-grid">
               <div class="field">
                 <label>地区</label>
@@ -91,14 +91,15 @@
             </div>
             <div class="chips">
               <a class="chip" href="vps.html?budget=5">$5以下</a
-              ><a class="chip" href="region.html?region=hk">香港</a
-              ><a class="chip" href="region.html?region=jp">日本</a
+              ><button class="chip" type="button" data-demo>香港（地区页未建立）</button
+              ><button class="chip" type="button" data-demo>日本（地区页未建立）</button
               ><a class="chip" href="vps.html?line=cn2">CN2</a
               ><a class="chip" href="vps.html?traffic=high">大流量</a
               ><a class="chip" href="vps.html?ip=native">原生IP</a
               ><a class="chip" href="vps.html?purpose=ai">ChatGPT</a
               ><a class="chip" href="vps.html?purpose=media">流媒体</a>
             </div>
+            <p class="small-muted">地区页状态：当前仅有洛杉矶 region.html 静态数据页；不要将香港或日本参数解释为该页面已经支持地区切换。</p>
           </form>
         </div>
       </section>
