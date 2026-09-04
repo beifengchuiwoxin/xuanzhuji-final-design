@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta
       name="description"
-      content="选主机 Looking Glass：展示 MTR、Ping、TCP Ping 与路由追踪测试记录及网络路径分析。"
+      content="选主机 Looking Glass 静态快照：展示已有 MTR 路由记录，并提供 Ping、TCP Ping、Traceroute 与下载测试界面示意。"
     />
     <title>Looking Glass - 选主机</title>
     <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml" />
@@ -55,6 +55,8 @@
             ><button class="tab">Traceroute</button
             ><button class="tab">下载测试</button>
           </div>
+          <p class="small-muted" style="margin-top: 10px">测试类型切换（功能示意）</p>
+          <p class="small-muted">当前页面仅展示下方这一份 MTR 静态记录；Ping、TCP Ping、Traceroute 与下载测试标签不代表对应测试结果已接入。</p>
           <h3 style="margin-top: 16px">测试控制（功能示意）</h3>
           <p class="small-muted">节点、目标地址和测试类型仅用于展示未来功能界面，当前静态版本不会发送 Ping、MTR 或 Traceroute 请求。</p>
           <div
@@ -84,7 +86,7 @@
           <div class="card table-card">
             <div class="list-head">
               <div>
-                <strong>MTR 结果快照</strong>
+                <strong>当前展示：MTR 结果快照</strong>
                 <div class="small-muted">
                   香港 CN2 GIA → 8.8.8.8 · 2026-09-03 17:02:18 · 100 packets
                 </div>
@@ -215,14 +217,14 @@
                       href="#"
                       data-demo
                       style="padding: 2px 8px; font-size: 11px"
-                      >浏览器测速（未接入）</a
+                      >浏览器测速入口（功能示意）</a
                     >
                     <button
                       class="btn btn-sm"
                       data-copy="#curl-cmd-100"
                       style="padding: 2px 8px; font-size: 11px"
                     >
-                      cURL 命令（未接入）
+                      复制 cURL 占位说明
                     </button>
                     <input
                       id="curl-cmd-100"
@@ -230,6 +232,7 @@
                       style="display: none"
                     />
                     <p class="small-muted">当前静态原型不提供测速文件或真实下载测速服务。</p>
+                    <p class="small-muted">当前复制内容不是可执行 cURL 测速命令。</p>
                   </div>
                 </div>
               </div>
@@ -249,24 +252,25 @@
           <div class="section-head">
             <div>
               <h2>其他网络工具</h2>
-              <p>查看相关网络工具与已收录测试页面</p>
+              <p>以下卡片仅用于进入相关静态原型或已收录测试页面</p>
             </div>
           </div>
           <div class="grid-4">
             <a class="card mini-card" href="toolbox.html"
               ><strong>⌁ Ping</strong>
-              <div class="sub">ICMP 延迟与丢包</div></a
+              <div class="sub">查看 Ping 功能原型</div></a
             ><a class="card mini-card" href="toolbox.html"
               ><strong>⌘ TCP Ping</strong>
-              <div class="sub">测试 80 / 443 等端口</div></a
+              <div class="sub">查看 TCP Ping 功能原型</div></a
             ><a class="card mini-card" href="toolbox.html"
               ><strong>↗ Traceroute</strong>
-              <div class="sub">查看完整路由路径</div></a
+              <div class="sub">查看 Traceroute 功能原型</div></a
             ><a class="card mini-card" href="benchmarks.html"
               ><strong>◴ VPS 实测</strong>
-              <div class="sub">查看真实性能与解锁结果</div></a
+              <div class="sub">查看已收录测试记录</div></a
             >
           </div>
+          <p class="small-muted" style="margin-top: 10px">入口说明：工具箱中的相关功能当前可能仅为静态原型；是否已有测试数据应以目标页面的状态说明为准。</p>
         </section>
       </div>
     </main>
@@ -282,8 +286,11 @@
         </div>
         <div>
           <div class="footer-links">
-            <a href="#">关于</a><a href="#">数据来源</a><a href="#">评分方法</a
-            ><a href="#">免责声明</a><a href="#">隐私政策</a>
+            <a href="#" data-demo>关于</a>
+            <a href="#" data-demo>数据来源</a>
+            <a href="#" data-demo>评分方法</a>
+            <a href="#" data-demo>免责声明</a>
+            <a href="#" data-demo>隐私政策</a>
           </div>
           <div class="small-muted" style="margin-top: 12px; text-align: right">
             © 2026 xuanzhuji.com
