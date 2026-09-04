@@ -42,27 +42,29 @@
     </section>
     <main class="container">
       <section class="card toolbar">
-        <h2>指南搜索（功能示意）</h2>
+        <h2>精选指南筛选</h2>
         <div style="display: flex; gap: 12px">
           <input
             class="input"
-            placeholder="搜索指南，例如：CN2 GIA、香港 VPS、建站"
-          /><button class="btn btn-primary" data-demo>搜索（功能示意）</button>
+            data-guide-search
+            placeholder="筛选当前精选指南，例如：CN2 GIA、香港 VPS、建站"
+          /><button class="btn btn-primary" type="button" data-guide-search-btn>筛选精选指南</button>
         </div>
         <div class="chips">
-          <button class="chip active">全部</button
-          ><button class="chip">入门</button><button class="chip">线路</button
-          ><button class="chip">建站</button><button class="chip">流媒体</button
-          ><button class="chip">优惠</button
-          ><button class="chip">测试方法</button>
+          <button class="chip active" data-guide-filter="all">全部</button
+          ><button class="chip" data-guide-filter="beginner">入门</button><button class="chip" data-guide-filter="line">线路</button
+          ><button class="chip" data-guide-filter="site">建站</button><button class="chip" data-guide-filter="streaming">流媒体</button
+          ><button class="chip" data-guide-filter="deals">优惠</button
+          ><button class="chip" data-guide-filter="testing">测试方法</button>
         </div>
-        <p class="small-muted">分类按钮仅用于展示未来筛选界面，当前静态版本不新增真实筛选逻辑。</p>
+        <p class="small-muted">搜索和分类会在浏览器中筛选下方当前已加载的 3 条精选指南；不会请求服务器，也不会搜索“更多指南”或站点其他内容。</p>
+        <p class="small-muted">若某分类在当前 3 条精选指南中没有对应内容，列表会暂时显示为空。</p>
       </section>
       <section class="section">
         <div class="section-head">
           <div>
             <h2>精选指南</h2>
-            <p>当前静态目录中的主要文章入口</p>
+            <p>当前静态目录中的主要文章入口 · 当前可筛选记录：3 条</p>
           </div>
         </div>
         <div class="guide-cards">
@@ -74,7 +76,7 @@
             <h3>CN2 GIA 是什么？相比普通线路有什么优势？</h3>
             <p>理解 CN2 GIA 的核心特点、适用场景和判断方法。</p>
             <span class="sub">8 分钟阅读 · 2026-09-01</span></a
-          ><a class="card guide-card" href="guide.html"
+          ><a class="card guide-card" href="guide.html" data-guide-card="beginner site"
             ><span class="kicker"
               ><span class="badge-level beginner">小白入门</span> ·
               新手入门</span
@@ -98,10 +100,10 @@
           <div class="section-head">
             <div>
               <h2>更多指南</h2>
-              <p>当前目录中的其他主题</p>
+              <p>当前目录中的其他主题 · 当前可筛选记录：3 条</p>
             </div>
           </div>
-          <p class="small-muted">以上条目为静态内容目录示例，当前原型未提供独立文章页面映射。</p>
+          <p class="small-muted">以下“更多指南”为静态目录示例，不参与上方搜索和分类筛选；当前原型也未提供独立文章页面映射。</p>
           <div class="card aside-card">
             <div class="idea">
               <div class="idea-icon">01</div>
@@ -168,7 +170,7 @@
       </section>
       <section class="section card aside-card">
         <h2>内容说明</h2>
-        <p>当前指南页为静态内容原型。文章标题、阅读时间和已有发布日期均来自当前页面记录；未标注日期的内容不补写推测日期。多个主题暂时共用 guide.html 作为文章详情示例。</p>
+        <p>当前指南页为静态内容目录。上方搜索与分类仅在浏览器中筛选已加载的 3 条精选指南，不会请求新的文章数据。文章标题、阅读时间和已有发布日期均来自当前页面记录；未标注日期的内容不补写推测日期。多个主题暂时共用 guide.html 作为文章详情示例。</p>
       </section>
     </main>
     <footer class="site-footer">
