@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta name="description" content="洛杉矶 VPS 数据页：86 款套餐价格分布、三网延迟表现、网络特征综述与热门配置推荐。" />
+    <meta name="description" content="洛杉矶 VPS 数据快照：套餐价格分布、三网延迟记录与配置示例。" />
     <title>洛杉矶 VPS 数据 - 选主机</title>
     <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="assets/css/app.css" />
@@ -37,7 +37,8 @@
       <section class="page-title">
         <div class="container">
           <h1>🇺🇸 洛杉矶 VPS</h1>
-          <p>共收录 86 款套餐，来自 12 家商家；以数据库统计与真实实测为主。</p>
+          <p>当前数据快照收录 86 款套餐，来自 12 家商家，并包含 32 个已有实测套餐记录。</p>
+          <p>数据快照：2026-09-03 · 页面中的价格、套餐数量与网络结果均以当前静态记录为准。</p>
         </div>
       </section>
       <div class="container">
@@ -45,21 +46,21 @@
           <div class="card stat">
             <div class="stat-icon">$</div>
             <div>
-              <div class="stat-label">最低价格</div>
+              <div class="stat-label">快照最低价格</div>
               <strong>$2.49/月</strong>
             </div>
           </div>
           <div class="card stat">
             <div class="stat-icon">~</div>
             <div>
-              <div class="stat-label">中位价格</div>
+              <div class="stat-label">快照中位价格</div>
               <strong>$5.90/月</strong>
             </div>
           </div>
           <div class="card stat">
             <div class="stat-icon">↑</div>
             <div>
-              <div class="stat-label">最高价格</div>
+              <div class="stat-label">快照最高价格</div>
               <strong>$22.00/月</strong>
             </div>
           </div>
@@ -79,20 +80,19 @@
           </div>
         </div>
         <div class="notice section" style="margin-top: 18px">
-          <h4>💡 洛杉矶计算节点网络特征综述</h4>
+          <h4>💡 洛杉矶网络数据摘要</h4>
           <p>
-            洛杉矶是美西面向中国大陆最成熟的骨干网络出口，带宽冗余大、单位流量成本低。中国联通直连访问延迟全天稳定在
-            145ms 左右；中国电信普通 163
-            骨干网晚高峰偶有拥堵，对于建站或业务高稳定需求，建议优先考虑 CN2 GIA
-            或 AS9929 优化线路。
+            当前页面记录的网络摘要为：电信 152ms、联通 148ms、移动 155ms，平均丢包 0.3%。
+            这些数值来自当前收录的静态测试记录，仅用于观察本次数据快照，不代表洛杉矶所有商家、所有线路或长期网络表现。
           </p>
+          <p>统计范围：当前收录的 86 款洛杉矶套餐 · 数据日期：2026-09-03</p>
         </div>
         <div class="tabs" data-tabs="region">
           <button class="tab active">套餐列表</button
           ><button class="tab">价格分布</button
           ><button class="tab">网络表现</button
-          ><button class="tab">热门配置</button
-          ><button class="tab">最近降价</button>
+          ><button class="tab">配置示例</button
+          ><button class="tab">价格变动</button>
         </div>
         <div class="tab-panel active" data-tab-panel="region">
           <section
@@ -104,7 +104,8 @@
             "
           >
             <aside class="card aside-card">
-              <h3>筛选条件</h3>
+              <h3>筛选条件（功能示意）</h3>
+              <p class="small-muted">当前静态页面保留筛选界面，不新增真实数据过滤逻辑。</p>
               <div class="field">
                 <label>预算</label
                 ><select class="select">
@@ -131,8 +132,8 @@
             </aside>
             <div class="card table-card">
               <div class="list-head">
-                <strong>洛杉矶 VPS 套餐</strong
-                ><span class="small-muted">数据更新：2026-09-03</span>
+                <strong>洛杉矶 VPS 套餐示例</strong
+                ><span class="small-muted">当前静态页面展示 4 条套餐记录 · 聚合统计范围为 86 款 · 数据更新：2026-09-03</span>
               </div>
               <table class="data-table">
                 <thead>
@@ -141,7 +142,7 @@
                     <th>基础配置</th>
                     <th>月付价格</th>
                     <th>延迟(电信)</th>
-                    <th>综合评分</th>
+                    <th>示例评分</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -177,6 +178,7 @@
                   </tr>
                 </tbody>
               </table>
+              <p class="small-muted">评分字段为当前静态原型中的展示数据；本页未提供完整评分算法，因此不作为商家或套餐的客观排名依据。</p>
             </div>
           </section>
         </div>
@@ -216,10 +218,12 @@
                 <text x="460" y="190" text-anchor="middle" font-size="12" fill="#64708a">$20+/月</text>
               </g>
             </svg>
+            <p class="small-muted">四个价格区间合计 86 款，反映当前数据快照中的价格分布。</p>
           </div>
         </div>
         <div class="tab-panel" data-tab-panel="region">
           <div class="card section" style="padding: 20px">
+            <h3 style="margin-top: 0">网络表现快照</h3>
             <div class="grid-4">
               <div class="network-card">电信<br /><strong>152ms</strong></div>
               <div class="network-card">联通<br /><strong>148ms</strong></div>
@@ -228,11 +232,13 @@
                 平均丢包<br /><strong>0.3%</strong>
               </div>
             </div>
+            <p class="small-muted">以上为当前收录测试结果摘要，不代表所有运营商、时间段或洛杉矶机房的长期表现。</p>
           </div>
         </div>
         <div class="tab-panel" data-tab-panel="region">
           <div class="card section" style="padding: 20px">
-            <h3 style="margin-top: 0">洛杉矶计算节点三大主流配置推荐</h3>
+            <h3 style="margin-top: 0">洛杉矶 VPS 配置示例</h3>
+            <p class="small-muted">以下配置与价格仅为当前静态页面中的示例，不代表市场主流程度或实时最低价格。</p>
             <div class="grid-3" style="margin-top: 16px">
               <div
                 class="card"
@@ -284,7 +290,7 @@
                   class="badge"
                   style="display: inline-block; margin-bottom: 8px"
                 >
-                  标准建站型 (热门)
+                  标准建站型
                 </div>
                 <div style="font-size: 18px; font-weight: 700">
                   2 vCPU · 2 GB · 40GB
@@ -353,7 +359,8 @@
         </div>
         <div class="tab-panel" data-tab-panel="region">
           <div class="card table-card section" style="padding: 20px">
-            <h3 style="margin-top: 0">洛杉矶机房最近 7 天价格变动追踪</h3>
+            <h3 style="margin-top: 0">价格变动记录快照</h3>
+            <p class="small-muted">以下内容为页面已有价格变动记录，不表示正在进行实时价格监控。</p>
             <table class="data-table" style="margin-top: 12px">
               <thead>
                 <tr>
@@ -377,7 +384,7 @@
                       >-27%</span
                     >
                   </td>
-                  <td>12 小时前</td>
+                  <td>快照中的相对时间记录</td>
                   <td>
                     <a class="btn btn-primary btn-sm" href="plan.html"
                       >查看优惠</a
@@ -395,7 +402,7 @@
                       >-23%</span
                     >
                   </td>
-                  <td>2 天前</td>
+                  <td>快照中的相对时间记录</td>
                   <td>
                     <a class="btn btn-primary btn-sm" href="plan.html"
                       >查看优惠</a
