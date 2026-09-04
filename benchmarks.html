@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta name="description" content="VPS 测速大厅：站长与用户提交的真实跑分、网络吞吐与流媒体解锁报告，一键测速自动上传。" />
+    <meta name="description" content="VPS 测速大厅：汇总 CPU、磁盘、网络吞吐、延迟与流媒体测试记录，提供可追溯的测速报告索引。" />
     <title>测速大厅 - 选主机</title>
     <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="assets/css/app.css" />
@@ -36,7 +36,8 @@
     <section class="page-title">
       <div class="container">
         <h1>测速大厅</h1>
-        <p>汇总站长与用户提交的真实 VPS 测试结果。</p>
+        <p>汇总站内已有 VPS 测试记录，按商家、地区和测试时间整理。</p>
+        <p>数据快照：2026-09-03 · 页面展示的是静态测试记录，不代表当前实时网络状态。</p>
       </div>
     </section>
     <main class="container">
@@ -44,29 +45,29 @@
         <div class="card stat">
           <div class="stat-icon">◴</div>
           <div>
-            <div class="stat-label">最新测速</div>
-            <strong>126</strong><span class="delta">较昨日 +12</span>
+            <div class="stat-label">收录测试</div>
+            <strong>126</strong><span class="delta">截至 2026-09-03</span>
           </div>
         </div>
         <div class="card stat">
           <div class="stat-icon">＋</div>
           <div>
-            <div class="stat-label">今日新增</div>
-            <strong>8</strong><span class="delta">较昨日 +3</span>
+            <div class="stat-label">当日新增</div>
+            <strong>8</strong><span class="delta">2026-09-03</span>
           </div>
         </div>
         <div class="card stat">
           <div class="stat-icon">◉</div>
           <div>
-            <div class="stat-label">已覆盖地区</div>
-            <strong>18</strong><span class="delta">全球节点</span>
+            <div class="stat-label">覆盖地区</div>
+            <strong>18</strong><span class="delta">当前快照记录</span>
           </div>
         </div>
         <div class="card stat">
           <div class="stat-icon">⌂</div>
           <div>
-            <div class="stat-label">活跃商家</div>
-            <strong>26</strong><span class="delta">较昨日 +2</span>
+            <div class="stat-label">收录商家</div>
+            <strong>26</strong><span class="delta">当前快照记录</span>
           </div>
         </div>
       </div>
@@ -81,13 +82,13 @@
           "
         >
           <div style="flex: 1">
-            <h3>一键测速（自动上传结果）</h3>
+            <h3>测速脚本接入示意</h3>
             <p class="small-muted">
-              在你的 VPS 中运行命令即可完成基础测试并生成可分享报告。
+              当前页面为静态原型，自动测速、结果上传和报告提交功能尚未接入。正式接入后，这里将提供测速命令、脚本校验信息和源码地址。
             </p>
             <div class="command">
               <code id="bench-command"
-                >curl -sL https://www.xuanzhuji.com/bench.sh | bash</code
+                >测速脚本尚未开放</code
               >
               <button class="btn btn-sm" data-copy="#bench-command">
                 复制
@@ -103,13 +104,13 @@
                 flex-wrap: wrap;
               "
             >
-              <span>🛡️ 开源安全审计通过 (SHA256: 7a8f9b2c...)</span>
+              <span>🛡️ 脚本版本、SHA256 校验与源码地址将在正式接入后展示。</span>
               <a href="#" data-demo style="color: var(--blue)"
                 >在 GitHub 上查看测速脚本源码 ↗</a
               >
             </div>
           </div>
-          <button class="btn btn-primary" data-demo>提交测试</button>
+          <button class="btn btn-primary" data-demo>提交测试（功能示意）</button>
         </div>
       </section>
       <section class="card toolbar section">
@@ -181,8 +182,8 @@
       </section>
       <section class="card table-card">
         <div class="list-head">
-          <strong>测速报告（近 200 条）</strong
-          ><span class="small-muted">仅展示通过基础完整性检查的数据</span>
+          <strong>测速报告快照</strong
+          ><span class="small-muted">当前页面展示 6 条已有测试记录 · 快照日期：2026-09-03</span>
         </div>
         <table class="data-table">
           <thead>
@@ -265,8 +266,8 @@
         <div>
           <div class="section-head">
             <div>
-              <h2>热门测试地区</h2>
-              <p>基于近期测试量</p>
+              <h2>测试地区快照</h2>
+              <p>基于当前页面已收录记录 · 快照日期：2026-09-03</p>
             </div>
           </div>
           <div class="grid-2">
@@ -355,8 +356,8 @@
         <div>
           <div class="section-head">
             <div>
-              <h2>最新报告</h2>
-              <p>按提交时间排序</p>
+              <h2>报告摘要</h2>
+              <p>展示当前快照中的已有记录</p>
             </div>
           </div>
           <div class="card aside-card">
