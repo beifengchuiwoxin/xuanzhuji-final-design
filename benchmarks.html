@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta name="description" content="VPS 测速大厅：汇总 CPU、磁盘、网络吞吐、延迟与流媒体测试记录，提供可追溯的测速报告索引。" />
+    <meta name="description" content="VPS 测速报告索引快照：展示当前收录的 CPU、磁盘、网络吞吐、延迟与流媒体测试记录。" />
     <title>测速大厅 - 选主机</title>
     <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="assets/css/app.css" />
@@ -45,28 +45,28 @@
         <div class="card stat">
           <div class="stat-icon">◴</div>
           <div>
-            <div class="stat-label">收录测试</div>
+            <div class="stat-label">测试记录</div>
             <strong>126</strong><span class="delta">截至 2026-09-03</span>
           </div>
         </div>
         <div class="card stat">
           <div class="stat-icon">＋</div>
           <div>
-            <div class="stat-label">当日新增</div>
+            <div class="stat-label">快照新增记录</div>
             <strong>8</strong><span class="delta">2026-09-03</span>
           </div>
         </div>
         <div class="card stat">
           <div class="stat-icon">◉</div>
           <div>
-            <div class="stat-label">覆盖地区</div>
+            <div class="stat-label">地区记录</div>
             <strong>18</strong><span class="delta">当前快照记录</span>
           </div>
         </div>
         <div class="card stat">
           <div class="stat-icon">⌂</div>
           <div>
-            <div class="stat-label">收录商家</div>
+            <div class="stat-label">商家记录</div>
             <strong>26</strong><span class="delta">当前快照记录</span>
           </div>
         </div>
@@ -91,7 +91,7 @@
                 >测速脚本尚未开放</code
               >
               <button class="btn btn-sm" data-copy="#bench-command">
-                复制
+                复制占位文本
               </button>
             </div>
             <div
@@ -106,14 +106,17 @@
             >
               <span>🛡️ 脚本版本、SHA256 校验与源码地址将在正式接入后展示。</span>
               <a href="#" data-demo style="color: var(--blue)"
-                >在 GitHub 上查看测速脚本源码 ↗</a
+                >测速脚本源码入口（功能示意）</a
               >
             </div>
           </div>
-          <button class="btn btn-primary" data-demo>提交测试（功能示意）</button>
+              <button class="btn btn-primary" data-demo>提交测试结果（功能示意）</button>
+              <span class="small-muted">当前按钮不会上传、保存或审核测试结果。</span>
         </div>
       </section>
       <section class="card toolbar section">
+        <h2>测试记录筛选与排序（功能示意）</h2>
+        <p class="small-muted">当前静态版本不会根据以下条件查询、过滤、排序或重新计算测试报告。</p>
         <div class="toolbar-grid">
           <div class="field">
             <label>商家</label>
@@ -145,16 +148,16 @@
             <label>时间范围</label>
             <select class="select">
               <option>全部时间</option>
-              <option>最近 24 小时</option>
-              <option>最近 7 天 (最新稳定)</option>
-              <option>最近 30 天</option>
+              <option>24 小时时间范围（功能示意）</option>
+              <option>7 天时间范围（功能示意）</option>
+              <option>30 天时间范围（功能示意）</option>
             </select>
           </div>
           <div class="field">
             <label>CPU 架构</label>
             <select class="select">
               <option>全部 CPU</option>
-              <option>AMD EPYC (高主频)</option>
+              <option>AMD EPYC</option>
               <option>Intel Xeon</option>
               <option>1 vCPU</option>
               <option>2 vCPU 及以上</option>
@@ -170,12 +173,12 @@
             </select>
           </div>
           <div class="field">
-            <label>排序</label>
+            <label>排序（功能示意）</label>
             <select class="select">
-              <option>测试时间 ↓ (最新优先)</option>
-              <option>下行吞吐最高 ↓</option>
-              <option>磁盘读写最快 ↓</option>
-              <option>CPU 单核跑分最高 ↓</option>
+              <option>测试时间 ↓</option>
+              <option>下行吞吐数值 ↓</option>
+              <option>磁盘读写数值 ↓</option>
+              <option>CPU 单核跑分 ↓</option>
             </select>
           </div>
         </div>
@@ -184,6 +187,7 @@
         <div class="list-head">
           <strong>测速报告快照</strong
           ><span class="small-muted">当前页面展示 6 条已有测试记录 · 快照日期：2026-09-03</span>
+          <p class="small-muted">126 为当前快照的汇总记录数；本静态页面仅展示下方 6 条示例记录，不代表已渲染完整 126 条报告。</p>
         </div>
         <table class="data-table">
           <thead>
@@ -261,6 +265,7 @@
             </tr>
           </tbody>
         </table>
+        <p class="small-muted">流媒体结果仅代表对应报告的测试时间和测试环境，不保证当前或未来仍保持相同状态。</p>
       </section>
       <section class="section two-col">
         <div>
@@ -269,6 +274,7 @@
               <h2>测试地区摘要</h2>
               <p>基于当前页面已有静态测试记录整理</p>
               <p>延迟与丢包结果受测试节点、运营商和测试时间影响，不代表该地区长期网络表现。</p>
+              <p>趋势线为当前静态页面中的展示图形，不会自动追加实时测试点。</p>
             </div>
           </div>
           <div class="grid-2">
