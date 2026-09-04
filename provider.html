@@ -46,11 +46,12 @@
               <div style="flex: 1">
                 <div style="display: flex; gap: 8px; align-items: center">
                   <h1>RackNerd</h1>
-                  <span class="rating">9.4 极佳</span>
+                  <span class="rating">站内综合评分 9.4 / 10</span>
                 </div>
                 <div class="sub">
                   🇺🇸 美国知名 VPS 服务商，性价比较高，支持多地区部署
                 </div>
+                <div class="small-muted">基于当前收录的价格、在线率与实测数据 · 更新于 2026-09-03</div>
                 <div style="display: flex; gap: 8px; margin-top: 12px">
                   <a class="btn btn-primary" href="#" data-demo>访问官网 ↗</a
                   ><button class="btn" data-favorite>♡ 收藏</button>
@@ -68,7 +69,7 @@
                 <span>支付方式</span><strong>PayPal · 信用卡</strong>
               </div>
               <div class="summary-cell">
-                <span>退款政策</span><strong>7 天无条件退款</strong>
+                <span>退款政策</span><strong>7 天退款政策</strong>
               </div>
             </div>
             <div class="summary-grid" style="margin-top: 0">
@@ -85,7 +86,7 @@
             </div>
           </div>
           <aside class="notice">
-            <h4>服务质量综合诊断</h4>
+            <h4>服务与政策摘要</h4>
             <div
               style="
                 margin-top: 8px;
@@ -97,12 +98,13 @@
             >
               <div>
                 工单平均响应时效：<strong class="metric-good"
-                  >15 分钟 (高效)</strong
+                  >15 分钟</strong
                 >
               </div>
-              <div>退款政策：<strong>7 天无条件退款保证</strong></div>
-              <div>SLA 承诺：<strong>99.9% 骨干网络正常运行保障</strong></div>
+              <div>退款政策：<strong>7 天退款政策</strong></div>
+              <div>SLA 信息：<strong>99.9%</strong></div>
             </div>
+            <div class="small-muted" style="margin-top: 10px">来源：商家公开资料与站内记录 · 最近整理：2026-09-03</div>
           </aside>
           <div class="card section" style="margin-top: 18px; padding: 18px">
             <h3 style="margin: 0 0 4px">RackNerd 社区常见问答与避坑指南</h3>
@@ -117,8 +119,7 @@
                 <div class="faq-answer">
                   DC02 是 RackNerd 最经典的自建机房，走 MC
                   机房上游网络，针对中国联通和中国电信有 BGP
-                  优化路由。实测联通全天稳定在 145ms
-                  左右无明显丢包；电信晚高峰偶有轻微波动，整体性价比突出。
+                  优化路由。当前站内记录显示，已有测试中的延迟约为 145–152ms；电信晚高峰偶有轻微波动。实际结果会受运营商、地区和测试时间影响，请结合下方最新测速记录判断。
                 </div>
               </div>
               <div class="faq-item">
@@ -135,9 +136,7 @@
                   是否支持原生 IP 解锁 ChatGPT 和流媒体？
                 </div>
                 <div class="faq-answer">
-                  根据选主机官方探针最近 7
-                  天的轮询检测，其洛杉矶节点为商业纯净原生 IP，全天稳定解锁
-                  Netflix 美区、YouTube Premium 以及 ChatGPT Web 端。
+                  流媒体与 AI 服务可用性会随 IP 段和平台策略变化。当前页面不将单次检测结果作为长期可用保证，建议以最近一次检测结果为准。
                 </div>
               </div>
             </div>
@@ -145,8 +144,9 @@
           <aside class="notice" style="margin-top: 18px">
             <h4>数据来源说明</h4>
             <p>
-              本页数据基于商家公开资料、价格记录和站内真实测试整理。最近更新：2026-09-03。
+              本页商家资料、套餐与政策信息来自商家公开资料；价格历史、在线率与测速来自站内已有记录。不同数据的更新时间可能不同，请以各区块标注时间为准。
             </p>
+            <p>最近整理：2026-09-03</p>
             <p style="margin-top: 10px">
               评分与 Affiliate 关系分离，不以推广关系改变评分结果。
             </p>
@@ -203,6 +203,7 @@
                   <div class="small-muted">
                     2 个监控节点 · 17,280 次采样 · 3 分钟前更新
                   </div>
+                  <div class="small-muted">统计窗口：最近 30 天 · 样本：17,280 次 · 监控节点：2 个 · 最后更新：3 分钟前</div>
                 </div>
                 <div>
                   <span class="metric-good" style="font-size: 26px"
@@ -292,6 +293,7 @@
                 <strong>最新真实测速</strong
                 ><a class="link-more" href="benchmarks.html">更多测速 ›</a>
               </div>
+              <p class="small-muted">以下结果为站内已有测试记录，网络表现会随线路、地区和时间变化。</p>
               <table class="data-table">
                 <thead>
                   <tr>
@@ -300,7 +302,7 @@
                     <th>延迟</th>
                     <th>丢包</th>
                     <th>下载速度</th>
-                    <th>时间</th>
+                    <th>测试时间</th>
                   </tr>
                 </thead>
                 <tbody>
