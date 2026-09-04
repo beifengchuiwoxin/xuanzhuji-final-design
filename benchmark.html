@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta name="description" content="RackNerd 洛杉矶 DC02 测速报告：Geekbench 跑分、磁盘 IO、三网延迟、丢包率与流媒体解锁详情。" />
+    <meta name="description" content="RackNerd 洛杉矶 DC02 单次测速记录：展示 Geekbench、磁盘 IO、网络延迟、丢包与流媒体测试结果。" />
     <title>测速报告详情 - 选主机</title>
     <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="assets/css/app.css" />
@@ -54,6 +54,7 @@
             <p>
               测试时间：2026-09-03 10:24 · 脚本版本 v2.3.1 · 测试时长 6 分钟<br />
               报告编号：#20260903-1024 · 本页记录一次测试结果，不代表该套餐长期性能。
+              <br />记录状态：静态报告快照 · 原始终端输出、JSON 与校验文件尚未接入
             </p>
           </div>
           <a class="btn" href="benchmarks.html">返回测速大厅</a>
@@ -166,12 +167,14 @@
                   </g>
                 </svg>
               </div>
+              <p class="small-muted" style="margin-top: 10px">趋势图为本次静态报告中的展示图形，不会自动追加新的监测点。</p>
             </div>
             <div class="card table-card section">
               <div class="list-head">
-                <strong>路由测试</strong
+                <strong>路由测试记录</strong
                 ><span class="small-muted">目标：中国电信 163 骨干网</span>
               </div>
+              <p class="small-muted" style="margin-top: 10px">以下跳数、IP、主机名、延迟与 AS 信息均为本次报告保存的静态路由记录。</p>
               <table class="data-table">
                 <thead>
                   <tr>
@@ -233,7 +236,7 @@
               <div style="display: flex; gap: 8px; flex-wrap: wrap">
                 <button class="btn" data-demo>JSON 尚未接入</button
                 ><button class="btn" data-demo>TXT 尚未接入</button
-                ><button class="btn" data-copy="#report-url">复制链接</button>
+                ><button class="btn" data-copy="#report-url">复制报告编号</button>
               </div>
               <code
                 id="report-url"
@@ -241,23 +244,26 @@
                 style="display: block; margin-top: 10px"
                 >报告编号：20260903-1024</code
               >
+              <p class="small-muted" style="margin-top: 10px">当前没有可复制的公开报告 URL；此按钮仅复制页面中的报告编号。</p>
               <div style="margin-top: 14px">
                 <div class="sub" style="margin-bottom: 6px">
                   嵌入徽章（功能示意）
                 </div>
+                <p class="small-muted">正式报告与徽章地址将在报告存储功能接入后提供；当前不会生成真实徽章代码、图片地址或嵌入链接。</p>
                 <div class="command" style="font-size: 11px">
                   <code id="embed-badge"
                     >正式报告与徽章地址将在报告存储功能接入后提供。</code
                   >
                   <button class="btn btn-sm" data-copy="#embed-badge">
-                    复制
+                    复制占位说明
                   </button>
                 </div>
               </div>
               <div class="small-muted" style="margin-top: 10px">
                 数据有误？<a href="#" data-demo style="color: var(--blue)"
-                  >提交纠错 / 申诉 ›</a
+                  >纠错入口（功能示意） ›</a
                 >
+                <br /><span class="small-muted">当前入口不会保存、发送或审核纠错内容。</span>
               </div>
             </div>
           </div>
@@ -265,6 +271,7 @@
             <div class="card aside-card">
               <h3>流媒体测试</h3>
               <p class="small-muted">测试时间：2026-09-03 10:24 · 平台策略和 IP 状态可能变化，本次结果不代表长期可用。</p>
+              <p class="small-muted">当前页面不会重新检测这些平台状态。</p>
               <div class="idea">
                 <div class="idea-icon">N</div>
                 <div>
@@ -311,14 +318,16 @@
                   <span>IP 类型</span><strong>原生 IP</strong>
                 </div>
               </div>
+              <p class="small-muted" style="margin-top: 10px">“原生 IP”为当前测试记录中的页面字段，本页未提供独立 IP 类型验证材料。</p>
             </div>
             <div class="card aside-card">
               <h3>原始测试数据</h3>
               <p class="small-muted">当前静态原型仅展示测试结果摘要，原始 JSON、终端输出与校验信息尚未接入。</p>
               <div style="display: flex; gap: 8px; margin-top: 12px">
-                <button class="btn btn-sm" data-demo>原始 JSON（未接入）</button>
-                <button class="btn btn-sm" data-demo>终端 TXT（未接入）</button>
+                <button class="btn btn-sm" data-demo>JSON 数据（未接入）</button>
+                <button class="btn btn-sm" data-demo>终端输出（未接入）</button>
               </div>
+              <p class="small-muted" style="margin-top: 10px">这些按钮不会下载或生成文件。</p>
             </div>
             <div class="card aside-card">
               <h3>相关对应套餐</h3>
