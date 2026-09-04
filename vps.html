@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta name="description" content="按地区、预算、配置、线路与用途筛选 VPS 套餐，支持价格排序与多套餐横向对比，基于真实测速数据做决策。" />
+    <meta name="description" content="VPS 套餐数据页：展示当前收录的地区、价格、配置、线路与已有测试记录，并提供筛选与对比界面原型。" />
     <title>查找 VPS - 选主机</title>
     <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="assets/css/app.css" />
@@ -36,11 +36,14 @@
     <section class="page-title">
       <div class="container">
         <h1>查找 VPS</h1>
-        <p>按地区、价格、配置、线路和用途筛选，快速找到适合你的套餐。</p>
+        <p>查看当前收录的 VPS 套餐，并通过筛选与排序界面比较价格、配置、线路和测试记录。</p>
+        <p class="small-muted">页面数据快照：2026-09-04 · 当前筛选与排序控件为静态原型，不连接真实数据查询。</p>
       </div>
     </section>
     <main class="container">
       <section class="card toolbar">
+        <h2>套餐筛选（功能示意）</h2>
+        <p class="small-muted">以下条件用于展示未来筛选界面；当前静态版本不会根据选择项重新查询或计算套餐结果。</p>
         <div class="toolbar-grid">
           <div class="field">
             <label>地区</label>
@@ -59,10 +62,10 @@
             <label>月预算</label>
             <select class="select">
               <option>全部预算</option>
-              <option>$5 以下 /月 (极致性价比)</option>
-              <option>$5 – $10 /月 (主流均衡)</option>
-              <option>$10 – $20 /月 (性能进阶)</option>
-              <option>$20 以上 /月 (企业独享)</option>
+              <option>$5 以下 /月</option>
+              <option>$5 – $10 /月</option>
+              <option>$10 – $20 /月</option>
+              <option>$20 以上 /月</option>
             </select>
           </div>
           <div class="field">
@@ -82,7 +85,7 @@
             <select class="select">
               <option>全部内存</option>
               <option>1 GB</option>
-              <option>2 GB (建站推荐)</option>
+              <option>2 GB</option>
               <option>4 GB</option>
               <option>8 GB 及以上</option>
             </select>
@@ -102,7 +105,7 @@
               <option>全部带宽</option>
               <option>100 Mbps</option>
               <option>500 Mbps</option>
-              <option>1 Gbps (高速口)</option>
+              <option>1 Gbps</option>
               <option>2.5 Gbps / 10 Gbps</option>
             </select>
           </div>
@@ -149,12 +152,12 @@
             <label>商家</label>
             <select class="select">
               <option>全部商家</option>
-              <option>DMIT (香港/美西精品)</option>
-              <option>RackNerd (低价老牌)</option>
-              <option>Vultr (全球按时计费)</option>
-              <option>Hostodo (新加坡大带宽)</option>
-              <option>Contabo (欧洲大盘鸡)</option>
-              <option>BuyVM (卢森堡不限流)</option>
+              <option>DMIT</option>
+              <option>RackNerd</option>
+              <option>Vultr</option>
+              <option>Hostodo</option>
+              <option>Contabo</option>
+              <option>BuyVM</option>
               <option>搬瓦工 BandwagonHost</option>
             </select>
           </div>
@@ -180,7 +183,8 @@
           "
         >
           <div>
-            <strong>热门快速筛选</strong>
+            <strong>快速筛选（功能示意）</strong>
+            <div class="small-muted">当前按钮仅用于界面原型展示。</div>
             <div class="chips">
               <button class="chip">香港</button
               ><button class="chip">日本</button
@@ -195,9 +199,9 @@
             </div>
           </div>
           <div style="display: flex; gap: 8px">
-            <button class="btn">↻ 重置筛选</button
+            <button class="btn">↻ 重置（功能示意）</button
             ><button class="btn btn-primary" data-apply-filter>
-              ⌕ 应用筛选
+              ⌕ 应用筛选（功能示意）
             </button>
           </div>
         </div>
@@ -210,15 +214,16 @@
           <div class="list-head">
             <div>
               <strong
-                >共找到
+                >当前收录套餐记录：
                 <span data-result-count style="color: var(--blue)">318</span>
-                个套餐</strong
+                </strong
               >
-              <div class="small-muted">价格与套餐信息按最近一次采集数据展示</div>
+              <div class="small-muted">下表展示当前静态页面中的套餐记录；价格与测试状态以各行标注时间为准。</div>
+              <div class="small-muted">筛选控件不会改变真实数据集，318 不是当前筛选条件计算出的动态结果。</div>
             </div>
             <div style="display: flex; gap: 8px">
-              <button class="btn btn-sm" data-favorite>♡ 收藏</button
-              ><button class="btn btn-sm" data-demo>⇩ 导出结果</button>
+              <button class="btn btn-sm" data-favorite>♡ 收藏（功能示意）</button
+              ><button class="btn btn-sm" data-demo>⇩ 导出（功能示意）</button>
             </div>
           </div>
           <table class="data-table">
@@ -269,7 +274,7 @@
                     data-compare-btn
                     style="margin-top: 4px"
                   >
-                    加入对比
+                    加入对比（功能示意）
                   </button>
                 </td>
               </tr>
@@ -305,7 +310,7 @@
                     data-compare-btn
                     style="margin-top: 4px"
                   >
-                    加入对比
+                    加入对比（功能示意）
                   </button>
                 </td>
               </tr>
@@ -341,7 +346,7 @@
                     data-compare-btn
                     style="margin-top: 4px"
                   >
-                    加入对比
+                    加入对比（功能示意）
                   </button>
                 </td>
               </tr>
@@ -377,7 +382,7 @@
                     data-compare-btn
                     style="margin-top: 4px"
                   >
-                    加入对比
+                    加入对比（功能示意）
                   </button>
                 </td>
               </tr>
@@ -413,7 +418,7 @@
                     data-compare-btn
                     style="margin-top: 4px"
                   >
-                    加入对比
+                    加入对比（功能示意）
                   </button>
                 </td>
               </tr>
@@ -449,7 +454,7 @@
                     data-compare-btn
                     style="margin-top: 4px"
                   >
-                    加入对比
+                    加入对比（功能示意）
                   </button>
                 </td>
               </tr>
@@ -485,7 +490,7 @@
                     data-compare-btn
                     style="margin-top: 4px"
                   >
-                    加入对比
+                    加入对比（功能示意）
                   </button>
                 </td>
               </tr>
@@ -521,12 +526,16 @@
                     data-compare-btn
                     style="margin-top: 4px"
                   >
-                    加入对比
+                    加入对比（功能示意）
                   </button>
                 </td>
               </tr>
             </tbody>
           </table>
+          <section class="small-muted" style="margin-top: 16px">
+            <h3>交互说明</h3>
+            <p>筛选、排序、收藏、导出和加入对比均保留现有静态原型交互标记；正式接入数据层后再由真实查询结果驱动。</p>
+          </section>
           <div class="pagination">
             <span class="page-dot active">1</span><span class="page-dot">2</span
             ><span class="page-dot">3</span><span class="page-dot">4</span
