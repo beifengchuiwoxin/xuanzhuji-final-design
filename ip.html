@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta name="description" content="IP 查询工具：查询 IP 归属地、ASN、运营商、IP 类型与纯净度风险分。" />
+    <meta name="description" content="IP 查询页面原型：展示 IP 归属地、ASN、运营商与基础网络信息的结果结构。" />
     <title>IP 查询 - 选主机</title>
     <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="assets/css/app.css" />
@@ -36,16 +36,18 @@
     <section class="page-title">
       <div class="container">
         <h1>IP 查询</h1>
-        <p>查询 IP 地址的归属地、ASN、运营商与基础网络信息。</p>
+        <p>展示 IP 归属地、ASN、运营商等查询结果的界面原型。</p>
+        <p>当前版本为静态原型，输入 IP 不会请求外部查询服务；下方数据仅为示例展示。</p>
       </div>
     </section>
     <main class="container">
       <section class="card aside-card">
+        <h2>查询输入（功能示意）</h2>
         <form data-ip-form style="display: flex; gap: 10px">
           <input
             class="input"
             placeholder="输入 IP 地址，例如：8.8.8.8"
-          /><button class="btn btn-primary">查询</button>
+          /><button class="btn btn-primary" data-demo>查询（功能示意）</button>
         </form>
         <div class="chips">
           <button
@@ -54,12 +56,9 @@
             onclick="
               document.querySelector('[data-ip-form] input').value =
                 '104.28.19.82';
-              document
-                .querySelector('[data-ip-form]')
-                .dispatchEvent(new Event('submit'));
             "
           >
-            🎯 查询我的本机 IP</button
+            示例 IP：104.28.19.82</button
           ><button
             class="chip"
             type="button"
@@ -91,13 +90,15 @@
       <section class="section" data-ip-result>
         <div class="section-head">
           <div>
-            <h2>查询结果</h2>
-            <p>静态原型展示本地模拟结果</p>
+            <h2>示例结果</h2>
+            <p>以下字段用于展示未来真实查询结果的页面结构，当前不会随输入 IP 自动获取真实数据。</p>
+            <p>示例数据对象：8.8.8.8</p>
           </div>
         </div>
         <div class="card aside-card ip-result">
           <div>
             <div class="kv">
+              <h3>基础信息示例</h3>
               <div class="kv-item">
                 <span>IP 地址</span><strong data-ip-value>8.8.8.8</strong>
               </div>
@@ -120,18 +121,19 @@
                 <span>经纬度</span><strong>37.3860, -122.0838</strong>
               </div>
               <div class="kv-item">
-                <span>IP 类型</span><strong>原生 IP (广播/IDC机房)</strong>
+                <span>IP 类型</span><strong>示例：IDC / 数据中心</strong>
               </div>
               <div class="kv-item">
-                <span>纯净度 / 风险分</span
-                ><strong class="metric-good">2 / 10 (极纯净)</strong>
+                <span>风险检测</span><strong>尚未接入</strong>
               </div>
               <div class="kv-item">
-                <span>流媒体属性</span><strong>全解锁支持 (美区/港区)</strong>
+                <span>流媒体检测</span><strong>尚未接入</strong>
               </div>
             </div>
           </div>
           <div class="fake-map">
+            <strong>位置示意</strong>
+            <p>地图仅用于展示结果页布局，不代表实时地理定位。</p>
             <div class="map-pin"></div>
             <div
               style="
@@ -154,16 +156,16 @@
         <div class="grid-4">
           <a class="card mini-card" href="toolbox.html"
             ><strong>⌁ 路由追踪</strong>
-            <div class="sub">查看 IP 路由链路</div></a
+            <div class="sub">查看 IP 路由链路 · 状态：规划中</div></a
           ><a class="card mini-card" href="toolbox.html"
             ><strong>⌘ TCP Ping</strong>
-            <div class="sub">多端口 TCP 延迟</div></a
-          ><a class="card mini-card" href="toolbox.html"
+            <div class="sub">多端口 TCP 延迟 · 状态：规划中</div></a
+          ><a class="card mini-card" href="looking-glass.html"
             ><strong>⌘ Looking Glass</strong>
-            <div class="sub">多地区网络测试</div></a
+            <div class="sub">查看已有网络测试快照页面</div></a
           ><a class="card mini-card" href="toolbox.html"
-            ><strong>IP IP 段查询</strong>
-            <div class="sub">查询 IP 段归属</div></a
+            ><strong>IP 段查询</strong>
+            <div class="sub">查询 IP 段归属 · 状态：规划中</div></a
           >
         </div>
       </section>
